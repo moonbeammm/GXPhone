@@ -22,7 +22,7 @@
         
         [self setViewControllers:@[rootViewController]];
         self.automaticallyAdjustsScrollViewInsets = NO;
-        [self.navigationBar setBarTintColor:GXPinkColor];8
+        [self.navigationBar setBarTintColor:GXPinkColor];
 //        [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
         [self.navigationBar setTintColor:[UIColor redColor]]; // 设置返回按钮的tintColor
         [self.navigationBar setTranslucent:NO];

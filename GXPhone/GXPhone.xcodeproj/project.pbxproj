@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		055207906260DBDE2780CEF1 /* Pods_GXPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E743F9D45EA410278DBB21 /* Pods_GXPhone.framework */; };
 		E41D6A001E8AD12C002A464F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D69FF1E8AD12C002A464F /* main.m */; };
 		E41D6A031E8AD12C002A464F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D6A021E8AD12C002A464F /* AppDelegate.m */; };
 		E41D6A061E8AD12C002A464F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D6A051E8AD12C002A464F /* ViewController.m */; };
@@ -65,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61D4700B4248AB6267A426D1 /* Pods-GXPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXPhone.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GXPhone/Pods-GXPhone.debug.xcconfig"; sourceTree = "<group>"; };
+		95E743F9D45EA410278DBB21 /* Pods_GXPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GXPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41D69FB1E8AD12C002A464F /* GXPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41D69FF1E8AD12C002A464F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E41D6A011E8AD12C002A464F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +148,7 @@
 		E41D6A861E8AD2A3002A464F /* GXPhonePCH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhonePCH.h; sourceTree = "<group>"; };
 		E41D6A871E8AD2A3002A464F /* GXSizePCH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXSizePCH.h; sourceTree = "<group>"; };
 		E41D6A881E8AD2A3002A464F /* GXPhonePrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhonePrefix.pch; sourceTree = "<group>"; };
+		F072ED836FEF3C8971E70C0B /* Pods-GXPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXPhone.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GXPhone/Pods-GXPhone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				055207906260DBDE2780CEF1 /* Pods_GXPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +177,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		792BB62851BC1A5F09E1FA95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95E743F9D45EA410278DBB21 /* Pods_GXPhone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E41D69F21E8AD12C002A464F = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +192,8 @@
 				E41D6A171E8AD12C002A464F /* GXPhoneTests */,
 				E41D6A221E8AD12C002A464F /* GXPhoneUITests */,
 				E41D69FC1E8AD12C002A464F /* Products */,
+				E6BB552F4DC4D8D0879CC0EE /* Pods */,
+				792BB62851BC1A5F09E1FA95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -490,6 +505,15 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		E6BB552F4DC4D8D0879CC0EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61D4700B4248AB6267A426D1 /* Pods-GXPhone.debug.xcconfig */,
+				F072ED836FEF3C8971E70C0B /* Pods-GXPhone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -497,9 +521,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E41D6A281E8AD12C002A464F /* Build configuration list for PBXNativeTarget "GXPhone" */;
 			buildPhases = (
+				EFBCD7488CC9580D5E5D6DEB /* [CP] Check Pods Manifest.lock */,
 				E41D69F71E8AD12C002A464F /* Sources */,
 				E41D69F81E8AD12C002A464F /* Frameworks */,
 				E41D69F91E8AD12C002A464F /* Resources */,
+				90B95AFB0538CF7A33FFDE75 /* [CP] Embed Pods Frameworks */,
+				3D38A650C4E2936425F5B5F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -621,6 +648,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D38A650C4E2936425F5B5F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GXPhone/Pods-GXPhone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90B95AFB0538CF7A33FFDE75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GXPhone/Pods-GXPhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFBCD7488CC9580D5E5D6DEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E41D69F71E8AD12C002A464F /* Sources */ = {
@@ -803,11 +878,13 @@
 		};
 		E41D6A291E8AD12C002A464F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D4700B4248AB6267A426D1 /* Pods-GXPhone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T3R82QQDQ5;
 				GCC_PREFIX_HEADER = $SRCROOT/GXPhone/Main/GXPhonePrefix.pch;
 				INFOPLIST_FILE = GXPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sgx.GXPhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -816,11 +893,13 @@
 		};
 		E41D6A2A1E8AD12C002A464F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F072ED836FEF3C8971E70C0B /* Pods-GXPhone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T3R82QQDQ5;
 				GCC_PREFIX_HEADER = $SRCROOT/GXPhone/Main/GXPhonePrefix.pch;
 				INFOPLIST_FILE = GXPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sgx.GXPhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -896,6 +975,7 @@
 				E41D6A2A1E8AD12C002A464F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E41D6A2B1E8AD12C002A464F /* Build configuration list for PBXNativeTarget "GXPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -904,6 +984,7 @@
 				E41D6A2D1E8AD12C002A464F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E41D6A2E1E8AD12C002A464F /* Build configuration list for PBXNativeTarget "GXPhoneUITests" */ = {
 			isa = XCConfigurationList;
@@ -912,6 +993,7 @@
 				E41D6A301E8AD12C002A464F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
