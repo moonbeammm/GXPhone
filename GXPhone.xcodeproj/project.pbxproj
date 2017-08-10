@@ -75,6 +75,8 @@
 		B755550E1F3C502C008D0D01 /* GXPhone */ = {
 			isa = PBXGroup;
 			children = (
+				B755558F1F3C6362008D0D01 /* GXPhone */,
+				B75555901F3C6362008D0D01 /* Resources */,
 				B755550F1F3C502C008D0D01 /* GXPhone.h */,
 				B75555351F3C5493008D0D01 /* GXPhoneAppDelegate.h */,
 				B75555361F3C5493008D0D01 /* GXPhoneAppDelegate.m */,
@@ -90,6 +92,20 @@
 				B755551C1F3C502C008D0D01 /* Info.plist */,
 			);
 			path = GXPhoneTests;
+			sourceTree = "<group>";
+		};
+		B755558F1F3C6362008D0D01 /* GXPhone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GXPhone;
+			sourceTree = "<group>";
+		};
+		B75555901F3C6362008D0D01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
