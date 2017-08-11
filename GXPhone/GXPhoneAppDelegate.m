@@ -7,6 +7,9 @@
 //
 
 #import "GXPhoneAppDelegate.h"
+#import "GXMainTabBarViewController.h"
+#import "GXMainNavigationVC.h"
+#import "GXPhoneNavigator.h"
 
 @implementation GXPhoneAppDelegate
 
@@ -23,9 +26,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    UIViewController * vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor redColor];
-    self.window.rootViewController = vc;
+    GXMainTabBarViewController * tabBarVC = [[GXMainTabBarViewController alloc] init];
+    self.naviVC = [[GXMainNavigationVC alloc] initWithRootViewController:tabBarVC];
+    self.window.rootViewController = self.naviVC;
     [self.window makeKeyAndVisible];
 }
 

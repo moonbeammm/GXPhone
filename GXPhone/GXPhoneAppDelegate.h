@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class GXMainNavigationVC;
 @interface GXPhoneAppDelegate : UIResponder
 
 @property (strong, nonatomic) UIWindow *window;
+
+// Myself
+@property (nonatomic, strong) GXMainNavigationVC *naviVC;
 
 @end

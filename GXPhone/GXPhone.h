@@ -17,4 +17,4 @@ FOUNDATION_EXPORT const unsigned char GXPhoneVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <GXPhone/PublicHeader.h>
 
 #import <GXPhone/GXPhoneAppDelegate.h>
-
+#import <GXPhone/GXPhoneBus.h>
