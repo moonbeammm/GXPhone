@@ -78,6 +78,27 @@
 			remoteGlobalIDString = B7B684691F41A98700306EF5;
 			remoteInfo = GXRuler;
 		};
+		B7B685651F41C00200306EF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7B685461F41BFA100306EF5;
+			remoteInfo = GXNetwork;
+		};
+		B7B685671F41C00200306EF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7B6854F1F41BFA100306EF5;
+			remoteInfo = GXNetworkTests;
+		};
+		B7B6857E1F41C04700306EF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B7B685451F41BFA100306EF5;
+			remoteInfo = GXNetwork;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +113,7 @@
 		B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXRuler.xcodeproj; path = ../GXRuler/GXRuler.xcodeproj; sourceTree = "<group>"; };
 		B7B6851C1F41AC4D00306EF5 /* GXPhone.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GXPhone.xcassets; sourceTree = "<group>"; };
 		B7B6853A1F41B75B00306EF5 /* startMovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = startMovie.mp4; sourceTree = "<group>"; };
+		B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXNetwork.xcodeproj; path = ../GXNetwork/GXNetwork.xcodeproj; sourceTree = "<group>"; };
 		B7CCDC5A1F3DBA7C00B06BB3 /* GXPhoneBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneBus.h; sourceTree = "<group>"; };
 		B7CCDC5B1F3DBA7C00B06BB3 /* GXPhoneBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneBus.m; sourceTree = "<group>"; };
 		B7CCDC731F3DBEEB00B06BB3 /* GXPhoneBusTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneBusTestVC.h; sourceTree = "<group>"; };
@@ -210,6 +232,7 @@
 		B75557521F3C7511008D0D01 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */,
 				B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */,
 			);
 			name = Dependencies;
@@ -220,6 +243,15 @@
 			children = (
 				B7B6848A1F41A9A800306EF5 /* GXRuler.framework */,
 				B7B6848C1F41A9A800306EF5 /* GXRulerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7B685611F41C00100306EF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7B685661F41C00200306EF5 /* GXNetwork.framework */,
+				B7B685681F41C00200306EF5 /* GXNetworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -426,6 +458,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B7B6857F1F41C04700306EF5 /* PBXTargetDependency */,
 				B7B685191F41AA5700306EF5 /* PBXTargetDependency */,
 			);
 			name = GXPhone;
@@ -484,6 +517,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = B7B685611F41C00100306EF5 /* Products */;
+					ProjectRef = B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */;
+				},
+				{
 					ProductGroup = B7B684851F41A9A700306EF5 /* Products */;
 					ProjectRef = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
 				},
@@ -509,6 +546,20 @@
 			fileType = wrapper.cfbundle;
 			path = GXRulerTests.xctest;
 			remoteRef = B7B6848B1F41A9A800306EF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7B685661F41C00200306EF5 /* GXNetwork.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GXNetwork.framework;
+			remoteRef = B7B685651F41C00200306EF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7B685681F41C00200306EF5 /* GXNetworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GXNetworkTests.xctest;
+			remoteRef = B7B685671F41C00200306EF5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -577,6 +628,11 @@
 			isa = PBXTargetDependency;
 			name = GXRuler;
 			targetProxy = B7B685181F41AA5700306EF5 /* PBXContainerItemProxy */;
+		};
+		B7B6857F1F41C04700306EF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXNetwork;
+			targetProxy = B7B6857E1F41C04700306EF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
