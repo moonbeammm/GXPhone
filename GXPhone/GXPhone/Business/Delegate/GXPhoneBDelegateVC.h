@@ -6,9 +6,9 @@
 //  Copyright © 2017年 sunguangxin. All rights reserved.
 //
 
-#import "GXPhoneBaseVC.h"
+#import <GXRuler/GXBaseViewController.h>
 #import "GXPhoneDelegateHeader.h"
 
-@interface GXPhoneBDelegateVC : GXPhoneBaseVC <GXPhoneDelegateHeader>
+@interface GXPhoneBDelegateVC : GXBaseViewController <GXPhoneDelegateHeader>
 
 @end

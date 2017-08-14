@@ -15,8 +15,8 @@
  * 前提是Bvc必须在.h里遵守协议.
  */
 
-#import "GXPhoneBaseVC.h"
+#import <GXRuler/GXBaseViewController.h>
 
-@interface GXPhoneADelegateVC : GXPhoneBaseVC
+@interface GXPhoneADelegateVC : GXBaseViewController
 
 @end

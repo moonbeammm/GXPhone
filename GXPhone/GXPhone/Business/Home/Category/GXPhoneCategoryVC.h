@@ -6,8 +6,8 @@
 //  Copyright © 2017年 sunguangxin. All rights reserved.
 //
 
-#import "GXPhoneBaseTableVC.h"
+#import <GXRuler/GXBaseTableVC.h>
 
-@interface GXPhoneCategoryVC : GXPhoneBaseTableVC
+@interface GXPhoneCategoryVC : GXBaseTableVC
 
 @end

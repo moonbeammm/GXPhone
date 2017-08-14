@@ -7,6 +7,8 @@
 //
 
 #import "GXMainNavigationVC.h"
+#import <GXRuler/GXColors.h>
+#import <GXRuler/UIImage+Tint.h>
 
 @interface GXMainNavigationVC () <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
@@ -24,7 +26,7 @@
         [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
         [[UINavigationBar appearance] setShadowImage:[UIImage new]]; // 底部的线的颜色
         [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:17 weight:UIFontWeightRegular]}];
-//        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:[uic]] forBarMetrics:UIBarMetricsDefault];
+        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:GX_PINK_COLOR] forBarMetrics:UIBarMetricsDefault];
     }
     return self;
 }

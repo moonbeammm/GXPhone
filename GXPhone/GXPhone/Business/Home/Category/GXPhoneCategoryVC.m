@@ -8,8 +8,13 @@
 
 #import "GXPhoneCategoryVC.h"
 #import "GXPhoneCategoryVM.h"
-#import "GXPhoneBaseTableViewCell.h"
+
+#import <GXRuler/GXBaseTableViewCell.h>
 #import "GXPhoneNavigator.h"
+
+#import <GXRuler/GXImage.h>
+#import <GXRuler/UIView+Frame.h>
+#import <GXRuler/GXColors.h>
 
 @interface GXPhoneCategoryVC ()
 
@@ -21,17 +26,17 @@
 @end
 
 @implementation GXPhoneCategoryVC
-
+@synthesize viewModel;
 
 - (instancetype)init
 {
     if (self = [super init]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
-        self.tabBarItem.image = [UIImage imageNamed:@"home_category_tab"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed:@"home_category_tab_s"];
+        self.tabBarItem.image = GXImageMake(GXPhone,@"home_category_tab");
+        self.tabBarItem.selectedImage = GXImageMake(GXPhone,@"home_category_tab_s");
         self.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
         self.viewModel = [[GXPhoneCategoryVM alloc] init];
-//        [self.viewModel loadData];
+        [self.viewModel tryLoadData];
     }
     return self;
 }
@@ -55,7 +60,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    GXPhoneBaseTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([GXPhoneBaseTableViewCell class]) forIndexPath:indexPath];
+    GXBaseTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([GXBaseTableViewCell class]) forIndexPath:indexPath];
     NSString *title = self.model[indexPath.row][@"title"];
     cell.textLabel.text = title;
     return cell;
@@ -78,29 +83,21 @@
 {
     [self.view addSubview:self.naviView];
     [self.naviView addSubview:self.titleLabel];
-    
-//    [self.naviView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.left.right.equalTo(self.view);
-//        make.height.equalTo(@(64));
-//    }];
-//    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.centerX.equalTo(self.naviView);
-//        make.centerY.equalTo(self.naviView).offset(10);
-//        make.height.equalTo(@34);
-//    }];
+    self.naviView.frame = CGRectMake(0, 0, self.view.viewWidth, 64);
+    self.titleLabel.frame = CGRectMake((self.view.viewWidth - 40) / 2, 30, 40, 34);
     self.tableView.contentInset = UIEdgeInsetsMake(44, 0, 0, 0);
 }
 
 - (void)registerCell
 {
-    [self.tableView registerClass:[GXPhoneBaseTableViewCell class] forCellReuseIdentifier:NSStringFromClass([GXPhoneBaseTableViewCell class])];
+    [self.tableView registerClass:[GXBaseTableViewCell class] forCellReuseIdentifier:NSStringFromClass([GXBaseTableViewCell class])];
 }
 
 - (UIView *)naviView
 {
     if (_naviView == nil) {
         _naviView = [[UIView alloc] init];
-        _naviView.backgroundColor = [UIColor yellowColor];
+        _naviView.backgroundColor = GX_PINK_COLOR;
     }
     return _naviView;
 }

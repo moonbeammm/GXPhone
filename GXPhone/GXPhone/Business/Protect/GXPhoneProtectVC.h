@@ -6,12 +6,12 @@
 //  Copyright © 2017年 sunguangxin. All rights reserved.
 //
 
-#import "GXPhoneBaseVC.h"
+#import <GXRuler/GXBaseViewController.h>
 
 @interface GXPhonePerson : NSObject
 
 @end
 
-@interface GXPhoneProtectVC : GXPhoneBaseVC
+@interface GXPhoneProtectVC : GXBaseViewController
 
 @end

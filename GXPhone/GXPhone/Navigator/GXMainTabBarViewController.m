@@ -7,7 +7,6 @@
 //
 
 #import "GXMainTabBarViewController.h"
-#import "GXPhoneHomeVC.h"
 #import "GXPhoneCategoryVC.h"
 #import "GXPhoneSearchVC.h"
 #import "GXPhoneUserVC.h"
@@ -59,7 +58,7 @@
     
     // 通过url获取busModel
     // busModel里保存了一开始设置好的你想要的值(如vc)
-    GXBusModel *busModel = [GXBusMagiSystem callFunction:@"home/bus_test_vc" withModel:paraModel validator:validator];
+    GXBusModel *busModel = [GXBusMagiSystem callFunction:@"home/home_vc" withModel:paraModel validator:validator];
     if (!busModel) {
         return [[UIViewController alloc] init];
     }

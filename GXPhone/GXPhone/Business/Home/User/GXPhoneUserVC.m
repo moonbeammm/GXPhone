@@ -8,6 +8,7 @@
 
 #import "GXPhoneUserVC.h"
 //#import <GXNetwork/GXNetworkManager.h>
+#import <GXRuler/GXImage.h>
 
 @interface GXPhoneUserVC ()
 
@@ -18,8 +19,8 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        self.tabBarItem.image = [UIImage imageNamed:@"home_mine_tab"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed:@"home_mine_tab_s"];
+        self.tabBarItem.image = GXImageMake(GXPhone,@"home_mine_tab");
+        self.tabBarItem.selectedImage = GXImageMake(GXPhone,@"home_mine_tab_s");
         self.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
     }
     return self;

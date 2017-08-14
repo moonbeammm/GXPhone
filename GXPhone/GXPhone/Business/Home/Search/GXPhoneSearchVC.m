@@ -7,6 +7,7 @@
 //
 
 #import "GXPhoneSearchVC.h"
+#import <GXRuler/GXImage.h>
 
 @interface GXPhoneSearchVC ()
 
@@ -17,8 +18,8 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        self.tabBarItem.image = [UIImage imageNamed:@"home_discovery_tab"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed:@"home_discovery_tab_s"];
+        self.tabBarItem.image = GXImageMake(GXPhone,@"home_discovery_tab");
+        self.tabBarItem.selectedImage = GXImageMake(GXPhone,@"home_discovery_tab_s");
         self.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
     }
     return self;

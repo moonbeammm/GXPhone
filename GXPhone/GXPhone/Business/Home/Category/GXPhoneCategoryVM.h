@@ -6,9 +6,9 @@
 //  Copyright © 2017年 sunguangxin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <GXRuler/GXBaseViewModel.h>
 
-@interface GXPhoneCategoryVM : NSObject
+@interface GXPhoneCategoryVM : GXBaseViewModel
 
 
 @end

@@ -6,8 +6,8 @@
 //  Copyright © 2017年 sunguangxin. All rights reserved.
 //
 
-#import "GXPhoneBaseVC.h"
+#import <GXRuler/GXBaseViewController.h>
 
-@interface GXPikerViewVC : GXPhoneBaseVC
+@interface GXPikerViewVC : GXBaseViewController
 
 @end
