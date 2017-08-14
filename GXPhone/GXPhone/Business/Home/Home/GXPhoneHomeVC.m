@@ -8,6 +8,7 @@
 
 #import "GXPhoneHomeVC.h"
 
+
 @interface GXPhoneHomeVC ()
 
 @end
@@ -30,7 +31,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
 }
 
 - (void)viewWillAppear:(BOOL)animated

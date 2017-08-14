@@ -18,13 +18,13 @@
 // 注意
 // 1.注册的function(url)必须是小写
 
-- (BFCBusModel *)callFunction:(NSString *)function withModel:(BFCBusModel *)model
+- (GXBusModel *)callFunction:(NSString *)function withModel:(GXBusModel *)model
 {
-    BFCBusModel *resultModel = nil;
+    GXBusModel *resultModel = nil;
     function = [function lowercaseString];
     if ([function isEqualToString:@"main/bus_test_vc"]) {
 
-        BFCBusValidator *validator = [BFCBusValidator new];
+        GXBusValidator *validator = [GXBusValidator new];
         // 测试传递viewModel
         // [validator setViewModelValidationForKey:@"info_viewModel"];
         [validator setStringValidationForKey:@"from"];
@@ -36,7 +36,7 @@
             // 创建vc
             UIViewController *vc = [[GXPhoneBusTestVC alloc] init];
             // 通过vc和params创建保存vc的busModel
-            resultModel = [BFCBusModel new];
+            resultModel = [GXBusModel new];
             [resultModel setControllerValue:vc forKey:@"vc"];
         }
     }

@@ -47,11 +47,11 @@
 {
     // validator为了让bus验证这个url的对应的busModel里有没有对应的类型的值.
     // 如果没有就返回nil;
-    BFCBusValidator *validator = [BFCBusValidator new];
+    GXBusValidator *validator = [GXBusValidator new];
     [validator setControllerValidationForKey:@"vc"];
     
     // 传过去的参数
-    BFCBusModel *paraModel = [BFCBusModel new];
+    GXBusModel *paraModel = [GXBusModel new];
     // 测试传递viewModel
     // NSObject *viewModel = [[NSObject alloc] init];
     // [paraModel setViewModelValue:viewModel forKey:@"viewModel"];
@@ -59,7 +59,7 @@
     
     // 通过url获取busModel
     // busModel里保存了一开始设置好的你想要的值(如vc)
-    BFCBusModel *busModel = [BFCBusMagiSystem callFunction:@"home/bus_test_vc" withModel:paraModel validator:validator];
+    GXBusModel *busModel = [GXBusMagiSystem callFunction:@"home/bus_test_vc" withModel:paraModel validator:validator];
     if (!busModel) {
         return [[UIViewController alloc] init];
     }

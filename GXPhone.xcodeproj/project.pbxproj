@@ -65,25 +65,25 @@
 			remoteGlobalIDString = B755550B1F3C502C008D0D01;
 			remoteInfo = GXPhone;
 		};
-		B7CCDC541F3DBA0400B06BB3 /* PBXContainerItemProxy */ = {
+		B7B684891F41A9A800306EF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B7CCDC4F1F3DBA0400B06BB3 /* GXRuler.xcodeproj */;
+			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = B755569A1F3C71E1008D0D01;
+			remoteGlobalIDString = B7B6846A1F41A98700306EF5;
 			remoteInfo = GXRuler;
 		};
-		B7CCDC561F3DBA0400B06BB3 /* PBXContainerItemProxy */ = {
+		B7B6848B1F41A9A800306EF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B7CCDC4F1F3DBA0400B06BB3 /* GXRuler.xcodeproj */;
+			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = B75556A31F3C71E2008D0D01;
+			remoteGlobalIDString = B7B684731F41A98700306EF5;
 			remoteInfo = GXRulerTests;
 		};
-		B7CCDC581F3DBA1500B06BB3 /* PBXContainerItemProxy */ = {
+		B7B685181F41AA5700306EF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B7CCDC4F1F3DBA0400B06BB3 /* GXRuler.xcodeproj */;
+			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = B75556991F3C71E1008D0D01;
+			remoteGlobalIDString = B7B684691F41A98700306EF5;
 			remoteInfo = GXRuler;
 		};
 /* End PBXContainerItemProxy section */
@@ -97,7 +97,7 @@
 		B755551C1F3C502C008D0D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B75555351F3C5493008D0D01 /* GXPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneAppDelegate.h; sourceTree = "<group>"; };
 		B75555361F3C5493008D0D01 /* GXPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneAppDelegate.m; sourceTree = "<group>"; };
-		B7CCDC4F1F3DBA0400B06BB3 /* GXRuler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXRuler.xcodeproj; path = ../GXFC/GXRuler/GXRuler.xcodeproj; sourceTree = "<group>"; };
+		B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXRuler.xcodeproj; path = ../GXRuler/GXRuler.xcodeproj; sourceTree = "<group>"; };
 		B7CCDC5A1F3DBA7C00B06BB3 /* GXPhoneBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneBus.h; sourceTree = "<group>"; };
 		B7CCDC5B1F3DBA7C00B06BB3 /* GXPhoneBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneBus.m; sourceTree = "<group>"; };
 		B7CCDC731F3DBEEB00B06BB3 /* GXPhoneBusTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneBusTestVC.h; sourceTree = "<group>"; };
@@ -225,16 +225,16 @@
 		B75557521F3C7511008D0D01 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				B7CCDC4F1F3DBA0400B06BB3 /* GXRuler.xcodeproj */,
+				B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		B7CCDC501F3DBA0400B06BB3 /* Products */ = {
+		B7B684851F41A9A700306EF5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B7CCDC551F3DBA0400B06BB3 /* GXRuler.framework */,
-				B7CCDC571F3DBA0400B06BB3 /* GXRulerTests.xctest */,
+				B7B6848A1F41A9A800306EF5 /* GXRuler.framework */,
+				B7B6848C1F41A9A800306EF5 /* GXRulerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,10 +242,10 @@
 		B7CCDC711F3DBED900B06BB3 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				B7CCDCB11F3DC52900B06BB3 /* Home */,
 				B7CCDCA41F3DC52900B06BB3 /* 延时执行方法 */,
 				B7CCDCA71F3DC52900B06BB3 /* CAAnimation */,
 				B7CCDCAB1F3DC52900B06BB3 /* Delegate */,
-				B7CCDCB11F3DC52900B06BB3 /* Home */,
 				B7CCDCC21F3DC52900B06BB3 /* Protect */,
 				B7CCDCC51F3DC52900B06BB3 /* RebaseTest */,
 				B7CCDCC81F3DC52900B06BB3 /* UIPickerView */,
@@ -470,7 +470,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B7CCDC591F3DBA1500B06BB3 /* PBXTargetDependency */,
+				B7B685191F41AA5700306EF5 /* PBXTargetDependency */,
 			);
 			name = GXPhone;
 			productName = GXPhone;
@@ -528,8 +528,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B7CCDC501F3DBA0400B06BB3 /* Products */;
-					ProjectRef = B7CCDC4F1F3DBA0400B06BB3 /* GXRuler.xcodeproj */;
+					ProductGroup = B7B684851F41A9A700306EF5 /* Products */;
+					ProjectRef = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -541,18 +541,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B7CCDC551F3DBA0400B06BB3 /* GXRuler.framework */ = {
+		B7B6848A1F41A9A800306EF5 /* GXRuler.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = GXRuler.framework;
-			remoteRef = B7CCDC541F3DBA0400B06BB3 /* PBXContainerItemProxy */;
+			remoteRef = B7B684891F41A9A800306EF5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B7CCDC571F3DBA0400B06BB3 /* GXRulerTests.xctest */ = {
+		B7B6848C1F41A9A800306EF5 /* GXRulerTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = GXRulerTests.xctest;
-			remoteRef = B7CCDC561F3DBA0400B06BB3 /* PBXContainerItemProxy */;
+			remoteRef = B7B6848B1F41A9A800306EF5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -620,10 +620,10 @@
 			target = B755550B1F3C502C008D0D01 /* GXPhone */;
 			targetProxy = B75555171F3C502C008D0D01 /* PBXContainerItemProxy */;
 		};
-		B7CCDC591F3DBA1500B06BB3 /* PBXTargetDependency */ = {
+		B7B685191F41AA5700306EF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GXRuler;
-			targetProxy = B7CCDC581F3DBA1500B06BB3 /* PBXContainerItemProxy */;
+			targetProxy = B7B685181F41AA5700306EF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
