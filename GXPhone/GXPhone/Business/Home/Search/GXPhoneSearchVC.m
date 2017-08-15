@@ -7,7 +7,7 @@
 //
 
 #import "GXPhoneSearchVC.h"
-#import <GXRuler/GXImage.h>
+#import <GXRuler/GXImageManager.h>
 
 @interface GXPhoneSearchVC ()
 

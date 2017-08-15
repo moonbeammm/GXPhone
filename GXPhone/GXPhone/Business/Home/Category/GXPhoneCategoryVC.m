@@ -12,7 +12,7 @@
 #import <GXRuler/GXBaseTableViewCell.h>
 #import "GXPhoneNavigator.h"
 
-#import <GXRuler/GXImage.h>
+#import <GXRuler/GXImageManager.h>
 #import <GXRuler/UIView+Frame.h>
 #import <GXRuler/GXColors.h>
 

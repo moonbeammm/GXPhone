@@ -57,6 +57,13 @@
 			remoteGlobalIDString = B755550B1F3C502C008D0D01;
 			remoteInfo = GXPhone;
 		};
+		B79003DB1F42A4BF00EA6247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B7B684691F41A98700306EF5;
+			remoteInfo = GXRuler;
+		};
 		B7B684891F41A9A800306EF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
@@ -70,13 +77,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = B7B684731F41A98700306EF5;
 			remoteInfo = GXRulerTests;
-		};
-		B7B685181F41AA5700306EF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B7B684691F41A98700306EF5;
-			remoteInfo = GXRuler;
 		};
 		B7B685651F41C00200306EF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -458,8 +458,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				B79003DC1F42A4BF00EA6247 /* PBXTargetDependency */,
 				B7B6857F1F41C04700306EF5 /* PBXTargetDependency */,
-				B7B685191F41AA5700306EF5 /* PBXTargetDependency */,
 			);
 			name = GXPhone;
 			productName = GXPhone;
@@ -624,10 +624,10 @@
 			target = B755550B1F3C502C008D0D01 /* GXPhone */;
 			targetProxy = B75555171F3C502C008D0D01 /* PBXContainerItemProxy */;
 		};
-		B7B685191F41AA5700306EF5 /* PBXTargetDependency */ = {
+		B79003DC1F42A4BF00EA6247 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GXRuler;
-			targetProxy = B7B685181F41AA5700306EF5 /* PBXContainerItemProxy */;
+			targetProxy = B79003DB1F42A4BF00EA6247 /* PBXContainerItemProxy */;
 		};
 		B7B6857F1F41C04700306EF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

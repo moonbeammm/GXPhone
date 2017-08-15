@@ -8,7 +8,7 @@
 
 #import "GXPhoneUserVC.h"
 #import <GXNetwork/GXNetworkManager.h>
-#import <GXRuler/GXImage.h>
+#import <GXRuler/GXImageManager.h>
 
 @interface GXPhoneUserVC ()
 
