@@ -47,6 +47,8 @@
 		B7CCDCE11F3DC52900B06BB3 /* GXPhoneRebaseTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CCDCC71F3DC52900B06BB3 /* GXPhoneRebaseTestVC.m */; };
 		B7CCDCE21F3DC52900B06BB3 /* GXPikerViewVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CCDCC91F3DC52900B06BB3 /* GXPikerViewVC.h */; };
 		B7CCDCE31F3DC52900B06BB3 /* GXPikerViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CCDCCA1F3DC52900B06BB3 /* GXPikerViewVC.m */; };
+		E4C58B831F44AA3A00DF928F /* GXPhoneStackOverflowVC.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C58B811F44AA3A00DF928F /* GXPhoneStackOverflowVC.h */; };
+		E4C58B841F44AA3A00DF928F /* GXPhoneStackOverflowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C58B821F44AA3A00DF928F /* GXPhoneStackOverflowVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +149,8 @@
 		B7CCDCC71F3DC52900B06BB3 /* GXPhoneRebaseTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneRebaseTestVC.m; sourceTree = "<group>"; };
 		B7CCDCC91F3DC52900B06BB3 /* GXPikerViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPikerViewVC.h; sourceTree = "<group>"; };
 		B7CCDCCA1F3DC52900B06BB3 /* GXPikerViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPikerViewVC.m; sourceTree = "<group>"; };
+		E4C58B811F44AA3A00DF928F /* GXPhoneStackOverflowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneStackOverflowVC.h; sourceTree = "<group>"; };
+		E4C58B821F44AA3A00DF928F /* GXPhoneStackOverflowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneStackOverflowVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +263,7 @@
 		B7CCDC711F3DBED900B06BB3 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				E4C58B7A1F44A9C300DF928F /* stack overflow */,
 				B7CCDCB11F3DC52900B06BB3 /* Home */,
 				B7CCDCA41F3DC52900B06BB3 /* delayPerformMethod */,
 				B7CCDCA71F3DC52900B06BB3 /* CAAnimation */,
@@ -414,6 +419,15 @@
 			path = UIPickerView;
 			sourceTree = "<group>";
 		};
+		E4C58B7A1F44A9C300DF928F /* stack overflow */ = {
+			isa = PBXGroup;
+			children = (
+				E4C58B811F44AA3A00DF928F /* GXPhoneStackOverflowVC.h */,
+				E4C58B821F44AA3A00DF928F /* GXPhoneStackOverflowVC.m */,
+			);
+			path = "stack overflow";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -427,6 +441,7 @@
 				B7CCDCA01F3DC52000B06BB3 /* GXPhoneNavigator.h in Headers */,
 				B7CCDC751F3DBEEB00B06BB3 /* GXPhoneBusTestVC.h in Headers */,
 				B7CCDCCB1F3DC52900B06BB3 /* GXPhoneDelayPerformMethodVC.h in Headers */,
+				E4C58B831F44AA3A00DF928F /* GXPhoneStackOverflowVC.h in Headers */,
 				B7CCDCDC1F3DC52900B06BB3 /* GXPhoneUserVC.h in Headers */,
 				B7CCDCD41F3DC52900B06BB3 /* GXPhoneCategoryVC.h in Headers */,
 				B755551D1F3C502C008D0D01 /* GXPhone.h in Headers */,
@@ -599,6 +614,7 @@
 				B7CCDCCE1F3DC52900B06BB3 /* GXPhoneADelegateVC.m in Sources */,
 				B7CCDC761F3DBEEB00B06BB3 /* GXPhoneBusTestVC.m in Sources */,
 				B7CCDCD01F3DC52900B06BB3 /* GXPhoneBDelegateVC.m in Sources */,
+				E4C58B841F44AA3A00DF928F /* GXPhoneStackOverflowVC.m in Sources */,
 				B75555381F3C5493008D0D01 /* GXPhoneAppDelegate.m in Sources */,
 				B7CCDCDB1F3DC52900B06BB3 /* GXPhoneSearchVC.m in Sources */,
 				B7CCDCE31F3DC52900B06BB3 /* GXPikerViewVC.m in Sources */,

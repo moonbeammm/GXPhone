@@ -12,6 +12,7 @@
 #import "GXPikerViewVC.h"
 #import "GXPhoneProtectVC.h"
 #import "GXPhoneDelayPerformMethodVC.h"
+#import "GXPhoneStackOverflowVC.h"
 
 @implementation GXPhoneNavigator
 
@@ -59,6 +60,12 @@
 - (void)showDelayPerformMethodVC
 {
     GXPhoneDelayPerformMethodVC *vc = [[GXPhoneDelayPerformMethodVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)showStackOverflowVC
+{
+    GXPhoneStackOverflowVC *vc = [GXPhoneStackOverflowVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
