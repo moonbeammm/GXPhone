@@ -941,6 +941,7 @@
 				B716D3E21F4C4BEB00860791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B75555061F3C502C008D0D01 /* Build configuration list for PBXProject "GXPhone" */ = {
 			isa = XCConfigurationList;
