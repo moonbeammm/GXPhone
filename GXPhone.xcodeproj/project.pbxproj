@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B716D3D11F4C4BEB00860791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B716D3D01F4C4BEB00860791 /* main.m */; };
+		B716D3E61F4C4C4200860791 /* GXPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; };
+		B716D3E71F4C4C4200860791 /* GXPhone.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B75555161F3C502C008D0D01 /* GXPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; };
 		B755551B1F3C502C008D0D01 /* GXPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B755551A1F3C502C008D0D01 /* GXPhoneTests.m */; };
 		B755551D1F3C502C008D0D01 /* GXPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = B755550F1F3C502C008D0D01 /* GXPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +55,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B716D3E81F4C4C4200860791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B75555031F3C502C008D0D01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B755550B1F3C502C008D0D01;
+			remoteInfo = GXPhone;
+		};
 		B75555171F3C502C008D0D01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B75555031F3C502C008D0D01 /* Project object */;
@@ -103,7 +113,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B716D3EA1F4C4C4200860791 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B716D3E71F4C4C4200860791 /* GXPhone.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B716D3CD1F4C4BEB00860791 /* GXShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B716D3D01F4C4BEB00860791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B716D3E01F4C4BEB00860791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B755550C1F3C502C008D0D01 /* GXPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GXPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B755550F1F3C502C008D0D01 /* GXPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhone.h; sourceTree = "<group>"; };
 		B75555101F3C502C008D0D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -154,6 +181,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B716D3CA1F4C4BEB00860791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B716D3E61F4C4C4200860791 /* GXPhone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B75555081F3C502C008D0D01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,9 +207,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B716D3CE1F4C4BEB00860791 /* GXShell */ = {
+			isa = PBXGroup;
+			children = (
+				B716D3E01F4C4BEB00860791 /* Info.plist */,
+				B716D3CF1F4C4BEB00860791 /* Supporting Files */,
+			);
+			path = GXShell;
+			sourceTree = "<group>";
+		};
+		B716D3CF1F4C4BEB00860791 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B716D3D01F4C4BEB00860791 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B75555021F3C502C008D0D01 = {
 			isa = PBXGroup;
 			children = (
+				B716D3CE1F4C4BEB00860791 /* GXShell */,
 				B75557521F3C7511008D0D01 /* Dependencies */,
 				B755550E1F3C502C008D0D01 /* GXPhone */,
 				B75555191F3C502C008D0D01 /* GXPhoneTests */,
@@ -187,6 +240,7 @@
 			children = (
 				B755550C1F3C502C008D0D01 /* GXPhone.framework */,
 				B75555151F3C502C008D0D01 /* GXPhoneTests.xctest */,
+				B716D3CD1F4C4BEB00860791 /* GXShell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -461,6 +515,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B716D3CC1F4C4BEB00860791 /* GXShell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B716D3E51F4C4BEB00860791 /* Build configuration list for PBXNativeTarget "GXShell" */;
+			buildPhases = (
+				B716D3C91F4C4BEB00860791 /* Sources */,
+				B716D3CA1F4C4BEB00860791 /* Frameworks */,
+				B716D3CB1F4C4BEB00860791 /* Resources */,
+				B716D3EA1F4C4C4200860791 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B716D3E91F4C4C4200860791 /* PBXTargetDependency */,
+			);
+			name = GXShell;
+			productName = GXShell;
+			productReference = B716D3CD1F4C4BEB00860791 /* GXShell.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B755550B1F3C502C008D0D01 /* GXPhone */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B75555201F3C502C008D0D01 /* Build configuration list for PBXNativeTarget "GXPhone" */;
@@ -508,6 +581,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = sunguangxin;
 				TargetAttributes = {
+					B716D3CC1F4C4BEB00860791 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VEE3B6HDQ5;
+						ProvisioningStyle = Automatic;
+					};
 					B755550B1F3C502C008D0D01 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = VEE3B6HDQ5;
@@ -526,6 +604,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B75555021F3C502C008D0D01;
 			productRefGroup = B755550D1F3C502C008D0D01 /* Products */;
@@ -542,6 +621,7 @@
 			);
 			projectRoot = "";
 			targets = (
+				B716D3CC1F4C4BEB00860791 /* GXShell */,
 				B755550B1F3C502C008D0D01 /* GXPhone */,
 				B75555141F3C502C008D0D01 /* GXPhoneTests */,
 			);
@@ -580,6 +660,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B716D3CB1F4C4BEB00860791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B755550A1F3C502C008D0D01 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -599,6 +686,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B716D3C91F4C4BEB00860791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B716D3D11F4C4BEB00860791 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B75555071F3C502C008D0D01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -635,6 +730,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B716D3E91F4C4C4200860791 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B755550B1F3C502C008D0D01 /* GXPhone */;
+			targetProxy = B716D3E81F4C4C4200860791 /* PBXContainerItemProxy */;
+		};
 		B75555181F3C502C008D0D01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B755550B1F3C502C008D0D01 /* GXPhone */;
@@ -653,6 +753,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B716D3E11F4C4BEB00860791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VEE3B6HDQ5;
+				INFOPLIST_FILE = GXShell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sgx.GXShell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B716D3E21F4C4BEB00860791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VEE3B6HDQ5;
+				INFOPLIST_FILE = GXShell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sgx.GXShell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B755551E1F3C502C008D0D01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -812,6 +934,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B716D3E51F4C4BEB00860791 /* Build configuration list for PBXNativeTarget "GXShell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B716D3E11F4C4BEB00860791 /* Debug */,
+				B716D3E21F4C4BEB00860791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B75555061F3C502C008D0D01 /* Build configuration list for PBXProject "GXPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
