@@ -758,6 +758,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = VEE3B6HDQ5;
 				INFOPLIST_FILE = GXShell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sgx.GXShell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -769,6 +770,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = VEE3B6HDQ5;
 				INFOPLIST_FILE = GXShell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sgx.GXShell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
