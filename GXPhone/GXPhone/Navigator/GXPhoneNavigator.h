@@ -22,5 +22,6 @@
 - (void)showProtectVC;
 - (void)showDelayPerformMethodVC;
 - (void)showStackOverflowVC;
+- (void)showTouchEventVC;
 
 @end

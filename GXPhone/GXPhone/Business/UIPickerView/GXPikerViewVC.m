@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor yellowColor];
     //数据源数组
     models = @[@"西班牙",@"韩国",@"加拿大",@"中国大陆",@"马来西亚",@"新加坡",@"俄罗斯",@"美国",@"法国"];
     
