@@ -10,7 +10,7 @@
 #import "GXMainTabBarViewController.h"
 #import "GXMainNavigationVC.h"
 #import "GXPhoneNavigator.h"
-
+#import "GXPhoneRouter.h"
 //#import "DCIntrospect.h"
 
 #define kDocumentDirectory [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
@@ -61,6 +61,7 @@
 - (void)configureNavigator
 {
     [GXPhoneNavigator shared].navigationController = self.naviVC;
+    [GXPhoneRouter setNavigationController:self.naviVC];
 }
 
 - (void)configureStatusBarStyle:(UIApplication *)application

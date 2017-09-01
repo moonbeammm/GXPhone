@@ -6,8 +6,8 @@
 //  Copyright © 2017年 sunguangxin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <GXRuler/GXRouter.h>
 
-@interface GXPhoneRouter : NSObject
+@interface GXPhoneRouter : GXRouter
 
 @end

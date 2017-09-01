@@ -34,10 +34,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self nilProtect];
+//    [self nilProtect];
 //    [self assertTest];
     [self dictProtect];
-    [self objectProtect];
+//    [self objectProtect];
 }
 
 - (void)nilProtect
@@ -111,6 +111,14 @@
         NSLog(@"NULL相当于Nil");
     }
     //NSNull：在集合对象中，表示空值的对象 
+    
+    NSDictionary *dict2 = nil;
+    NSArray *allkeys = [dict2 allKeys];
+    for (int i = 0; i < allkeys.count; i++) {
+        NSLog(@"遍历所有key");
+    }
+    NSLog(@"%@",allkeys);
+    
 }
 
 - (void)objectProtect

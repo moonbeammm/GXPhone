@@ -10,6 +10,12 @@
 		B716D3D11F4C4BEB00860791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B716D3D01F4C4BEB00860791 /* main.m */; };
 		B716D3E61F4C4C4200860791 /* GXPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; };
 		B716D3E71F4C4C4200860791 /* GXPhone.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B74495D01F56B2490018CC0F /* GXPhonePageViewVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B74495CE1F56B2490018CC0F /* GXPhonePageViewVC.h */; };
+		B74495D11F56B2490018CC0F /* GXPhonePageViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B74495CF1F56B2490018CC0F /* GXPhonePageViewVC.m */; };
+		B74495DE1F56B3970018CC0F /* GXPhoneNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = B74495DA1F56B3970018CC0F /* GXPhoneNavigator.h */; };
+		B74495DF1F56B3970018CC0F /* GXPhoneNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = B74495DB1F56B3970018CC0F /* GXPhoneNavigator.m */; };
+		B74495E01F56B3970018CC0F /* GXPhoneRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = B74495DC1F56B3970018CC0F /* GXPhoneRouter.h */; };
+		B74495E11F56B3970018CC0F /* GXPhoneRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B74495DD1F56B3970018CC0F /* GXPhoneRouter.m */; };
 		B75555161F3C502C008D0D01 /* GXPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; };
 		B755551B1F3C502C008D0D01 /* GXPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B755551A1F3C502C008D0D01 /* GXPhoneTests.m */; };
 		B755551D1F3C502C008D0D01 /* GXPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = B755550F1F3C502C008D0D01 /* GXPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,6 +23,7 @@
 		B75555381F3C5493008D0D01 /* GXPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B75555361F3C5493008D0D01 /* GXPhoneAppDelegate.m */; };
 		B7B6851D1F41AC4D00306EF5 /* GXPhone.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B6851C1F41AC4D00306EF5 /* GXPhone.xcassets */; };
 		B7B6853B1F41B75B00306EF5 /* startMovie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7B6853A1F41B75B00306EF5 /* startMovie.mp4 */; };
+		B7BCCD311F57DC6D006B4135 /* GXPhoneSubStrTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BCCD301F57DC6D006B4135 /* GXPhoneSubStrTest.m */; };
 		B7CCDC5C1F3DBA7C00B06BB3 /* GXPhoneBus.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CCDC5A1F3DBA7C00B06BB3 /* GXPhoneBus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7CCDC5D1F3DBA7C00B06BB3 /* GXPhoneBus.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CCDC5B1F3DBA7C00B06BB3 /* GXPhoneBus.m */; };
 		B7CCDC751F3DBEEB00B06BB3 /* GXPhoneBusTestVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CCDC731F3DBEEB00B06BB3 /* GXPhoneBusTestVC.h */; };
@@ -25,10 +32,6 @@
 		B7CCDC9D1F3DC52000B06BB3 /* GXMainNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CCDC8B1F3DC52000B06BB3 /* GXMainNavigationVC.m */; };
 		B7CCDC9E1F3DC52000B06BB3 /* GXMainTabBarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CCDC8C1F3DC52000B06BB3 /* GXMainTabBarViewController.h */; };
 		B7CCDC9F1F3DC52000B06BB3 /* GXMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CCDC8D1F3DC52000B06BB3 /* GXMainTabBarViewController.m */; };
-		B7CCDCA01F3DC52000B06BB3 /* GXPhoneNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CCDC8E1F3DC52000B06BB3 /* GXPhoneNavigator.h */; };
-		B7CCDCA11F3DC52000B06BB3 /* GXPhoneNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CCDC8F1F3DC52000B06BB3 /* GXPhoneNavigator.m */; };
-		B7CCDCA21F3DC52000B06BB3 /* GXPhoneRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CCDC901F3DC52000B06BB3 /* GXPhoneRouter.h */; };
-		B7CCDCA31F3DC52000B06BB3 /* GXPhoneRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CCDC911F3DC52000B06BB3 /* GXPhoneRouter.m */; };
 		B7CCDCCD1F3DC52900B06BB3 /* GXPhoneADelegateVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CCDCAC1F3DC52900B06BB3 /* GXPhoneADelegateVC.h */; };
 		B7CCDCCE1F3DC52900B06BB3 /* GXPhoneADelegateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CCDCAD1F3DC52900B06BB3 /* GXPhoneADelegateVC.m */; };
 		B7CCDCCF1F3DC52900B06BB3 /* GXPhoneBDelegateVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CCDCAE1F3DC52900B06BB3 /* GXPhoneBDelegateVC.h */; };
@@ -67,6 +70,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = B755550B1F3C502C008D0D01;
 			remoteInfo = GXPhone;
+		};
+		B74495AE1F56B0C50018CC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B744959E1F56B0A80018CC0F;
+			remoteInfo = GXPageView;
+		};
+		B74495B11F56B0D60018CC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B744959D1F56B0A80018CC0F;
+			remoteInfo = GXPageView;
 		};
 		B75555171F3C502C008D0D01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -137,6 +154,13 @@
 		B716D3CD1F4C4BEB00860791 /* GXShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B716D3D01F4C4BEB00860791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B716D3E01F4C4BEB00860791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXPageView.xcodeproj; path = ../GXPageView/GXPageView.xcodeproj; sourceTree = "<group>"; };
+		B74495CE1F56B2490018CC0F /* GXPhonePageViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhonePageViewVC.h; sourceTree = "<group>"; };
+		B74495CF1F56B2490018CC0F /* GXPhonePageViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhonePageViewVC.m; sourceTree = "<group>"; };
+		B74495DA1F56B3970018CC0F /* GXPhoneNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneNavigator.h; sourceTree = "<group>"; };
+		B74495DB1F56B3970018CC0F /* GXPhoneNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneNavigator.m; sourceTree = "<group>"; };
+		B74495DC1F56B3970018CC0F /* GXPhoneRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneRouter.h; sourceTree = "<group>"; };
+		B74495DD1F56B3970018CC0F /* GXPhoneRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneRouter.m; sourceTree = "<group>"; };
 		B755550C1F3C502C008D0D01 /* GXPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GXPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B755550F1F3C502C008D0D01 /* GXPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhone.h; sourceTree = "<group>"; };
 		B75555101F3C502C008D0D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +173,7 @@
 		B7B6851C1F41AC4D00306EF5 /* GXPhone.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GXPhone.xcassets; sourceTree = "<group>"; };
 		B7B6853A1F41B75B00306EF5 /* startMovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = startMovie.mp4; sourceTree = "<group>"; };
 		B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXNetwork.xcodeproj; path = ../GXNetwork/GXNetwork.xcodeproj; sourceTree = "<group>"; };
+		B7BCCD301F57DC6D006B4135 /* GXPhoneSubStrTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneSubStrTest.m; sourceTree = "<group>"; };
 		B7CCDC5A1F3DBA7C00B06BB3 /* GXPhoneBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneBus.h; sourceTree = "<group>"; };
 		B7CCDC5B1F3DBA7C00B06BB3 /* GXPhoneBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneBus.m; sourceTree = "<group>"; };
 		B7CCDC731F3DBEEB00B06BB3 /* GXPhoneBusTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneBusTestVC.h; sourceTree = "<group>"; };
@@ -157,10 +182,6 @@
 		B7CCDC8B1F3DC52000B06BB3 /* GXMainNavigationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMainNavigationVC.m; sourceTree = "<group>"; };
 		B7CCDC8C1F3DC52000B06BB3 /* GXMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMainTabBarViewController.h; sourceTree = "<group>"; };
 		B7CCDC8D1F3DC52000B06BB3 /* GXMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMainTabBarViewController.m; sourceTree = "<group>"; };
-		B7CCDC8E1F3DC52000B06BB3 /* GXPhoneNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneNavigator.h; sourceTree = "<group>"; };
-		B7CCDC8F1F3DC52000B06BB3 /* GXPhoneNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneNavigator.m; sourceTree = "<group>"; };
-		B7CCDC901F3DC52000B06BB3 /* GXPhoneRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneRouter.h; sourceTree = "<group>"; };
-		B7CCDC911F3DC52000B06BB3 /* GXPhoneRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneRouter.m; sourceTree = "<group>"; };
 		B7CCDCAC1F3DC52900B06BB3 /* GXPhoneADelegateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneADelegateVC.h; sourceTree = "<group>"; };
 		B7CCDCAD1F3DC52900B06BB3 /* GXPhoneADelegateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneADelegateVC.m; sourceTree = "<group>"; };
 		B7CCDCAE1F3DC52900B06BB3 /* GXPhoneBDelegateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneBDelegateVC.h; sourceTree = "<group>"; };
@@ -236,6 +257,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B74495AA1F56B0C50018CC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B74495AF1F56B0C50018CC0F /* GXPageView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B74495C91F56B1DE0018CC0F /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				B74495CE1F56B2490018CC0F /* GXPhonePageViewVC.h */,
+				B74495CF1F56B2490018CC0F /* GXPhonePageViewVC.m */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
 		B75555021F3C502C008D0D01 = {
 			isa = PBXGroup;
 			children = (
@@ -263,10 +301,14 @@
 				B755558F1F3C6362008D0D01 /* GXPhone */,
 				B75555901F3C6362008D0D01 /* Resources */,
 				B755550F1F3C502C008D0D01 /* GXPhone.h */,
-				B7CCDC5A1F3DBA7C00B06BB3 /* GXPhoneBus.h */,
-				B7CCDC5B1F3DBA7C00B06BB3 /* GXPhoneBus.m */,
 				B75555351F3C5493008D0D01 /* GXPhoneAppDelegate.h */,
 				B75555361F3C5493008D0D01 /* GXPhoneAppDelegate.m */,
+				B74495DA1F56B3970018CC0F /* GXPhoneNavigator.h */,
+				B74495DB1F56B3970018CC0F /* GXPhoneNavigator.m */,
+				B74495DC1F56B3970018CC0F /* GXPhoneRouter.h */,
+				B74495DD1F56B3970018CC0F /* GXPhoneRouter.m */,
+				B7CCDC5A1F3DBA7C00B06BB3 /* GXPhoneBus.h */,
+				B7CCDC5B1F3DBA7C00B06BB3 /* GXPhoneBus.m */,
 				B75555101F3C502C008D0D01 /* Info.plist */,
 			);
 			path = GXPhone;
@@ -276,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				B755551A1F3C502C008D0D01 /* GXPhoneTests.m */,
+				B7BCCD301F57DC6D006B4135 /* GXPhoneSubStrTest.m */,
 				B755551C1F3C502C008D0D01 /* Info.plist */,
 			);
 			path = GXPhoneTests;
@@ -302,6 +345,7 @@
 		B75557521F3C7511008D0D01 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */,
 				B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */,
 				B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */,
 			);
@@ -329,6 +373,7 @@
 		B7CCDC711F3DBED900B06BB3 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				B74495C91F56B1DE0018CC0F /* PageView */,
 				E4C3E0071F4C849D00C8E69A /* touch_event_response */,
 				E4C3E0021F4C847800C8E69A /* delayPerformMethod */,
 				E4C58B7A1F44A9C300DF928F /* stack overflow */,
@@ -359,10 +404,6 @@
 				B7CCDC8B1F3DC52000B06BB3 /* GXMainNavigationVC.m */,
 				B7CCDC8C1F3DC52000B06BB3 /* GXMainTabBarViewController.h */,
 				B7CCDC8D1F3DC52000B06BB3 /* GXMainTabBarViewController.m */,
-				B7CCDC8E1F3DC52000B06BB3 /* GXPhoneNavigator.h */,
-				B7CCDC8F1F3DC52000B06BB3 /* GXPhoneNavigator.m */,
-				B7CCDC901F3DC52000B06BB3 /* GXPhoneRouter.h */,
-				B7CCDC911F3DC52000B06BB3 /* GXPhoneRouter.m */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -514,10 +555,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7CCDCA21F3DC52000B06BB3 /* GXPhoneRouter.h in Headers */,
 				B7CCDCE21F3DC52900B06BB3 /* GXPikerViewVC.h in Headers */,
 				B7CCDCE01F3DC52900B06BB3 /* GXPhoneRebaseTestVC.h in Headers */,
-				B7CCDCA01F3DC52000B06BB3 /* GXPhoneNavigator.h in Headers */,
 				E4C3E0121F4C88A400C8E69A /* GXPhoneTouchEventTwoView.h in Headers */,
 				B7CCDC751F3DBEEB00B06BB3 /* GXPhoneBusTestVC.h in Headers */,
 				E4C58B831F44AA3A00DF928F /* GXPhoneStackOverflowVC.h in Headers */,
@@ -531,8 +570,11 @@
 				B7CCDCCD1F3DC52900B06BB3 /* GXPhoneADelegateVC.h in Headers */,
 				B7CCDC9E1F3DC52000B06BB3 /* GXMainTabBarViewController.h in Headers */,
 				B7CCDCD11F3DC52900B06BB3 /* GXPhoneDelegateHeader.h in Headers */,
+				B74495E01F56B3970018CC0F /* GXPhoneRouter.h in Headers */,
 				B7CCDCDA1F3DC52900B06BB3 /* GXPhoneSearchVC.h in Headers */,
 				E4C3E00E1F4C889800C8E69A /* GXPhoneTouchEventOneView.h in Headers */,
+				B74495DE1F56B3970018CC0F /* GXPhoneNavigator.h in Headers */,
+				B74495D01F56B2490018CC0F /* GXPhonePageViewVC.h in Headers */,
 				E4C3E0051F4C847800C8E69A /* GXPhoneDelayPerformMethodVC.h in Headers */,
 				B7CCDCDE1F3DC52900B06BB3 /* GXPhoneProtectVC.h in Headers */,
 				B7CCDC5C1F3DBA7C00B06BB3 /* GXPhoneBus.h in Headers */,
@@ -574,6 +616,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B74495B21F56B0D60018CC0F /* PBXTargetDependency */,
 				B79003DC1F42A4BF00EA6247 /* PBXTargetDependency */,
 				B7B6857F1F41C04700306EF5 /* PBXTargetDependency */,
 			);
@@ -643,6 +686,10 @@
 					ProjectRef = B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */;
 				},
 				{
+					ProductGroup = B74495AA1F56B0C50018CC0F /* Products */;
+					ProjectRef = B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */;
+				},
+				{
 					ProductGroup = B7B684851F41A9A700306EF5 /* Products */;
 					ProjectRef = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
 				},
@@ -657,6 +704,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		B74495AF1F56B0C50018CC0F /* GXPageView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GXPageView.framework;
+			remoteRef = B74495AE1F56B0C50018CC0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		B7B6848A1F41A9A800306EF5 /* GXRuler.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -727,7 +781,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7CCDCD71F3DC52900B06BB3 /* GXPhoneCategoryVM.m in Sources */,
-				B7CCDCA31F3DC52000B06BB3 /* GXPhoneRouter.m in Sources */,
+				B74495D11F56B2490018CC0F /* GXPhonePageViewVC.m in Sources */,
 				B7CCDCDD1F3DC52900B06BB3 /* GXPhoneUserVC.m in Sources */,
 				B7CCDC5D1F3DBA7C00B06BB3 /* GXPhoneBus.m in Sources */,
 				B7CCDCDF1F3DC52900B06BB3 /* GXPhoneProtectVC.m in Sources */,
@@ -739,12 +793,13 @@
 				E4C3E0061F4C847800C8E69A /* GXPhoneDelayPerformMethodVC.m in Sources */,
 				E4C3E0131F4C88A400C8E69A /* GXPhoneTouchEventTwoView.m in Sources */,
 				B7CCDC761F3DBEEB00B06BB3 /* GXPhoneBusTestVC.m in Sources */,
+				B74495DF1F56B3970018CC0F /* GXPhoneNavigator.m in Sources */,
 				B7CCDCD01F3DC52900B06BB3 /* GXPhoneBDelegateVC.m in Sources */,
 				E4C58B841F44AA3A00DF928F /* GXPhoneStackOverflowVC.m in Sources */,
 				B75555381F3C5493008D0D01 /* GXPhoneAppDelegate.m in Sources */,
 				B7CCDCDB1F3DC52900B06BB3 /* GXPhoneSearchVC.m in Sources */,
+				B74495E11F56B3970018CC0F /* GXPhoneRouter.m in Sources */,
 				B7CCDCE31F3DC52900B06BB3 /* GXPikerViewVC.m in Sources */,
-				B7CCDCA11F3DC52000B06BB3 /* GXPhoneNavigator.m in Sources */,
 				E4C3E00B1F4C84C000C8E69A /* GXPhoneTouchEventVC.m in Sources */,
 				B7CCDCD51F3DC52900B06BB3 /* GXPhoneCategoryVC.m in Sources */,
 			);
@@ -755,6 +810,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B755551B1F3C502C008D0D01 /* GXPhoneTests.m in Sources */,
+				B7BCCD311F57DC6D006B4135 /* GXPhoneSubStrTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,6 +821,11 @@
 			isa = PBXTargetDependency;
 			target = B755550B1F3C502C008D0D01 /* GXPhone */;
 			targetProxy = B716D3E81F4C4C4200860791 /* PBXContainerItemProxy */;
+		};
+		B74495B21F56B0D60018CC0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXPageView;
+			targetProxy = B74495B11F56B0D60018CC0F /* PBXContainerItemProxy */;
 		};
 		B75555181F3C502C008D0D01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

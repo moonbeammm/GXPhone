@@ -7,7 +7,13 @@
 //
 
 #import "GXPhoneRouter.h"
+#import "GXPhoneProtectVC.h"
 
 @implementation GXPhoneRouter
+
++ (void)initialize
+{
+    [[GXRouter shared] map:@"main/business/protectvc" toControllerClass:[GXPhoneProtectVC class]];
+}
 
 @end

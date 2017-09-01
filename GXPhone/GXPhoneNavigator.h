@@ -23,5 +23,6 @@
 - (void)showDelayPerformMethodVC;
 - (void)showStackOverflowVC;
 - (void)showTouchEventVC;
+- (void)showPageViewVC;
 
 @end

@@ -14,6 +14,7 @@
 #import "GXPhoneDelayPerformMethodVC.h"
 #import "GXPhoneStackOverflowVC.h"
 #import "GXPhoneTouchEventVC.h"
+#import "GXPhonePageViewVC.h"
 
 @implementation GXPhoneNavigator
 
@@ -73,6 +74,12 @@
 - (void)showTouchEventVC
 {
     GXPhoneTouchEventVC *vc = [GXPhoneTouchEventVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)showPageViewVC
+{
+    GXPhonePageViewVC *vc = [GXPhonePageViewVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
