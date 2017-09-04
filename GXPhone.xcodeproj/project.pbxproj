@@ -21,6 +21,10 @@
 		B755551D1F3C502C008D0D01 /* GXPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = B755550F1F3C502C008D0D01 /* GXPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B75555371F3C5493008D0D01 /* GXPhoneAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B75555351F3C5493008D0D01 /* GXPhoneAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B75555381F3C5493008D0D01 /* GXPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B75555361F3C5493008D0D01 /* GXPhoneAppDelegate.m */; };
+		B77B4C731F5D65F9009FBFF0 /* GXNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B685661F41C00200306EF5 /* GXNetwork.framework */; };
+		B77B4C741F5D65F9009FBFF0 /* GXPageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74495AF1F56B0C50018CC0F /* GXPageView.framework */; };
+		B77B4C751F5D65F9009FBFF0 /* GXPodContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */; };
+		B77B4C761F5D65F9009FBFF0 /* GXRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B6848A1F41A9A800306EF5 /* GXRuler.framework */; };
 		B7B6851D1F41AC4D00306EF5 /* GXPhone.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B6851C1F41AC4D00306EF5 /* GXPhone.xcassets */; };
 		B7B6853B1F41B75B00306EF5 /* startMovie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B7B6853A1F41B75B00306EF5 /* startMovie.mp4 */; };
 		B7BCCD311F57DC6D006B4135 /* GXPhoneSubStrTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BCCD301F57DC6D006B4135 /* GXPhoneSubStrTest.m */; };
@@ -105,6 +109,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = B77B4B251F5D2694009FBFF0;
 			remoteInfo = GXPodContainer;
+		};
+		B77B4C6E1F5D6071009FBFF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B77B4C441F5D5EB0009FBFF0;
+			remoteInfo = GXPodContainerTestShell;
 		};
 		B79003DB1F42A4BF00EA6247 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -241,6 +252,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77B4C731F5D65F9009FBFF0 /* GXNetwork.framework in Frameworks */,
+				B77B4C741F5D65F9009FBFF0 /* GXPageView.framework in Frameworks */,
+				B77B4C751F5D65F9009FBFF0 /* GXPodContainer.framework in Frameworks */,
+				B77B4C761F5D65F9009FBFF0 /* GXRuler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */,
+				B77B4C6F1F5D6071009FBFF0 /* GXPodContainerTestShell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -745,6 +761,13 @@
 			fileType = wrapper.framework;
 			path = GXPodContainer.framework;
 			remoteRef = B77B4B691F5D2CFA009FBFF0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B77B4C6F1F5D6071009FBFF0 /* GXPodContainerTestShell.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GXPodContainerTestShell.app;
+			remoteRef = B77B4C6E1F5D6071009FBFF0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		B7B6848A1F41A9A800306EF5 /* GXRuler.framework */ = {

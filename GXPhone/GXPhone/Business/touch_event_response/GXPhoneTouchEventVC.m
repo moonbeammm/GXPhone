@@ -11,7 +11,6 @@
 #import "GXPhoneTouchEventOneView.h"
 #import "GXPhoneTouchEventTwoView.h"
 #import <Masonry/Masonry.h>
-#import <GXPodContainer/GXPodContainerTest.h>
 
 @interface GXPhoneTouchEventVC ()
 
@@ -41,7 +40,7 @@
 //    oneView.hidden = YES;
 //    oneView.alpha = 0;
     
-    GXPodContainerTest *twoView = [[GXPodContainerTest alloc] init];
+    UIView *twoView = [[UIView alloc] init];
     twoView.backgroundColor = [UIColor blueColor];
     twoView.frame = CGRectMake(50, 50, oneView.viewWidth-100, oneView.viewHeight - 100);
     [oneView addSubview:twoView];
