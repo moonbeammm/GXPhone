@@ -11,6 +11,8 @@
 #import <GXPageView/MLMSegmentScroll.h>
 #import <GXPageView/MLMSegmentManager.h>
 
+#import <GXPageView/GXPageContainerView.h>
+
 @interface GXPhonePageViewVC ()
 
 @end
@@ -20,6 +22,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+//    [self addMLMTest];
+    [self addGXContainerTest];
+    
+    
+    
+}
+
+- (void)addGXContainerTest
+{
+    NSArray *contents = [self vcArr:4];
+    GXPageContainerView *containerView = [[GXPageContainerView alloc] initWithParentVC:self contents:contents argv:nil];
+    [self.view addSubview:containerView];
+    containerView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+}
+
+- (void)addMLMTest
+{
     NSArray * list = @[@"推荐",@"视频"];
     
     MLMSegmentHead *segHead = [[MLMSegmentHead alloc] initWithFrame:CGRectMake(0, 64, 375, 40) titles:list headStyle:SegmentHeadStyleLine layoutStyle:MLMSegmentLayoutLeft];
@@ -32,18 +52,14 @@
         [self.view addSubview:segHead];
         [self.view addSubview:segScroll];
     }];
-    
-    
 }
-
-
 
 - (NSArray *)vcArr:(NSInteger)count {
     NSMutableArray *arr = [NSMutableArray array];
     for (NSInteger i = 0; i < count; i ++) {
         UIViewController *vc = [UIViewController new];
         vc.view.backgroundColor = [UIColor redColor];
-//        vc.index = i;
+        vc.title = [NSString stringWithFormat:@"title-%zd",i];
         [arr addObject:vc];
     }
     return arr;
