@@ -10,6 +10,8 @@
 #import <GXRuler/UIView+Frame.h>
 #import "GXPhoneTouchEventOneView.h"
 #import "GXPhoneTouchEventTwoView.h"
+#import <Masonry/Masonry.h>
+#import <GXPodContainer/GXPodContainerTest.h>
 
 @interface GXPhoneTouchEventVC ()
 
@@ -27,16 +29,25 @@
 - (void)addEventTouchSubView
 {
     GXPhoneTouchEventOneView *oneView = [[GXPhoneTouchEventOneView alloc] init];
-    oneView.backgroundColor = [UIColor redColor];
-    oneView.frame = CGRectMake(50, 50, self.view.viewWidth-100, self.view.viewHeight - 200);
+    oneView.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:oneView];
+    [oneView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.equalTo(@(50));
+        make.width.equalTo(@(100));
+        make.height.equalTo(@(100));
+    }];
+//    oneView.frame = CGRectMake(50, 50, self.view.viewWidth-100, self.view.viewHeight - 200);
+    
 //    oneView.hidden = YES;
 //    oneView.alpha = 0;
     
-    GXPhoneTouchEventTwoView *twoView = [[GXPhoneTouchEventTwoView alloc] init];
+    GXPodContainerTest *twoView = [[GXPodContainerTest alloc] init];
     twoView.backgroundColor = [UIColor blueColor];
     twoView.frame = CGRectMake(50, 50, oneView.viewWidth-100, oneView.viewHeight - 100);
     [oneView addSubview:twoView];
+    
+    
+    
     
 }
 

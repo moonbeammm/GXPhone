@@ -92,6 +92,20 @@
 			remoteGlobalIDString = B755550B1F3C502C008D0D01;
 			remoteInfo = GXPhone;
 		};
+		B77B4B691F5D2CFA009FBFF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B77B4B261F5D2694009FBFF0;
+			remoteInfo = GXPodContainer;
+		};
+		B77B4B751F5D2D4C009FBFF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B77B4B251F5D2694009FBFF0;
+			remoteInfo = GXPodContainer;
+		};
 		B79003DB1F42A4BF00EA6247 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
@@ -169,6 +183,7 @@
 		B755551C1F3C502C008D0D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B75555351F3C5493008D0D01 /* GXPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneAppDelegate.h; sourceTree = "<group>"; };
 		B75555361F3C5493008D0D01 /* GXPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneAppDelegate.m; sourceTree = "<group>"; };
+		B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXPodContainer.xcodeproj; path = ../GXPodContainer/GXPodContainer.xcodeproj; sourceTree = "<group>"; };
 		B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXRuler.xcodeproj; path = ../GXRuler/GXRuler.xcodeproj; sourceTree = "<group>"; };
 		B7B6851C1F41AC4D00306EF5 /* GXPhone.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GXPhone.xcassets; sourceTree = "<group>"; };
 		B7B6853A1F41B75B00306EF5 /* startMovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = startMovie.mp4; sourceTree = "<group>"; };
@@ -345,11 +360,20 @@
 		B75557521F3C7511008D0D01 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */,
 				B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */,
 				B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */,
 				B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */,
 			);
 			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		B77B4B651F5D2CFA009FBFF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		B7B684851F41A9A700306EF5 /* Products */ = {
@@ -616,6 +640,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B77B4B761F5D2D4C009FBFF0 /* PBXTargetDependency */,
 				B74495B21F56B0D60018CC0F /* PBXTargetDependency */,
 				B79003DC1F42A4BF00EA6247 /* PBXTargetDependency */,
 				B7B6857F1F41C04700306EF5 /* PBXTargetDependency */,
@@ -690,6 +715,10 @@
 					ProjectRef = B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */;
 				},
 				{
+					ProductGroup = B77B4B651F5D2CFA009FBFF0 /* Products */;
+					ProjectRef = B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */;
+				},
+				{
 					ProductGroup = B7B684851F41A9A700306EF5 /* Products */;
 					ProjectRef = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
 				},
@@ -709,6 +738,13 @@
 			fileType = wrapper.framework;
 			path = GXPageView.framework;
 			remoteRef = B74495AE1F56B0C50018CC0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GXPodContainer.framework;
+			remoteRef = B77B4B691F5D2CFA009FBFF0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		B7B6848A1F41A9A800306EF5 /* GXRuler.framework */ = {
@@ -831,6 +867,11 @@
 			isa = PBXTargetDependency;
 			target = B755550B1F3C502C008D0D01 /* GXPhone */;
 			targetProxy = B75555171F3C502C008D0D01 /* PBXContainerItemProxy */;
+		};
+		B77B4B761F5D2D4C009FBFF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXPodContainer;
+			targetProxy = B77B4B751F5D2D4C009FBFF0 /* PBXContainerItemProxy */;
 		};
 		B79003DC1F42A4BF00EA6247 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
