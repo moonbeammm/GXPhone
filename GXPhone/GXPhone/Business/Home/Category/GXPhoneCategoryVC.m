@@ -58,6 +58,11 @@
     return self.model.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     GXBaseTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([GXBaseTableViewCell class]) forIndexPath:indexPath];
@@ -135,6 +140,28 @@
                     @"method":@"showTouchEventVC"},
                   @{@"title":@"顶部菜单栏!!",
                     @"method":@"showPageViewVC"},
+                  @{@"title":@"敬请期待!!",
+                    @"method":@""},
+                  @{@"title":@"敬请期待!!",
+                    @"method":@""},
+                  @{@"title":@"敬请期待!!",
+                    @"method":@""},
+                  @{@"title":@"敬请期待!!",
+                    @"method":@""},
+                  @{@"title":@"敬请期待!!",
+                    @"method":@""},
+                  @{@"title":@"敬请期待!!",
+                    @"method":@""},
+                  @{@"title":@"敬请期待!!",
+                    @"method":@""},
+                  @{@"title":@"敬请期待!!",
+                    @"method":@""},
+                  @{@"title":@"敬请期待!!",
+                    @"method":@""},
+                  @{@"title":@"敬请期待!!",
+                    @"method":@""},
+                  @{@"title":@"敬请期待!!",
+                    @"method":@""},
                   @{@"title":@"敬请期待!!",
                     @"method":@""},
                   @{@"title":@"敬请期待!!",

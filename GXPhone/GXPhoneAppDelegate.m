@@ -12,6 +12,7 @@
 #import "GXPhoneNavigator.h"
 #import "GXPhoneRouter.h"
 #import <DCIntrospect-ARC/DCIntrospect.h>
+#import <YYFPSLabel/YYFPSLabel.h>
 
 #define kDocumentDirectory [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
 
@@ -25,6 +26,7 @@
     [self configureNavigator];
     [self configureStatusBarStyle:application];
     [self configureDCIntrospect];
+    [self configureYYFPSLabel];
     return YES;
 }
 
@@ -78,6 +80,16 @@
 #endif
 }
 
+- (void)configureYYFPSLabel
+{
+#if DEBUG
+    YYFPSLabel *label = [[YYFPSLabel alloc] init];
+    label.frame = CGRectMake(100, 0, 40, 15);
+    label.font = [UIFont systemFontOfSize:10];
+    label.userInteractionEnabled = YES;
+    [self.window.rootViewController.view addSubview:label];
+#endif
+}
 
 
 
