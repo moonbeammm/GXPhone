@@ -11,6 +11,8 @@
 #import "GXMainNavigationVC.h"
 #import "GXPhoneNavigator.h"
 #import "GXPhoneRouter.h"
+
+// 三方库
 #import <DCIntrospect-ARC/DCIntrospect.h>
 #import <YYFPSLabel/YYFPSLabel.h>
 
@@ -70,6 +72,16 @@
 {
     application.statusBarStyle = UIStatusBarStyleLightContent;
 }
+
+
+
+
+
+
+
+
+
+/// 三方库接入
 
 - (void)configureDCIntrospect
 {
