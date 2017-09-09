@@ -29,14 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    GXNetworkManager * manager = [GXNetworkManager shared];
+//    GXNetworkManager * manager = [[GXNetworkManager alloc] init];
 //    [manager GETWithUrl:@"http://www.mocky.io/v2/58f863ec110000170ea1739a"];
-    
-    
-    UIImageView *imageView = [manager getImageView];
-    [self.view addSubview:imageView];
-    imageView.frame = CGRectMake(100, 100, 100, 100);
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
