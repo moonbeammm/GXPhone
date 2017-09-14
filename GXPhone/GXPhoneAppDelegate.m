@@ -96,7 +96,8 @@
 {
 #if DEBUG
     YYFPSLabel *label = [[YYFPSLabel alloc] init];
-    label.frame = CGRectMake(100, 0, 40, 15);
+    CGSize size = self.window.frame.size;
+    label.frame = CGRectMake(size.width - 40, size.height, 40, 15);
     label.font = [UIFont systemFontOfSize:10];
     label.userInteractionEnabled = YES;
     [self.window.rootViewController.view addSubview:label];
