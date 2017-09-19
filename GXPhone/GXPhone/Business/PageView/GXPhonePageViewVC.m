@@ -8,8 +8,12 @@
 
 #import "GXPhonePageViewVC.h"
 #import <GXPageView/GXPageContainerView.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "GXPhoneRACDisposerShare.h"
 
 @interface GXPhonePageViewVC ()
+
+@property (nonatomic, strong) NSString *name;
 
 @end
 
@@ -17,19 +21,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.name = @"孙广鑫!!";
+    @weakify(self);
+    [RACObserve([GXPhoneRACDisposerShare shared], name) subscribeNext:^(id x) {
+        @strongify(self);
+        NSLog(@"sunguangxin:%@",self.name);
+        
+    }];
+    
+    UIButton *buttn = [[UIButton alloc] init];
+    buttn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:buttn];
+    buttn.frame = CGRectMake(100, 100, 50, 50);
+    [buttn addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (NSArray *)vcArr:(NSInteger)count {
-    NSMutableArray *arr = [NSMutableArray array];
-    for (NSInteger i = 0; i < count; i ++) {
-        UIViewController *vc = [UIViewController new];
-        vc.view.backgroundColor = [UIColor redColor];
-        vc.title = [NSString stringWithFormat:@"title-%zd",i];
-        [arr addObject:vc];
-    }
-    return arr;
+- (void)buttonClick
+{
+    [GXPhoneRACDisposerShare shared].name = @"hahahah";
 }
 
+
+- (void)dealloc
+{
+    NSLog(@"dealloc");
+}
 
 @end
