@@ -37,11 +37,6 @@
     [self setViewControllers:vcs animated:YES];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
 - (UIViewController *)getHomeLibraryVC
 {
     // validator为了让bus验证这个url的对应的busModel里有没有对应的类型的值.

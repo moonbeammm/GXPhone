@@ -18,6 +18,7 @@
 #import "GXPhoneTouchEventVC.h"
 #import "GXPhonePageViewVC.h"
 #import "GXPhoneLabelTestVC.h"
+#import "GXPhoneCountDownVC.h"
 
 @implementation GXPhoneNavigator
 
@@ -89,6 +90,12 @@
 - (void)showLabelTestVC
 {
     GXPhoneLabelTestVC *vc = [GXPhoneLabelTestVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)showCountDownVC
+{
+    GXPhoneCountDownVC *vc = [GXPhoneCountDownVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

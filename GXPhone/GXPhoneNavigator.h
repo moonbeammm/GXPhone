@@ -25,5 +25,5 @@
 - (void)showTouchEventVC;
 - (void)showPageViewVC;
 - (void)showLabelTestVC;
-
+- (void)showCountDownVC;
 @end

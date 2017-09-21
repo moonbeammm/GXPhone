@@ -48,7 +48,8 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -140,8 +141,8 @@
                     @"method":@"showPageViewVC"},
                   @{@"title":@"测试label能否用换行符!!",
                     @"method":@"showLabelTestVC"},
-                  @{@"title":@"敬请期待!!",
-                    @"method":@""},
+                  @{@"title":@"倒计时功能!!",
+                    @"method":@"showCountDownVC"},
                   @{@"title":@"敬请期待!!",
                     @"method":@""},
                   @{@"title":@"敬请期待!!",
