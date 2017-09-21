@@ -13,8 +13,6 @@
 #import "GXPhoneNavigator.h"
 
 #import <GXRuler/GXImageManager.h>
-#import <GXRuler/UIView+Frame.h>
-#import <GXRuler/GXColors.h>
 
 @interface GXPhoneCategoryVC ()
 
@@ -140,8 +138,8 @@
                     @"method":@"showTouchEventVC"},
                   @{@"title":@"顶部菜单栏!!",
                     @"method":@"showPageViewVC"},
-                  @{@"title":@"敬请期待!!",
-                    @"method":@""},
+                  @{@"title":@"测试label能否用换行符!!",
+                    @"method":@"showLabelTestVC"},
                   @{@"title":@"敬请期待!!",
                     @"method":@""},
                   @{@"title":@"敬请期待!!",

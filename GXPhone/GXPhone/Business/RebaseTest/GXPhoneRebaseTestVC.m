@@ -48,10 +48,10 @@
 {
     [self.view addSubview:self.btn];
     
-//    [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.equalTo(self.view);
-//        make.width.height.equalTo(@(50));
-//    }];
+    [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.width.height.equalTo(@(50));
+    }];
 }
 
 - (UIButton *)btn

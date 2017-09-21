@@ -7,8 +7,12 @@
 //
 
 #import "GXPhoneAppDelegate.h"
+
+// 基类
 #import "GXMainTabBarViewController.h"
 #import "GXMainNavigationVC.h"
+
+// 设置naviVC
 #import "GXPhoneNavigator.h"
 #import "GXPhoneRouter.h"
 
@@ -97,7 +101,7 @@
 #if DEBUG
     YYFPSLabel *label = [[YYFPSLabel alloc] init];
     CGSize size = self.window.frame.size;
-    label.frame = CGRectMake(size.width - 40, size.height, 40, 15);
+    label.frame = CGRectMake(size.width - 40, size.height-15, 40, 15);
     label.font = [UIFont systemFontOfSize:10];
     label.userInteractionEnabled = YES;
     [self.window.rootViewController.view addSubview:label];

@@ -39,15 +39,15 @@
     [self.view addSubview:self.vc.view];
     [self.vc didMoveToParentViewController:self];
     [self.view addSubview:self.btn];
-//    [self.vc.view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.view).offset(64);
-//        make.left.right.equalTo(self.view);
-//        make.height.equalTo(@(300));
-//    }];
-//    [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.bottom.left.equalTo(self.view);
-//        make.width.height.equalTo(@(100));
-//    }];
+    [self.vc.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(64);
+        make.left.right.equalTo(self.view);
+        make.height.equalTo(@(300));
+    }];
+    [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.left.equalTo(self.view);
+        make.width.height.equalTo(@(100));
+    }];
 }
 
 - (void)click

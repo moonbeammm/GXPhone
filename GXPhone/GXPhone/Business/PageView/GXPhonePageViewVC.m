@@ -8,7 +8,6 @@
 
 #import "GXPhonePageViewVC.h"
 #import <GXPageView/GXPageContainerView.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "GXPhoneRACDisposerShare.h"
 
 @interface GXPhonePageViewVC ()

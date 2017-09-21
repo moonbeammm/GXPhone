@@ -7,7 +7,6 @@
 //
 
 #import "GXMainNavigationVC.h"
-#import <GXRuler/GXColors.h>
 #import <GXRuler/UIImage+Tint.h>
 
 @interface GXMainNavigationVC () <UINavigationControllerDelegate, UIGestureRecognizerDelegate>

@@ -7,10 +7,8 @@
 //
 
 #import "GXPhoneTouchEventVC.h"
-#import <GXRuler/UIView+Frame.h>
 #import "GXPhoneTouchEventOneView.h"
 #import "GXPhoneTouchEventTwoView.h"
-#import <Masonry/Masonry.h>
 
 @interface GXPhoneTouchEventVC ()
 

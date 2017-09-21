@@ -24,5 +24,6 @@
 - (void)showStackOverflowVC;
 - (void)showTouchEventVC;
 - (void)showPageViewVC;
+- (void)showLabelTestVC;
 
 @end

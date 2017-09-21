@@ -7,6 +7,8 @@
 //
 
 #import "GXPhoneNavigator.h"
+
+// vc
 #import "GXPhoneADelegateVC.h"
 #import "GXPhoneRebaseTestVC.h"
 #import "GXPikerViewVC.h"
@@ -15,6 +17,7 @@
 #import "GXPhoneStackOverflowVC.h"
 #import "GXPhoneTouchEventVC.h"
 #import "GXPhonePageViewVC.h"
+#import "GXPhoneLabelTestVC.h"
 
 @implementation GXPhoneNavigator
 
@@ -80,6 +83,12 @@
 - (void)showPageViewVC
 {
     GXPhonePageViewVC *vc = [GXPhonePageViewVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)showLabelTestVC
+{
+    GXPhoneLabelTestVC *vc = [GXPhoneLabelTestVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
