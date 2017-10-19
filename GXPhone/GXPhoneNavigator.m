@@ -19,6 +19,7 @@
 #import "GXPhonePageViewVC.h"
 #import "GXPhoneLabelTestVC.h"
 #import "GXPhoneCountDownVC.h"
+#import "GXPlayerViewController.h"
 
 @implementation GXPhoneNavigator
 
@@ -96,6 +97,12 @@
 - (void)showCountDownVC
 {
     GXPhoneCountDownVC *vc = [GXPhoneCountDownVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)showPlayerVC
+{
+    GXPlayerViewController *vc = [[GXPlayerViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

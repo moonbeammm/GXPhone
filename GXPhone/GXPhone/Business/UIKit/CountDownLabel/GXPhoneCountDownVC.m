@@ -7,11 +7,12 @@
 //
 
 #import "GXPhoneCountDownVC.h"
+#import "GXPhoneVideoModel.h"
 
 @interface GXPhoneCountDownVC ()
 
 @property (nonatomic, strong) UILabel *countDownLabel;
-
+@property (nonatomic, strong) GXPhoneVideoModel *model;
 @end
 
 @implementation GXPhoneCountDownVC
@@ -19,8 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self configSubviews];
-    [self countDown];
+//    [self configSubviews];
+//    [self countDown];
+    self.model = [[GXPhoneVideoModel alloc] init];
+}
+- (void)dealloc
+{
+    NSLog(@"countDownVC >> dealloc");
 }
 
 #pragma mark - Public Method

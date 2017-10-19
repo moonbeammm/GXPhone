@@ -8,6 +8,7 @@
 
 #import "GXPhoneADelegateVC.h"
 #import "GXPhoneBDelegateVC.h"
+#import <IJKMediaFramework/IJKMediaFramework.h>
 
 @interface GXPhoneADelegateVC ()
 
@@ -29,8 +30,45 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     [self addSubviews];
+
+    [self leaks1];
+    [self leaks2];
+    [self leaks3];
+    
+    [self timeProfiler];
+    
+}
+
+- (void)timeProfiler
+{
+    for (NSInteger i = 0; i < 1000; i++) {
+        NSLog(@"TimeProfiler!");
+    }
+}
+
+- (void)leaks1
+{
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef colorRef = CGColorCreate(colorSpace, (CGFloat[]){1, 0, 0, 0.8});
+    UIColor *color = [UIColor colorWithCGColor:colorRef];
+    self.view.backgroundColor = color;
+}
+
+- (void)leaks2
+{
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef colorRef = CGColorCreate(colorSpace, (CGFloat[]){1, 0, 0, 0.8});
+    UIColor *color = [UIColor colorWithCGColor:colorRef];
+    self.view.backgroundColor = color;
+}
+
+- (void)leaks3
+{
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef colorRef = CGColorCreate(colorSpace, (CGFloat[]){1, 0, 0, 0.8});
+    UIColor *color = [UIColor colorWithCGColor:colorRef];
+    self.view.backgroundColor = color;
 }
 
 - (void)addSubviews

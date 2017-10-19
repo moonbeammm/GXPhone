@@ -26,4 +26,6 @@
 - (void)showPageViewVC;
 - (void)showLabelTestVC;
 - (void)showCountDownVC;
+- (void)showPlayerVC;
+
 @end
