@@ -8,7 +8,6 @@
 
 #import "GXPhoneADelegateVC.h"
 #import "GXPhoneBDelegateVC.h"
-#import <IJKMediaFramework/IJKMediaFramework.h>
 
 @interface GXPhoneADelegateVC ()
 

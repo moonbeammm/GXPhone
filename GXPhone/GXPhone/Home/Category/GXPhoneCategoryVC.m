@@ -88,7 +88,7 @@
     [self.view addSubview:self.naviView];
     [self.naviView addSubview:self.titleLabel];
     self.naviView.frame = CGRectMake(0, 0, self.view.viewWidth, 64);
-    self.titleLabel.frame = CGRectMake((self.view.viewWidth - 40) / 2, 30, 40, 34);
+    self.titleLabel.frame = CGRectMake((self.view.viewWidth - 40) / 2, 20, 40, 44);
     self.tableView.contentInset = UIEdgeInsetsMake(44, 0, 0, 0);
 }
 
@@ -113,7 +113,7 @@
         _titleLabel.text = @"分区";
         _titleLabel.textColor = [UIColor whiteColor];
         _titleLabel.backgroundColor = [UIColor clearColor];
-        _titleLabel.font = [UIFont systemFontOfSize:16];
+        _titleLabel.font = [UIFont systemFontOfSize:17];
         
     }
     return _titleLabel;
