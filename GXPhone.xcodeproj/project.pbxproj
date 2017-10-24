@@ -14,6 +14,9 @@
 		B74495DF1F56B3970018CC0F /* GXPhoneNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = B74495DB1F56B3970018CC0F /* GXPhoneNavigator.m */; };
 		B74495E01F56B3970018CC0F /* GXPhoneRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = B74495DC1F56B3970018CC0F /* GXPhoneRouter.h */; };
 		B74495E11F56B3970018CC0F /* GXPhoneRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B74495DD1F56B3970018CC0F /* GXPhoneRouter.m */; };
+		B75081D71F9E21F40054ED21 /* GXPageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74495AF1F56B0C50018CC0F /* GXPageView.framework */; };
+		B75081DB1F9E21FA0054ED21 /* GXNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B685661F41C00200306EF5 /* GXNetwork.framework */; };
+		B75081DC1F9E22010054ED21 /* GXRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B6848A1F41A9A800306EF5 /* GXRuler.framework */; };
 		B75555161F3C502C008D0D01 /* GXPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; };
 		B755551B1F3C502C008D0D01 /* GXPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B755551A1F3C502C008D0D01 /* GXPhoneTests.m */; };
 		B755551D1F3C502C008D0D01 /* GXPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = B755550F1F3C502C008D0D01 /* GXPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -278,6 +281,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75081DC1F9E22010054ED21 /* GXRuler.framework in Frameworks */,
+				B75081DB1F9E21FA0054ED21 /* GXNetwork.framework in Frameworks */,
+				B75081D71F9E21F40054ED21 /* GXPageView.framework in Frameworks */,
 				B759B9CD1F7A1FC600BD1DF6 /* GXPodContainer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
