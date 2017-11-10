@@ -19,6 +19,8 @@
 #import "GXPhonePageViewVC.h"
 #import "GXPhoneLabelTestVC.h"
 #import "GXPhoneCountDownVC.h"
+#import "GXPhoneCornerTestVC.h"
+#import "GXPhoneCornerContainerVC.h"
 
 @implementation GXPhoneNavigator
 
@@ -96,6 +98,18 @@
 - (void)showCountDownVC
 {
     GXPhoneCountDownVC *vc = [GXPhoneCountDownVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)showCornerContainerVC
+{
+    GXPhoneCornerContainerVC *vc = [GXPhoneCornerContainerVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)showCornerTestVCWithType:(int64_t)type
+{
+    GXPhoneCornerTestVC *vc = [[GXPhoneCornerTestVC alloc] initWithType:type];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

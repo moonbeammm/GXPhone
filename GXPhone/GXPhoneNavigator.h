@@ -26,5 +26,7 @@
 - (void)showPageViewVC;
 - (void)showLabelTestVC;
 - (void)showCountDownVC;
+- (void)showCornerContainerVC;
+- (void)showCornerTestVCWithType:(int64_t)type;
 
 @end

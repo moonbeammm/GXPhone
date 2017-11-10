@@ -8,6 +8,7 @@
 
 #import "GXMainNavigationVC.h"
 #import <GXRuler/UIImage+Tint.h>
+#import <GXRuler/GXImageManager.h>
 
 @interface GXMainNavigationVC () <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
@@ -59,7 +60,7 @@
 - (void)customNavigationBarWithController:(UIViewController *)viewController
 {
     if (self.viewControllers.count > 1) {
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"common_back"] style:UIBarButtonItemStylePlain target:self action:@selector(backPressed)];
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:GXImageMake(GXPhone,@"common_back") style:UIBarButtonItemStylePlain target:self action:@selector(backPressed)];
     }
 }
 

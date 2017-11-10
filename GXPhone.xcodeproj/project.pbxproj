@@ -66,6 +66,20 @@
 		B7CCDCDF1F3DC52900B06BB3 /* GXPhoneProtectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CCDCC41F3DC52900B06BB3 /* GXPhoneProtectVC.m */; };
 		B7CCDCE01F3DC52900B06BB3 /* GXPhoneRebaseTestVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CCDCC61F3DC52900B06BB3 /* GXPhoneRebaseTestVC.h */; };
 		B7CCDCE11F3DC52900B06BB3 /* GXPhoneRebaseTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CCDCC71F3DC52900B06BB3 /* GXPhoneRebaseTestVC.m */; };
+		B7F066401FB5599200E49E85 /* GXPhoneCornerContainerVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F0663E1FB5599200E49E85 /* GXPhoneCornerContainerVC.h */; };
+		B7F066411FB5599200E49E85 /* GXPhoneCornerContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F0663F1FB5599200E49E85 /* GXPhoneCornerContainerVC.m */; };
+		B7F066441FB55B9900E49E85 /* GXPhoneCornerTestVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F066421FB55B9900E49E85 /* GXPhoneCornerTestVC.h */; };
+		B7F066451FB55B9900E49E85 /* GXPhoneCornerTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F066431FB55B9900E49E85 /* GXPhoneCornerTestVC.m */; };
+		B7F066481FB55BB300E49E85 /* GXPhoneCornerTestCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F066461FB55BB300E49E85 /* GXPhoneCornerTestCell.h */; };
+		B7F066491FB55BB300E49E85 /* GXPhoneCornerTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F066471FB55BB300E49E85 /* GXPhoneCornerTestCell.m */; };
+		B7F066B11FB5C29C00E49E85 /* GXRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B6848A1F41A9A800306EF5 /* GXRuler.framework */; };
+		B7F066B21FB5C29C00E49E85 /* GXRuler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7B6848A1F41A9A800306EF5 /* GXRuler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7F066B51FB5C2C100E49E85 /* GXPodContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */; };
+		B7F066B61FB5C2C100E49E85 /* GXPodContainer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7F066B91FB5C2D600E49E85 /* GXNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B685661F41C00200306EF5 /* GXNetwork.framework */; };
+		B7F066BA1FB5C2D600E49E85 /* GXNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7B685661F41C00200306EF5 /* GXNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7F066BD1FB5C2E800E49E85 /* GXPageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74495AF1F56B0C50018CC0F /* GXPageView.framework */; };
+		B7F066BE1FB5C2E800E49E85 /* GXPageView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B74495AF1F56B0C50018CC0F /* GXPageView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4C3E0051F4C847800C8E69A /* GXPhoneDelayPerformMethodVC.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C3E0031F4C847800C8E69A /* GXPhoneDelayPerformMethodVC.h */; };
 		E4C3E0061F4C847800C8E69A /* GXPhoneDelayPerformMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C3E0041F4C847800C8E69A /* GXPhoneDelayPerformMethodVC.m */; };
 		E4C3E00A1F4C84C000C8E69A /* GXPhoneTouchEventVC.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C3E0081F4C84C000C8E69A /* GXPhoneTouchEventVC.h */; };
@@ -142,13 +156,6 @@
 			remoteGlobalIDString = B77B4B261F5D2694009FBFF0;
 			remoteInfo = GXPodContainer;
 		};
-		B77B4C6E1F5D6071009FBFF0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B77B4C441F5D5EB0009FBFF0;
-			remoteInfo = GXPodContainerTestShell;
-		};
 		B7B684891F41A9A800306EF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
@@ -177,6 +184,34 @@
 			remoteGlobalIDString = B7B6854F1F41BFA100306EF5;
 			remoteInfo = GXNetworkTests;
 		};
+		B7F066B31FB5C29C00E49E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B7B684691F41A98700306EF5;
+			remoteInfo = GXRuler;
+		};
+		B7F066B71FB5C2C100E49E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B77B4B251F5D2694009FBFF0;
+			remoteInfo = GXPodContainer;
+		};
+		B7F066BB1FB5C2D600E49E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B7B685451F41BFA100306EF5;
+			remoteInfo = GXNetwork;
+		};
+		B7F066BF1FB5C2E800E49E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B744959D1F56B0A80018CC0F;
+			remoteInfo = GXPageView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -186,7 +221,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B7F066BA1FB5C2D600E49E85 /* GXNetwork.framework in Embed Frameworks */,
+				B7F066B61FB5C2C100E49E85 /* GXPodContainer.framework in Embed Frameworks */,
+				B7F066B21FB5C29C00E49E85 /* GXRuler.framework in Embed Frameworks */,
 				B716D3E71F4C4C4200860791 /* GXPhone.framework in Embed Frameworks */,
+				B7F066BE1FB5C2E800E49E85 /* GXPageView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +295,12 @@
 		B7CCDCC41F3DC52900B06BB3 /* GXPhoneProtectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneProtectVC.m; sourceTree = "<group>"; };
 		B7CCDCC61F3DC52900B06BB3 /* GXPhoneRebaseTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneRebaseTestVC.h; sourceTree = "<group>"; };
 		B7CCDCC71F3DC52900B06BB3 /* GXPhoneRebaseTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneRebaseTestVC.m; sourceTree = "<group>"; };
+		B7F0663E1FB5599200E49E85 /* GXPhoneCornerContainerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneCornerContainerVC.h; sourceTree = "<group>"; };
+		B7F0663F1FB5599200E49E85 /* GXPhoneCornerContainerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneCornerContainerVC.m; sourceTree = "<group>"; };
+		B7F066421FB55B9900E49E85 /* GXPhoneCornerTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneCornerTestVC.h; sourceTree = "<group>"; };
+		B7F066431FB55B9900E49E85 /* GXPhoneCornerTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneCornerTestVC.m; sourceTree = "<group>"; };
+		B7F066461FB55BB300E49E85 /* GXPhoneCornerTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneCornerTestCell.h; sourceTree = "<group>"; };
+		B7F066471FB55BB300E49E85 /* GXPhoneCornerTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneCornerTestCell.m; sourceTree = "<group>"; };
 		E4C3E0031F4C847800C8E69A /* GXPhoneDelayPerformMethodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneDelayPerformMethodVC.h; sourceTree = "<group>"; };
 		E4C3E0041F4C847800C8E69A /* GXPhoneDelayPerformMethodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneDelayPerformMethodVC.m; sourceTree = "<group>"; };
 		E4C3E0081F4C84C000C8E69A /* GXPhoneTouchEventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneTouchEventVC.h; sourceTree = "<group>"; };
@@ -273,7 +318,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F066B91FB5C2D600E49E85 /* GXNetwork.framework in Frameworks */,
+				B7F066B51FB5C2C100E49E85 /* GXPodContainer.framework in Frameworks */,
+				B7F066B11FB5C29C00E49E85 /* GXRuler.framework in Frameworks */,
 				B716D3E61F4C4C4200860791 /* GXPhone.framework in Frameworks */,
+				B7F066BD1FB5C2E800E49E85 /* GXPageView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,8 +436,8 @@
 		B755558F1F3C6362008D0D01 /* GXPhone */ = {
 			isa = PBXGroup;
 			children = (
-				B78048351F736252004B5E5B /* Home */,
 				B7CCDC871F3DC52000B06BB3 /* Navigator */,
+				B78048351F736252004B5E5B /* Home */,
 				B7CCDC711F3DBED900B06BB3 /* Business */,
 			);
 			path = GXPhone;
@@ -418,7 +467,6 @@
 			isa = PBXGroup;
 			children = (
 				B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */,
-				B77B4C6F1F5D6071009FBFF0 /* GXPodContainerTestShell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -534,6 +582,7 @@
 		B7CCDC711F3DBED900B06BB3 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				B7F0663A1FB558DB00E49E85 /* Corner */,
 				B78048131F735D5B004B5E5B /* UIKit */,
 				E4C3E0071F4C849D00C8E69A /* touch_event_response */,
 				E4C3E0021F4C847800C8E69A /* delayPerformMethod */,
@@ -596,6 +645,19 @@
 			path = RebaseTest;
 			sourceTree = "<group>";
 		};
+		B7F0663A1FB558DB00E49E85 /* Corner */ = {
+			isa = PBXGroup;
+			children = (
+				B7F0663E1FB5599200E49E85 /* GXPhoneCornerContainerVC.h */,
+				B7F0663F1FB5599200E49E85 /* GXPhoneCornerContainerVC.m */,
+				B7F066421FB55B9900E49E85 /* GXPhoneCornerTestVC.h */,
+				B7F066431FB55B9900E49E85 /* GXPhoneCornerTestVC.m */,
+				B7F066461FB55BB300E49E85 /* GXPhoneCornerTestCell.h */,
+				B7F066471FB55BB300E49E85 /* GXPhoneCornerTestCell.m */,
+			);
+			path = Corner;
+			sourceTree = "<group>";
+		};
 		E4C3E0021F4C847800C8E69A /* delayPerformMethod */ = {
 			isa = PBXGroup;
 			children = (
@@ -642,12 +704,14 @@
 				B7CCDC751F3DBEEB00B06BB3 /* GXPhoneBusTestVC.h in Headers */,
 				E4C58B831F44AA3A00DF928F /* GXPhoneStackOverflowVC.h in Headers */,
 				B78048201F735DF9004B5E5B /* GXPhoneLabelTestVC.h in Headers */,
+				B7F066441FB55B9900E49E85 /* GXPhoneCornerTestVC.h in Headers */,
 				B755551D1F3C502C008D0D01 /* GXPhone.h in Headers */,
 				B75555371F3C5493008D0D01 /* GXPhoneAppDelegate.h in Headers */,
 				B7CCDCCF1F3DC52900B06BB3 /* GXPhoneBDelegateVC.h in Headers */,
 				B78048411F736252004B5E5B /* GXPhoneCategoryVC.h in Headers */,
 				B78048471F736252004B5E5B /* GXPhoneUserVC.h in Headers */,
 				E4C3E00A1F4C84C000C8E69A /* GXPhoneTouchEventVC.h in Headers */,
+				B7F066481FB55BB300E49E85 /* GXPhoneCornerTestCell.h in Headers */,
 				B7CCDC9C1F3DC52000B06BB3 /* GXMainNavigationVC.h in Headers */,
 				B78048B31F73BD2C004B5E5B /* GXPhoneCountDownVC.h in Headers */,
 				B7CCDCCD1F3DC52900B06BB3 /* GXPhoneADelegateVC.h in Headers */,
@@ -657,6 +721,7 @@
 				E4C3E00E1F4C889800C8E69A /* GXPhoneTouchEventOneView.h in Headers */,
 				B78048231F735EF1004B5E5B /* GXPhonePCH.pch in Headers */,
 				B74495DE1F56B3970018CC0F /* GXPhoneNavigator.h in Headers */,
+				B7F066401FB5599200E49E85 /* GXPhoneCornerContainerVC.h in Headers */,
 				B78048AD1F73BD15004B5E5B /* GXPhonePageViewVC.h in Headers */,
 				B780481B1F735D80004B5E5B /* GXPikerViewVC.h in Headers */,
 				B78048451F736252004B5E5B /* GXPhoneSearchVC.h in Headers */,
@@ -685,6 +750,10 @@
 			);
 			dependencies = (
 				B716D3E91F4C4C4200860791 /* PBXTargetDependency */,
+				B7F066B41FB5C29C00E49E85 /* PBXTargetDependency */,
+				B7F066B81FB5C2C100E49E85 /* PBXTargetDependency */,
+				B7F066BC1FB5C2D600E49E85 /* PBXTargetDependency */,
+				B7F066C01FB5C2E800E49E85 /* PBXTargetDependency */,
 			);
 			name = GXShell;
 			productName = GXShell;
@@ -817,13 +886,6 @@
 			remoteRef = B77B4B691F5D2CFA009FBFF0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B77B4C6F1F5D6071009FBFF0 /* GXPodContainerTestShell.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = GXPodContainerTestShell.app;
-			remoteRef = B77B4C6E1F5D6071009FBFF0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		B7B6848A1F41A9A800306EF5 /* GXRuler.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -896,6 +958,8 @@
 				B78048461F736252004B5E5B /* GXPhoneSearchVC.m in Sources */,
 				B7CCDC5D1F3DBA7C00B06BB3 /* GXPhoneBus.m in Sources */,
 				B7CCDCDF1F3DC52900B06BB3 /* GXPhoneProtectVC.m in Sources */,
+				B7F066411FB5599200E49E85 /* GXPhoneCornerContainerVC.m in Sources */,
+				B7F066491FB55BB300E49E85 /* GXPhoneCornerTestCell.m in Sources */,
 				B78048AE1F73BD15004B5E5B /* GXPhonePageViewVC.m in Sources */,
 				B7CCDC9F1F3DC52000B06BB3 /* GXMainTabBarViewController.m in Sources */,
 				B78048441F736252004B5E5B /* GXPhoneCategoryVM.m in Sources */,
@@ -916,6 +980,7 @@
 				B78048481F736252004B5E5B /* GXPhoneUserVC.m in Sources */,
 				B75555381F3C5493008D0D01 /* GXPhoneAppDelegate.m in Sources */,
 				B78048421F736252004B5E5B /* GXPhoneCategoryVC.m in Sources */,
+				B7F066451FB55B9900E49E85 /* GXPhoneCornerTestVC.m in Sources */,
 				B74495E11F56B3970018CC0F /* GXPhoneRouter.m in Sources */,
 				B759BA001F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.m in Sources */,
 				B78048B41F73BD2C004B5E5B /* GXPhoneCountDownVC.m in Sources */,
@@ -964,6 +1029,26 @@
 			isa = PBXTargetDependency;
 			name = GXRuler;
 			targetProxy = B759B9C71F7A1F2F00BD1DF6 /* PBXContainerItemProxy */;
+		};
+		B7F066B41FB5C29C00E49E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXRuler;
+			targetProxy = B7F066B31FB5C29C00E49E85 /* PBXContainerItemProxy */;
+		};
+		B7F066B81FB5C2C100E49E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXPodContainer;
+			targetProxy = B7F066B71FB5C2C100E49E85 /* PBXContainerItemProxy */;
+		};
+		B7F066BC1FB5C2D600E49E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXNetwork;
+			targetProxy = B7F066BB1FB5C2D600E49E85 /* PBXContainerItemProxy */;
+		};
+		B7F066C01FB5C2E800E49E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXPageView;
+			targetProxy = B7F066BF1FB5C2E800E49E85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1121,6 +1206,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GXPhone/GXPhonePCH.pch";
 				INFOPLIST_FILE = GXPhone/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sgx.GXPhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1146,6 +1232,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GXPhone/GXPhonePCH.pch";
 				INFOPLIST_FILE = GXPhone/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sgx.GXPhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
