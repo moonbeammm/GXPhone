@@ -10,6 +10,6 @@
 
 @interface GXPhoneCornerTestCell : GXBaseTableViewCell
 
-+ (instancetype)initializeWithTableView:(UITableView *)tableview indexPath:(NSIndexPath *)indexPath type:(NSInteger)type;
++ (instancetype)initializeWithTableView:(UITableView *)tableview indexPath:(NSIndexPath *)indexPath type:(int64_t)type;
 
 @end

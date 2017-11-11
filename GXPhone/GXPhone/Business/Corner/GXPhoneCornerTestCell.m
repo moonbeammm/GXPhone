@@ -7,14 +7,15 @@
 //
 
 #import "GXPhoneCornerTestCell.h"
-#import <GXRuler/UIImage+Corlor.h>
+#import "UIImage+Corlor.h"
 
-static const NSInteger imageViewCount = 9;
-static const NSInteger width = 32;
+static const NSInteger kRadius = 10;
+static const NSInteger kImgViewWidth = 32;
+static const NSInteger kImageViewCount = 9;
 static NSString *url = @"http://f.namibox.com/user/644953/headimage/headimage.jpg?20160224215727";
 
 @interface GXPhoneCornerTestCell () {
-    NSInteger _tsype;
+    int64_t _tsype;
 }
 
 @property (nonatomic, strong) NSMutableArray *imageViews;
@@ -26,7 +27,7 @@ static NSString *url = @"http://f.namibox.com/user/644953/headimage/headimage.jp
 
 static int64_t _type = 0;
 
-+ (instancetype)initializeWithTableView:(UITableView *)tableview indexPath:(NSIndexPath *)indexPath type:(NSInteger)type {
++ (instancetype)initializeWithTableView:(UITableView *)tableview indexPath:(NSIndexPath *)indexPath type:(int64_t)type {
     _type = type;
     return [tableview dequeueReusableCellWithIdentifier:NSStringFromClass([GXPhoneCornerTestCell class]) forIndexPath:indexPath];
 }
@@ -85,81 +86,81 @@ static int64_t _type = 0;
 
 
 
-/// 无圆角
+#pragma mark - 0.无圆角
 - (void)configType0 {
-    self.imageViews = [NSMutableArray arrayWithCapacity:4];
-    for (NSInteger i = 0; i < imageViewCount; i++) {
+    self.imageViews = [NSMutableArray arrayWithCapacity:kImageViewCount];
+    for (NSInteger i = 0; i < kImageViewCount; i++) {
         UIImageView *imgView = [[UIImageView alloc] init];
         imgView.image = GXImageMake(GXPhone,@"mine_default");
         [self.imageViews addObject:imgView];
     }
     
-    for (NSInteger i = 0; i < imageViewCount; i++) {
+    for (NSInteger i = 0; i < kImageViewCount; i++) {
         UIImageView *imgView = self.imageViews[i];
         [self.contentView addSubview:imgView];
-        imgView.frame = CGRectMake((10 + width) * i, 10, width, width);
+        imgView.frame = CGRectMake((10 + kImgViewWidth) * i, 10, kImgViewWidth, kImgViewWidth);
     }
 }
 
 - (void)installImageType0 {
     for (UIImageView *imageView in self.imageViews) {
-        [imageView gx_setImageWithURL:url ptSize:CGSizeMake(width, width) placeholderImage:nil options:0 progress:nil completed:nil];
+        [imageView gx_setImageWithURL:url ptSize:CGSizeMake(kImgViewWidth, kImgViewWidth) placeholderImage:nil options:0 progress:nil completed:nil];
     }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-/// 有圆角>>>>系统方法
+#pragma mark - 1.有圆角>>>>系统方法
 - (void)configType1 {
-    self.imageViews = [NSMutableArray arrayWithCapacity:4];
-    for (NSInteger i = 0; i < imageViewCount; i++) {
+    self.imageViews = [NSMutableArray arrayWithCapacity:kImageViewCount];
+    for (NSInteger i = 0; i < kImageViewCount; i++) {
         UIImageView *imgView = [[UIImageView alloc] init];
         imgView.image = GXImageMake(GXPhone,@"mine_default");
-        imgView.layer.cornerRadius = 8;
+        imgView.layer.cornerRadius = kRadius;
         imgView.layer.masksToBounds = YES;
         [self.imageViews addObject:imgView];
     }
     
-    for (NSInteger i = 0; i < imageViewCount; i++) {
+    for (NSInteger i = 0; i < kImageViewCount; i++) {
         UIImageView *imgView = self.imageViews[i];
         [self.contentView addSubview:imgView];
-        imgView.frame = CGRectMake((10 + width) * i, 10, width, width);
+        imgView.frame = CGRectMake((10 + kImgViewWidth) * i, 10, kImgViewWidth, kImgViewWidth);
     }
 }
 
 - (void)installImageType1 {
     for (UIImageView *imageView in self.imageViews) {
-        [imageView gx_setImageWithURL:url ptSize:CGSizeMake(width, width) placeholderImage:nil options:0 progress:nil completed:nil];
+        [imageView gx_setImageWithURL:url ptSize:CGSizeMake(kImgViewWidth, kImgViewWidth) placeholderImage:nil options:0 progress:nil completed:nil];
     }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-/// 有圆角>>>>CAShapeLayer
+#pragma mark - 2.有圆角>>>>CAShapeLayer
 - (void)configType2 {
-    self.imageViews = [NSMutableArray arrayWithCapacity:4];
-    for (NSInteger i = 0; i < imageViewCount; i++) {
+    self.imageViews = [NSMutableArray arrayWithCapacity:kImageViewCount];
+    for (NSInteger i = 0; i < kImageViewCount; i++) {
         UIImageView *imgView = [[UIImageView alloc] init];
         imgView.image = GXImageMake(GXPhone,@"mine_default");
         [self.imageViews addObject:imgView];
     }
     
-    for (NSInteger i = 0; i < imageViewCount; i++) {
+    for (NSInteger i = 0; i < kImageViewCount; i++) {
         UIImageView *imgView = self.imageViews[i];
         [self.contentView addSubview:imgView];
-        imgView.frame = CGRectMake((10 + width) * i, 10, width, width);
-        [self imageViewAddCornerWithImgView:imgView];
+        imgView.frame = CGRectMake((10 + kImgViewWidth) * i, 10, kImgViewWidth, kImgViewWidth);
+        [self imageViewAddCornerWithImgView:imgView radius:kRadius];
     }
 }
 
 - (void)installImageType2 {
     for (UIImageView *imageView in self.imageViews) {
-        [imageView gx_setImageWithURL:url ptSize:CGSizeMake(width, width) placeholderImage:nil options:0 progress:nil completed:nil];
+        [imageView gx_setImageWithURL:url ptSize:CGSizeMake(kImgViewWidth, kImgViewWidth) placeholderImage:nil options:0 progress:nil completed:nil];
     }
 }
 
-- (void)imageViewAddCornerWithImgView:(UIImageView *)imageView {
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:imageView.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:imageView.bounds.size];
+- (void)imageViewAddCornerWithImgView:(UIImageView *)imageView radius:(NSInteger)radius {
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:imageView.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(radius, radius)];
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc]init];
     maskLayer.frame = imageView.bounds;
     maskLayer.path = maskPath.CGPath;
@@ -168,53 +169,55 @@ static int64_t _type = 0;
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-/// 有圆角>>>>CGGraphics
+#pragma mark - 3.有圆角>>>>CGGraphics
 
 - (void)configType3 {
-    self.imageViews = [NSMutableArray arrayWithCapacity:4];
-    for (NSInteger i = 0; i < imageViewCount; i++) {
+    self.imageViews = [NSMutableArray arrayWithCapacity:kImageViewCount];
+    for (NSInteger i = 0; i < kImageViewCount; i++) {
         UIImageView *imgView = [[UIImageView alloc] init];
         imgView.image = GXImageMake(GXPhone,@"mine_default");
         [self.imageViews addObject:imgView];
     }
     
-    for (NSInteger i = 0; i < imageViewCount; i++) {
+    for (NSInteger i = 0; i < kImageViewCount; i++) {
         UIImageView *imgView = self.imageViews[i];
         [self.contentView addSubview:imgView];
-        imgView.frame = CGRectMake((10 + width) * i, 10, width, width);
+        imgView.frame = CGRectMake((10 + kImgViewWidth) * i, 10, kImgViewWidth, kImgViewWidth);
     }
 }
 
 - (void)installImageType3 {
     for (UIImageView *imageView in self.imageViews) {
-        [imageView gx_setImageWithURL:url ptSize:CGSizeMake(width, width) placeholderImage:nil options:0 progress:nil completed:^(UIImage * _Nullable image, NSError * _Nullable error, GXWebImageCacheType cacheType, NSURL * _Nullable imageURL) {
-            imageView.image = [image drawCircleImage];
+        [imageView gx_setImageWithURL:url ptSize:CGSizeMake(kImgViewWidth, kImgViewWidth) placeholderImage:nil options:0 progress:nil completed:^(UIImage * _Nullable image, NSError * _Nullable error, GXWebImageCacheType cacheType, NSURL * _Nullable imageURL) {
+            imageView.image = [image drawCircleImageWithImageViewSize:imageView.viewSize radius:CGSizeMake(kRadius, kRadius) type:UIRectCornerAllCorners];
         }];
     }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-/// 有圆角>>>>蒙一个圆角图片
+#pragma mark - 4.有圆角>>>>蒙一个圆角图片
 - (void)configType4 {
-    self.imageViews = [NSMutableArray arrayWithCapacity:4];
-    for (NSInteger i = 0; i < imageViewCount; i++) {
+    self.imageViews = [NSMutableArray arrayWithCapacity:kImageViewCount];
+    self.cornerViews = [NSMutableArray arrayWithCapacity:kImageViewCount];
+    for (NSInteger i = 0; i < kImageViewCount; i++) {
         UIImageView *imgView = [[UIImageView alloc] init];
         imgView.image = GXImageMake(GXPhone,@"mine_default");
         [self.imageViews addObject:imgView];
         
+        /// 蒙一个圆角ImageView
         UIImageView *cornerImgView = [[UIImageView alloc] init];
         cornerImgView.backgroundColor = [UIColor clearColor];
-        cornerImgView.image = [[UIImage concernImageWithColor:[UIColor whiteColor] size:CGSizeMake(20, 20) cornerRadius:8.0 cornerType:BiliImageCornerTypeAll] stretchableImageWithLeftCapWidth:10 topCapHeight:10];
+        cornerImgView.image = [[UIImage imageWithColor:[UIColor whiteColor] size:CGSizeMake(20, 20) radius:kRadius type:GXRectCornerAll] stretchableImageWithLeftCapWidth:10 topCapHeight:10];
         [self.cornerViews addObject:cornerImgView];
     }
     
-    for (NSInteger i = 0; i < imageViewCount; i++) {
+    for (NSInteger i = 0; i < kImageViewCount; i++) {
         UIImageView *imgView = self.imageViews[i];
         UIImageView *cornerView = self.cornerViews[i];
         
         [self.contentView addSubview:imgView];
-        imgView.frame = CGRectMake((10 + width) * i, 10, width, width);
+        imgView.frame = CGRectMake((10 + kImgViewWidth) * i, 10, kImgViewWidth, kImgViewWidth);
         
         [imgView addSubview:cornerView];
         cornerView.frame = imgView.bounds;
@@ -223,9 +226,7 @@ static int64_t _type = 0;
 
 - (void)installImageType4 {
     for (UIImageView *imageView in self.imageViews) {
-        [imageView gx_setImageWithURL:url ptSize:CGSizeMake(width, width) placeholderImage:nil options:0 progress:nil completed:^(UIImage * _Nullable image, NSError * _Nullable error, GXWebImageCacheType cacheType, NSURL * _Nullable imageURL) {
-            imageView.image = [image drawCircleImage];
-        }];
+        [imageView gx_setImageWithURL:url ptSize:CGSizeMake(kImgViewWidth, kImgViewWidth) placeholderImage:nil options:0 progress:nil completed:nil];
     }
 }
 
@@ -239,7 +240,7 @@ static int64_t _type = 0;
 
 
 + (NSUInteger)getHeigthWithModel:(id)model params:(NSDictionary *)params {
-    return 10 + width + 10;
+    return 10 + kImgViewWidth + 10;
 }
 
 @end

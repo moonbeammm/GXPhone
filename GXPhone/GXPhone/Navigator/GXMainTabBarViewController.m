@@ -63,4 +63,14 @@
     return vc ? : [[UIViewController alloc] init];
 }
 
+#pragma mark - 控制屏幕旋转
+
+- (BOOL)shouldAutorotate {
+    return self.selectedViewController.shouldAutorotate;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return self.selectedViewController.supportedInterfaceOrientations;
+}
+
 @end

@@ -18,8 +18,7 @@
 
 @implementation GXMainNavigationVC
 
-- (instancetype)initWithRootViewController:(UIViewController *)rootViewController
-{
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController {
     if (self = [super initWithRootViewController:rootViewController]) {
         self.navigationBar.translucent = NO;
         self.delegate = self;
@@ -36,36 +35,41 @@
 
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
+- (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
 
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     [super pushViewController:viewController animated:animated];
     [self customNavigationBarWithController:viewController];
 }
 
-- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     self.view.userInteractionEnabled = YES;
     self.interactivePopGestureRecognizer.enabled = self.viewControllers.count > 1;
     self.interactivePopGestureRecognizer.delegate = self;
 }
 
+#pragma mark - 控制屏幕旋转
+
+- (BOOL)shouldAutorotate {
+    return self.topViewController.shouldAutorotate;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return self.topViewController.supportedInterfaceOrientations;
+}
+
 #pragma mark - Private Method
 
 /**自定义导航栏*/
-- (void)customNavigationBarWithController:(UIViewController *)viewController
-{
+- (void)customNavigationBarWithController:(UIViewController *)viewController {
     if (self.viewControllers.count > 1) {
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:GXImageMake(GXPhone,@"common_back") style:UIBarButtonItemStylePlain target:self action:@selector(backPressed)];
     }
 }
 
-- (void)backPressed
-{
+- (void)backPressed {
     [self popViewControllerAnimated:YES];
 }
 

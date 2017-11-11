@@ -73,7 +73,6 @@
 
 - (void)assertTest
 {
-    BOOL assert = YES;
     NSAssert(assert == NO, @"assert不能为NO!");
     // 在release情况下.满足了assert条件.后面的代码也会被执行.
     NSLog(@"assert后面的代码被执行了.");
