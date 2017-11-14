@@ -24,6 +24,7 @@
 
 - (void)testNumberOfLines
 {
+    self.textLabel.backgroundColor = [UIColor blueColor];
     self.textLabel.text = @"hahah\n大声的告诉我.我换行了吗?\n大声的告诉我.我换行了吗?\n大声的告诉我.我换行了吗?";
 }
 
@@ -39,9 +40,10 @@
 {
     [self.view addSubview:self.textLabel];
     [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.equalTo(@(50));
+        make.left.equalTo(@(50));
         make.right.equalTo(@(-50));
         make.height.equalTo(@(200));
+        make.bottom.equalTo(self.view);
     }];
 }
 

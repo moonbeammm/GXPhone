@@ -16,18 +16,31 @@
 
 @implementation GXPikerViewVC
 
+- (instancetype)init
+{
+    if (self = [super init]) {
+        self.title = @"选择控件";
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
     //数据源数组
     models = @[@"西班牙",@"韩国",@"加拿大",@"中国大陆",@"马来西亚",@"新加坡",@"俄罗斯",@"美国",@"法国"];
     
-    UIPickerView *pickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(0, 240, self.view.frame.size.width, 400)];
+    UIPickerView *pickerView = [[UIPickerView alloc]init];
     
     pickerView.dataSource = self;
     pickerView.delegate = self;
     
     [self.view addSubview:pickerView];
+    [pickerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.view);
+        make.height.equalTo(@(300));
+        make.bottom.equalTo(self.view);
+    }];
 }
 
 #pragma mark -----数据源UIPickerViewDataSource代理的方法

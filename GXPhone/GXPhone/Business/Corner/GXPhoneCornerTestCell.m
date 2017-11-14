@@ -7,7 +7,7 @@
 //
 
 #import "GXPhoneCornerTestCell.h"
-#import "UIImage+Corlor.h"
+#import <GXRuler/UIImage+Corlor.h>
 
 static const NSInteger kRadius = 10;
 static const NSInteger kImgViewWidth = 32;
