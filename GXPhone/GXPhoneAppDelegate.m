@@ -20,6 +20,9 @@
 #import <DCIntrospect-ARC/DCIntrospect.h>
 #import <YYFPSLabel/YYFPSLabel.h>
 
+// 首页动态化数据
+#import "GXPhoneFeedCardJson.h"
+
 #define kDocumentDirectory [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
 
 @implementation GXPhoneAppDelegate
@@ -28,6 +31,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSLog(@"第一次启动!");
+    [GXPhoneFeedCardJson getHomeFeedCardJson];
     [self configureRooterVC];
     [self configureNavigator];
     [self configureStatusBarStyle:application];
@@ -76,7 +80,6 @@
 {
     application.statusBarStyle = UIStatusBarStyleLightContent;
 }
-
 
 
 
