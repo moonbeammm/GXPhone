@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA08D2A32000A9570062C7CE /* GXNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA08D2682000A8010062C7CE /* GXNetwork.framework */; };
+		AA08D2A42000A9570062C7CE /* GXPageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA08D25F2000A7FA0062C7CE /* GXPageView.framework */; };
+		AA08D2A52000A9570062C7CE /* GXPodContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA08D2A22000A94C0062C7CE /* GXPodContainer.framework */; };
+		AA08D2A62000A9570062C7CE /* GXRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA08D2712000A8080062C7CE /* GXRuler.framework */; };
 		B716D3D11F4C4BEB00860791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B716D3D01F4C4BEB00860791 /* main.m */; };
 		B716D3E61F4C4C4200860791 /* GXPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; };
 		B716D3E71F4C4C4200860791 /* GXPhone.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -14,15 +18,11 @@
 		B74495DF1F56B3970018CC0F /* GXPhoneNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = B74495DB1F56B3970018CC0F /* GXPhoneNavigator.m */; };
 		B74495E01F56B3970018CC0F /* GXPhoneRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = B74495DC1F56B3970018CC0F /* GXPhoneRouter.h */; };
 		B74495E11F56B3970018CC0F /* GXPhoneRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B74495DD1F56B3970018CC0F /* GXPhoneRouter.m */; };
-		B75081D71F9E21F40054ED21 /* GXPageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74495AF1F56B0C50018CC0F /* GXPageView.framework */; };
-		B75081DB1F9E21FA0054ED21 /* GXNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B685661F41C00200306EF5 /* GXNetwork.framework */; };
-		B75081DC1F9E22010054ED21 /* GXRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B6848A1F41A9A800306EF5 /* GXRuler.framework */; };
 		B75555161F3C502C008D0D01 /* GXPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; };
 		B755551B1F3C502C008D0D01 /* GXPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B755551A1F3C502C008D0D01 /* GXPhoneTests.m */; };
 		B755551D1F3C502C008D0D01 /* GXPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = B755550F1F3C502C008D0D01 /* GXPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B75555371F3C5493008D0D01 /* GXPhoneAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B75555351F3C5493008D0D01 /* GXPhoneAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B75555381F3C5493008D0D01 /* GXPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B75555361F3C5493008D0D01 /* GXPhoneAppDelegate.m */; };
-		B759B9CD1F7A1FC600BD1DF6 /* GXPodContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */; };
 		B759B9FF1F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B759B9FD1F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.h */; };
 		B759BA001F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B759B9FE1F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.m */; };
 		B77153EF1F8A211B004E8F6F /* GXPhoneVideoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B77153ED1F8A211B004E8F6F /* GXPhoneVideoModel.h */; };
@@ -72,14 +72,6 @@
 		B7F066451FB55B9900E49E85 /* GXPhoneCornerTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F066431FB55B9900E49E85 /* GXPhoneCornerTestVC.m */; };
 		B7F066481FB55BB300E49E85 /* GXPhoneCornerTestCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F066461FB55BB300E49E85 /* GXPhoneCornerTestCell.h */; };
 		B7F066491FB55BB300E49E85 /* GXPhoneCornerTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F066471FB55BB300E49E85 /* GXPhoneCornerTestCell.m */; };
-		B7F066B11FB5C29C00E49E85 /* GXRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B6848A1F41A9A800306EF5 /* GXRuler.framework */; };
-		B7F066B21FB5C29C00E49E85 /* GXRuler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7B6848A1F41A9A800306EF5 /* GXRuler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B7F066B51FB5C2C100E49E85 /* GXPodContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */; };
-		B7F066B61FB5C2C100E49E85 /* GXPodContainer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B7F066B91FB5C2D600E49E85 /* GXNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B685661F41C00200306EF5 /* GXNetwork.framework */; };
-		B7F066BA1FB5C2D600E49E85 /* GXNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7B685661F41C00200306EF5 /* GXNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B7F066BD1FB5C2E800E49E85 /* GXPageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74495AF1F56B0C50018CC0F /* GXPageView.framework */; };
-		B7F066BE1FB5C2E800E49E85 /* GXPageView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B74495AF1F56B0C50018CC0F /* GXPageView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4B83CC81FFE902C000A4AFF /* GXPhoneFeedCardJson.h in Headers */ = {isa = PBXBuildFile; fileRef = E4B83CC61FFE902C000A4AFF /* GXPhoneFeedCardJson.h */; };
 		E4B83CC91FFE902C000A4AFF /* GXPhoneFeedCardJson.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B83CC71FFE902C000A4AFF /* GXPhoneFeedCardJson.m */; };
 		E4C3E0051F4C847800C8E69A /* GXPhoneDelayPerformMethodVC.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C3E0031F4C847800C8E69A /* GXPhoneDelayPerformMethodVC.h */; };
@@ -95,6 +87,83 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AA08D25E2000A7FA0062C7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA08D2592000A7FA0062C7CE /* GXPageView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B744959E1F56B0A80018CC0F;
+			remoteInfo = GXPageView;
+		};
+		AA08D2602000A7FA0062C7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA08D2592000A7FA0062C7CE /* GXPageView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B77B4C7B1F5D6904009FBFF0;
+			remoteInfo = GXPageViewShell;
+		};
+		AA08D2672000A8010062C7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA08D2622000A8010062C7CE /* GXNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7B685461F41BFA100306EF5;
+			remoteInfo = GXNetwork;
+		};
+		AA08D2692000A8010062C7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA08D2622000A8010062C7CE /* GXNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7B6854F1F41BFA100306EF5;
+			remoteInfo = GXNetworkTests;
+		};
+		AA08D2702000A8080062C7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA08D26B2000A8080062C7CE /* GXRuler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7B6846A1F41A98700306EF5;
+			remoteInfo = GXRuler;
+		};
+		AA08D2722000A8080062C7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA08D26B2000A8080062C7CE /* GXRuler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7B684731F41A98700306EF5;
+			remoteInfo = GXRulerTests;
+		};
+		AA08D2972000A9460062C7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA08D26B2000A8080062C7CE /* GXRuler.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B7B684691F41A98700306EF5;
+			remoteInfo = GXRuler;
+		};
+		AA08D2992000A9460062C7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA08D2622000A8010062C7CE /* GXNetwork.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B7B685451F41BFA100306EF5;
+			remoteInfo = GXNetwork;
+		};
+		AA08D29B2000A9460062C7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA08D2592000A7FA0062C7CE /* GXPageView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B744959D1F56B0A80018CC0F;
+			remoteInfo = GXPageView;
+		};
+		AA08D2A12000A94C0062C7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA08D29D2000A94C0062C7CE /* GXPodContainer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B77B4B261F5D2694009FBFF0;
+			remoteInfo = GXPodContainer;
+		};
+		AA08D2A72000A99B0062C7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA08D29D2000A94C0062C7CE /* GXPodContainer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B77B4B251F5D2694009FBFF0;
+			remoteInfo = GXPodContainer;
+		};
 		B716D3E81F4C4C4200860791 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B75555031F3C502C008D0D01 /* Project object */;
@@ -102,117 +171,12 @@
 			remoteGlobalIDString = B755550B1F3C502C008D0D01;
 			remoteInfo = GXPhone;
 		};
-		B74495AE1F56B0C50018CC0F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B744959E1F56B0A80018CC0F;
-			remoteInfo = GXPageView;
-		};
-		B746ABD21F66A5470024E7CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B77B4C7B1F5D6904009FBFF0;
-			remoteInfo = GXPageViewShell;
-		};
 		B75555171F3C502C008D0D01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B75555031F3C502C008D0D01 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B755550B1F3C502C008D0D01;
 			remoteInfo = GXPhone;
-		};
-		B759B9C11F7A1F2F00BD1DF6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B77B4B251F5D2694009FBFF0;
-			remoteInfo = GXPodContainer;
-		};
-		B759B9C31F7A1F2F00BD1DF6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B744959D1F56B0A80018CC0F;
-			remoteInfo = GXPageView;
-		};
-		B759B9C51F7A1F2F00BD1DF6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B7B685451F41BFA100306EF5;
-			remoteInfo = GXNetwork;
-		};
-		B759B9C71F7A1F2F00BD1DF6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B7B684691F41A98700306EF5;
-			remoteInfo = GXRuler;
-		};
-		B77B4B691F5D2CFA009FBFF0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B77B4B261F5D2694009FBFF0;
-			remoteInfo = GXPodContainer;
-		};
-		B7B684891F41A9A800306EF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B7B6846A1F41A98700306EF5;
-			remoteInfo = GXRuler;
-		};
-		B7B6848B1F41A9A800306EF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B7B684731F41A98700306EF5;
-			remoteInfo = GXRulerTests;
-		};
-		B7B685651F41C00200306EF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B7B685461F41BFA100306EF5;
-			remoteInfo = GXNetwork;
-		};
-		B7B685671F41C00200306EF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B7B6854F1F41BFA100306EF5;
-			remoteInfo = GXNetworkTests;
-		};
-		B7F066B31FB5C29C00E49E85 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B7B684691F41A98700306EF5;
-			remoteInfo = GXRuler;
-		};
-		B7F066B71FB5C2C100E49E85 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B77B4B251F5D2694009FBFF0;
-			remoteInfo = GXPodContainer;
-		};
-		B7F066BB1FB5C2D600E49E85 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B7B685451F41BFA100306EF5;
-			remoteInfo = GXNetwork;
-		};
-		B7F066BF1FB5C2E800E49E85 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B744959D1F56B0A80018CC0F;
-			remoteInfo = GXPageView;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -223,11 +187,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B7F066BA1FB5C2D600E49E85 /* GXNetwork.framework in Embed Frameworks */,
-				B7F066B61FB5C2C100E49E85 /* GXPodContainer.framework in Embed Frameworks */,
-				B7F066B21FB5C29C00E49E85 /* GXRuler.framework in Embed Frameworks */,
 				B716D3E71F4C4C4200860791 /* GXPhone.framework in Embed Frameworks */,
-				B7F066BE1FB5C2E800E49E85 /* GXPageView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,10 +195,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA08D2592000A7FA0062C7CE /* GXPageView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXPageView.xcodeproj; path = "../GXRuler-OC/GXPageView/GXPageView.xcodeproj"; sourceTree = "<group>"; };
+		AA08D2622000A8010062C7CE /* GXNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXNetwork.xcodeproj; path = "../GXRuler-OC/GXNetwork/GXNetwork.xcodeproj"; sourceTree = "<group>"; };
+		AA08D26B2000A8080062C7CE /* GXRuler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXRuler.xcodeproj; path = "../GXRuler-OC/GXRuler/GXRuler.xcodeproj"; sourceTree = "<group>"; };
+		AA08D29D2000A94C0062C7CE /* GXPodContainer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXPodContainer.xcodeproj; path = "../GXRuler-OC/GXPodContainer/GXPodContainer.xcodeproj"; sourceTree = "<group>"; };
 		B716D3CD1F4C4BEB00860791 /* GXShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B716D3D01F4C4BEB00860791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B716D3E01F4C4BEB00860791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXPageView.xcodeproj; path = ../GXPageView/GXPageView.xcodeproj; sourceTree = "<group>"; };
 		B74495DA1F56B3970018CC0F /* GXPhoneNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneNavigator.h; sourceTree = "<group>"; };
 		B74495DB1F56B3970018CC0F /* GXPhoneNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneNavigator.m; sourceTree = "<group>"; };
 		B74495DC1F56B3970018CC0F /* GXPhoneRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneRouter.h; sourceTree = "<group>"; };
@@ -255,7 +218,6 @@
 		B759B9FE1F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneTouchTwoVC.m; sourceTree = "<group>"; };
 		B77153ED1F8A211B004E8F6F /* GXPhoneVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneVideoModel.h; sourceTree = "<group>"; };
 		B77153EE1F8A211B004E8F6F /* GXPhoneVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneVideoModel.m; sourceTree = "<group>"; };
-		B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXPodContainer.xcodeproj; path = ../GXPodContainer/GXPodContainer.xcodeproj; sourceTree = "<group>"; };
 		B78048191F735D80004B5E5B /* GXPikerViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPikerViewVC.h; sourceTree = "<group>"; };
 		B780481A1F735D80004B5E5B /* GXPikerViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPikerViewVC.m; sourceTree = "<group>"; };
 		B780481E1F735DF9004B5E5B /* GXPhoneLabelTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneLabelTestVC.h; sourceTree = "<group>"; };
@@ -275,10 +237,8 @@
 		B78048AC1F73BD15004B5E5B /* GXPhoneRACDisposerShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneRACDisposerShare.m; sourceTree = "<group>"; };
 		B78048B11F73BD2C004B5E5B /* GXPhoneCountDownVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneCountDownVC.h; sourceTree = "<group>"; };
 		B78048B21F73BD2C004B5E5B /* GXPhoneCountDownVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneCountDownVC.m; sourceTree = "<group>"; };
-		B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXRuler.xcodeproj; path = ../GXRuler/GXRuler.xcodeproj; sourceTree = "<group>"; };
 		B7B6851C1F41AC4D00306EF5 /* GXPhone.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GXPhone.xcassets; sourceTree = "<group>"; };
 		B7B6853A1F41B75B00306EF5 /* startMovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = startMovie.mp4; sourceTree = "<group>"; };
-		B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXNetwork.xcodeproj; path = ../GXNetwork/GXNetwork.xcodeproj; sourceTree = "<group>"; };
 		B7BCCD301F57DC6D006B4135 /* GXPhoneSubStrTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneSubStrTest.m; sourceTree = "<group>"; };
 		B7CCDC5A1F3DBA7C00B06BB3 /* GXPhoneBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXPhoneBus.h; sourceTree = "<group>"; };
 		B7CCDC5B1F3DBA7C00B06BB3 /* GXPhoneBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXPhoneBus.m; sourceTree = "<group>"; };
@@ -322,11 +282,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7F066B91FB5C2D600E49E85 /* GXNetwork.framework in Frameworks */,
-				B7F066B51FB5C2C100E49E85 /* GXPodContainer.framework in Frameworks */,
-				B7F066B11FB5C29C00E49E85 /* GXRuler.framework in Frameworks */,
 				B716D3E61F4C4C4200860791 /* GXPhone.framework in Frameworks */,
-				B7F066BD1FB5C2E800E49E85 /* GXPageView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,10 +290,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B75081DC1F9E22010054ED21 /* GXRuler.framework in Frameworks */,
-				B75081DB1F9E21FA0054ED21 /* GXNetwork.framework in Frameworks */,
-				B75081D71F9E21F40054ED21 /* GXPageView.framework in Frameworks */,
-				B759B9CD1F7A1FC600BD1DF6 /* GXPodContainer.framework in Frameworks */,
+				AA08D2A32000A9570062C7CE /* GXNetwork.framework in Frameworks */,
+				AA08D2A42000A9570062C7CE /* GXPageView.framework in Frameworks */,
+				AA08D2A52000A9570062C7CE /* GXPodContainer.framework in Frameworks */,
+				AA08D2A62000A9570062C7CE /* GXRuler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +308,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA08D25A2000A7FA0062C7CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA08D25F2000A7FA0062C7CE /* GXPageView.framework */,
+				AA08D2612000A7FA0062C7CE /* GXPageViewShell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA08D2632000A8010062C7CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA08D2682000A8010062C7CE /* GXNetwork.framework */,
+				AA08D26A2000A8010062C7CE /* GXNetworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA08D26C2000A8080062C7CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA08D2712000A8080062C7CE /* GXRuler.framework */,
+				AA08D2732000A8080062C7CE /* GXRulerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA08D29E2000A94C0062C7CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA08D2A22000A94C0062C7CE /* GXPodContainer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B70FBC791F99CB2D004A52F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,15 +365,6 @@
 				B716D3D01F4C4BEB00860791 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B74495AA1F56B0C50018CC0F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B74495AF1F56B0C50018CC0F /* GXPageView.framework */,
-				B746ABD31F66A5470024E7CE /* GXPageViewShell.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B75555021F3C502C008D0D01 = {
@@ -459,20 +441,12 @@
 		B75557521F3C7511008D0D01 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */,
-				B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */,
-				B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */,
-				B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */,
+				AA08D29D2000A94C0062C7CE /* GXPodContainer.xcodeproj */,
+				AA08D26B2000A8080062C7CE /* GXRuler.xcodeproj */,
+				AA08D2622000A8010062C7CE /* GXNetwork.xcodeproj */,
+				AA08D2592000A7FA0062C7CE /* GXPageView.xcodeproj */,
 			);
 			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		B77B4B651F5D2CFA009FBFF0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B78048131F735D5B004B5E5B /* UIKit */ = {
@@ -563,24 +537,6 @@
 				B78048AC1F73BD15004B5E5B /* GXPhoneRACDisposerShare.m */,
 			);
 			path = PageView;
-			sourceTree = "<group>";
-		};
-		B7B684851F41A9A700306EF5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B7B6848A1F41A9A800306EF5 /* GXRuler.framework */,
-				B7B6848C1F41A9A800306EF5 /* GXRulerTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B7B685611F41C00100306EF5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B7B685661F41C00200306EF5 /* GXNetwork.framework */,
-				B7B685681F41C00200306EF5 /* GXNetworkTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B7CCDC711F3DBED900B06BB3 /* Business */ = {
@@ -765,10 +721,6 @@
 			);
 			dependencies = (
 				B716D3E91F4C4C4200860791 /* PBXTargetDependency */,
-				B7F066B41FB5C29C00E49E85 /* PBXTargetDependency */,
-				B7F066B81FB5C2C100E49E85 /* PBXTargetDependency */,
-				B7F066BC1FB5C2D600E49E85 /* PBXTargetDependency */,
-				B7F066C01FB5C2E800E49E85 /* PBXTargetDependency */,
 			);
 			name = GXShell;
 			productName = GXShell;
@@ -787,10 +739,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				B759B9C21F7A1F2F00BD1DF6 /* PBXTargetDependency */,
-				B759B9C41F7A1F2F00BD1DF6 /* PBXTargetDependency */,
-				B759B9C61F7A1F2F00BD1DF6 /* PBXTargetDependency */,
-				B759B9C81F7A1F2F00BD1DF6 /* PBXTargetDependency */,
+				AA08D2A82000A99B0062C7CE /* PBXTargetDependency */,
+				AA08D2982000A9460062C7CE /* PBXTargetDependency */,
+				AA08D29A2000A9460062C7CE /* PBXTargetDependency */,
+				AA08D29C2000A9460062C7CE /* PBXTargetDependency */,
 			);
 			name = GXPhone;
 			productName = GXPhone;
@@ -854,20 +806,20 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B7B685611F41C00100306EF5 /* Products */;
-					ProjectRef = B7B685601F41C00100306EF5 /* GXNetwork.xcodeproj */;
+					ProductGroup = AA08D2632000A8010062C7CE /* Products */;
+					ProjectRef = AA08D2622000A8010062C7CE /* GXNetwork.xcodeproj */;
 				},
 				{
-					ProductGroup = B74495AA1F56B0C50018CC0F /* Products */;
-					ProjectRef = B74495A91F56B0C50018CC0F /* GXPageView.xcodeproj */;
+					ProductGroup = AA08D25A2000A7FA0062C7CE /* Products */;
+					ProjectRef = AA08D2592000A7FA0062C7CE /* GXPageView.xcodeproj */;
 				},
 				{
-					ProductGroup = B77B4B651F5D2CFA009FBFF0 /* Products */;
-					ProjectRef = B77B4B641F5D2CFA009FBFF0 /* GXPodContainer.xcodeproj */;
+					ProductGroup = AA08D29E2000A94C0062C7CE /* Products */;
+					ProjectRef = AA08D29D2000A94C0062C7CE /* GXPodContainer.xcodeproj */;
 				},
 				{
-					ProductGroup = B7B684851F41A9A700306EF5 /* Products */;
-					ProjectRef = B7B684841F41A9A700306EF5 /* GXRuler.xcodeproj */;
+					ProductGroup = AA08D26C2000A8080062C7CE /* Products */;
+					ProjectRef = AA08D26B2000A8080062C7CE /* GXRuler.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -880,53 +832,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B74495AF1F56B0C50018CC0F /* GXPageView.framework */ = {
+		AA08D25F2000A7FA0062C7CE /* GXPageView.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = GXPageView.framework;
-			remoteRef = B74495AE1F56B0C50018CC0F /* PBXContainerItemProxy */;
+			remoteRef = AA08D25E2000A7FA0062C7CE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B746ABD31F66A5470024E7CE /* GXPageViewShell.app */ = {
+		AA08D2612000A7FA0062C7CE /* GXPageViewShell.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = GXPageViewShell.app;
-			remoteRef = B746ABD21F66A5470024E7CE /* PBXContainerItemProxy */;
+			remoteRef = AA08D2602000A7FA0062C7CE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B77B4B6A1F5D2CFA009FBFF0 /* GXPodContainer.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GXPodContainer.framework;
-			remoteRef = B77B4B691F5D2CFA009FBFF0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B7B6848A1F41A9A800306EF5 /* GXRuler.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GXRuler.framework;
-			remoteRef = B7B684891F41A9A800306EF5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B7B6848C1F41A9A800306EF5 /* GXRulerTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GXRulerTests.xctest;
-			remoteRef = B7B6848B1F41A9A800306EF5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B7B685661F41C00200306EF5 /* GXNetwork.framework */ = {
+		AA08D2682000A8010062C7CE /* GXNetwork.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = GXNetwork.framework;
-			remoteRef = B7B685651F41C00200306EF5 /* PBXContainerItemProxy */;
+			remoteRef = AA08D2672000A8010062C7CE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B7B685681F41C00200306EF5 /* GXNetworkTests.xctest */ = {
+		AA08D26A2000A8010062C7CE /* GXNetworkTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = GXNetworkTests.xctest;
-			remoteRef = B7B685671F41C00200306EF5 /* PBXContainerItemProxy */;
+			remoteRef = AA08D2692000A8010062C7CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA08D2712000A8080062C7CE /* GXRuler.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GXRuler.framework;
+			remoteRef = AA08D2702000A8080062C7CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA08D2732000A8080062C7CE /* GXRulerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GXRulerTests.xctest;
+			remoteRef = AA08D2722000A8080062C7CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA08D2A22000A94C0062C7CE /* GXPodContainer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GXPodContainer.framework;
+			remoteRef = AA08D2A12000A94C0062C7CE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1016,6 +968,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AA08D2982000A9460062C7CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXRuler;
+			targetProxy = AA08D2972000A9460062C7CE /* PBXContainerItemProxy */;
+		};
+		AA08D29A2000A9460062C7CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXNetwork;
+			targetProxy = AA08D2992000A9460062C7CE /* PBXContainerItemProxy */;
+		};
+		AA08D29C2000A9460062C7CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXPageView;
+			targetProxy = AA08D29B2000A9460062C7CE /* PBXContainerItemProxy */;
+		};
+		AA08D2A82000A99B0062C7CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXPodContainer;
+			targetProxy = AA08D2A72000A99B0062C7CE /* PBXContainerItemProxy */;
+		};
 		B716D3E91F4C4C4200860791 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B755550B1F3C502C008D0D01 /* GXPhone */;
@@ -1025,46 +997,6 @@
 			isa = PBXTargetDependency;
 			target = B755550B1F3C502C008D0D01 /* GXPhone */;
 			targetProxy = B75555171F3C502C008D0D01 /* PBXContainerItemProxy */;
-		};
-		B759B9C21F7A1F2F00BD1DF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GXPodContainer;
-			targetProxy = B759B9C11F7A1F2F00BD1DF6 /* PBXContainerItemProxy */;
-		};
-		B759B9C41F7A1F2F00BD1DF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GXPageView;
-			targetProxy = B759B9C31F7A1F2F00BD1DF6 /* PBXContainerItemProxy */;
-		};
-		B759B9C61F7A1F2F00BD1DF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GXNetwork;
-			targetProxy = B759B9C51F7A1F2F00BD1DF6 /* PBXContainerItemProxy */;
-		};
-		B759B9C81F7A1F2F00BD1DF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GXRuler;
-			targetProxy = B759B9C71F7A1F2F00BD1DF6 /* PBXContainerItemProxy */;
-		};
-		B7F066B41FB5C29C00E49E85 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GXRuler;
-			targetProxy = B7F066B31FB5C29C00E49E85 /* PBXContainerItemProxy */;
-		};
-		B7F066B81FB5C2C100E49E85 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GXPodContainer;
-			targetProxy = B7F066B71FB5C2C100E49E85 /* PBXContainerItemProxy */;
-		};
-		B7F066BC1FB5C2D600E49E85 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GXNetwork;
-			targetProxy = B7F066BB1FB5C2D600E49E85 /* PBXContainerItemProxy */;
-		};
-		B7F066C01FB5C2E800E49E85 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GXPageView;
-			targetProxy = B7F066BF1FB5C2E800E49E85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
