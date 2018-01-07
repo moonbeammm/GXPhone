@@ -12,20 +12,18 @@
 @implementation GXPhoneFeedCardJson
 
 + (void)getHomeFeedCardJson {
-    GXApiOptions *options = [[GXApiOptions alloc] init];
-    options.baseUrl = @"http://www.sunxxxxx.com";
-    options.modelDescriptions = @[[GXApiModelDescription modelWith:@"data" mappingClass:[NSDictionary class] isArray:NO]];
-    
-    [[[GXNetworkManager alloc] initWithOptions:options progress:^(NSProgress * _Nullable downloadProgress) {
-        NSLog(@"ViewController: progress: %@",downloadProgress);
-    } success:^(NSDictionary * _Nullable result, NSURLResponse * _Nullable response) {
-        NSDictionary *data = result[@"data"];
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        [defaults setObject:data forKey:@"av_card_of_375"];
-        NSLog(@"ViewController: \ntask: \n%@\nresponseObject:\n%@",result,response);
-    } failure:^(NSDictionary * _Nullable result, NSError * _Nullable error) {
-        NSLog(@"ViewController: task: %@>>>>error:%@",result,error);
-    }] requestAsync];
+    NSData *jsonData = [NSData dataWithContentsOfFile:kLibraryDirectory(@"card_model.json")];
+    if (!jsonData) {
+        NSURL *url1 = [NSURL URLWithString: @"http://www.sunxxxxx.com/images/card_model.json"];
+        NSData *data1 = [NSData dataWithContentsOfURL:url1];
+        [data1 writeToFile:kLibraryDirectory(@"card_model.json") atomically:YES];
+    }
+    NSData *nibData = [NSData dataWithContentsOfFile:kLibraryDirectory(@"GXHomeRecGameCell.nib")];
+    if (!nibData) {
+        NSURL *url = [NSURL URLWithString: @"http://www.sunxxxxx.com/images/GXHomeRecGameCell.nib"];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        [data writeToFile:kLibraryDirectory(@"GXHomeRecGameCell.nib") atomically:YES];
+    }
 }
 
 @end
