@@ -30,9 +30,7 @@
     NSLog(@"rebase test one");
     NSLog(@"rebase test two");
     
-    NSDictionary *fontAttr = @{NSFontAttributeName : [UIFont systemFontOfSize:14]};
-    CGFloat width = [@"sdfsdfsdf搜地方了就是的父类搜地方老师的减肥了时间到了番剧是里点击飞洛杉矶的 老师的积分了删了可的番剧乐山大佛老师的积分老师的积分老师的积分数量的附件历史地看番剧" sizeWithAttributes:fontAttr].width;
-    width = width + 10;
+    
     
 }
 
