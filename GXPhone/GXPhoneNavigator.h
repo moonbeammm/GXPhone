@@ -28,5 +28,6 @@
 - (void)showCountDownVC;
 - (void)showCornerContainerVC;
 - (void)showCornerTestVCWithType:(int64_t)type;
+- (void)showTwoScrollVC;
 
 @end

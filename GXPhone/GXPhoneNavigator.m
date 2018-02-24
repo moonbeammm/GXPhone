@@ -21,6 +21,7 @@
 #import "GXPhoneCountDownVC.h"
 #import "GXPhoneCornerTestVC.h"
 #import "GXPhoneCornerContainerVC.h"
+#import "GXPhoneTwoScrollVC.h"
 
 @implementation GXPhoneNavigator
 
@@ -112,6 +113,11 @@
     GXPhoneCornerTestVC *vc = [[GXPhoneCornerTestVC alloc] initWithType:type];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
+- (void)showTwoScrollVC
+{
+    GXPhoneTwoScrollVC *vc = [GXPhoneTwoScrollVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 
 @end
