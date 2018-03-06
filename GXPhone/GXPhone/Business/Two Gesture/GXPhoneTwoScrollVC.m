@@ -14,28 +14,59 @@
 @property (nonatomic, strong) GXPhoneTwoScrollView *scrollView;
 @property (nonatomic, strong) UIView *topView;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *mutArr;
+@property (nonatomic, strong) NSMutableArray *mutArr2;
+@property (nonatomic, strong) NSMutableArray *largeArr;
 
 @end
 
 @implementation GXPhoneTwoScrollVC
+
++ (void)load {
+    [super load];
+    NSLog(@"sunguangxin >> load");
+}
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
         self.title = @"测试两个手势冲突问题.";
+        self.mutArr = [NSMutableArray arrayWithArray:@[@"1"]];
+        self.mutArr2 = self.mutArr;
     }
     return self;
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configSubviews];
+    
+    [RACObserve(self, mutArr) subscribeNext:^(id x) {
+        NSLog(@"mutArr 改变了");
+    }];
+    
+    NSString *temp = @"";
+    
+    for (NSInteger i = 0 ;i < 1000;i++) {
+        @autoreleasepool {
+        UIView *view = [[UIView alloc] init];
+            NSString *string = [NSString stringWithFormat:@"create"];
+            [temp stringByAppendingString:string];
+//        NSLog(@"%p >> %p",string, &string);
+            NSLog(@"view: %p >> %p",view, &view);
+        }
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = NO;
+    
+    self.mutArr[0] = @"2";
+    NSLog(@"sunguangxin >> %@",self.mutArr2[0]);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

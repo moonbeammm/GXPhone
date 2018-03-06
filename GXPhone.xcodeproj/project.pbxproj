@@ -15,6 +15,17 @@
 		AAB84D8D2041037400F98FD2 /* GXPhoneTwoScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB84D8A2041037400F98FD2 /* GXPhoneTwoScrollVC.m */; };
 		AAB84D9120410CFE00F98FD2 /* GXPhoneTwoScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB84D8F20410CFE00F98FD2 /* GXPhoneTwoScrollView.h */; };
 		AAB84D9220410CFE00F98FD2 /* GXPhoneTwoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB84D9020410CFE00F98FD2 /* GXPhoneTwoScrollView.m */; };
+		AAD5D921204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD5D91F204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.h */; };
+		AAD5D922204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD5D920204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.m */; };
+		AAD5D928204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD5D926204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h */; };
+		AAD5D929204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD5D927204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.m */; };
+		AAF238DB204E3DB700191285 /* GXPhoneJSVC.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF238D9204E3DB700191285 /* GXPhoneJSVC.h */; };
+		AAF238DC204E3DB700191285 /* GXPhoneJSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF238DA204E3DB700191285 /* GXPhoneJSVC.m */; };
+		AAF238E0204E3DD000191285 /* dynamic.js in Resources */ = {isa = PBXBuildFile; fileRef = AAF238DF204E3DD000191285 /* dynamic.js */; };
+		AAF238E3204E3E5F00191285 /* GXPhoneJSModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF238E1204E3E5F00191285 /* GXPhoneJSModel.h */; };
+		AAF238E4204E3E5F00191285 /* GXPhoneJSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF238E2204E3E5F00191285 /* GXPhoneJSModel.m */; };
+		AAF238E6204E4CEC00191285 /* GXPhoneJSTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF238E5204E4CEC00191285 /* GXPhoneJSTest.m */; };
+		AAF238EA204E66F000191285 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AAF238E9204E66F000191285 /* README.md */; };
 		B716D3D11F4C4BEB00860791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B716D3D01F4C4BEB00860791 /* main.m */; };
 		B716D3E61F4C4C4200860791 /* GXPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; };
 		B716D3E71F4C4C4200860791 /* GXPhone.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B755550C1F3C502C008D0D01 /* GXPhone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -207,6 +218,17 @@
 		AAB84D8A2041037400F98FD2 /* GXPhoneTwoScrollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneTwoScrollVC.m; sourceTree = "<group>"; };
 		AAB84D8F20410CFE00F98FD2 /* GXPhoneTwoScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneTwoScrollView.h; sourceTree = "<group>"; };
 		AAB84D9020410CFE00F98FD2 /* GXPhoneTwoScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneTwoScrollView.m; sourceTree = "<group>"; };
+		AAD5D91F204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXPhoneTwoScrollVC+One.h"; sourceTree = "<group>"; };
+		AAD5D920204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GXPhoneTwoScrollVC+One.m"; sourceTree = "<group>"; };
+		AAD5D926204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXPhoneTwoScrollVC+Two.h"; sourceTree = "<group>"; };
+		AAD5D927204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GXPhoneTwoScrollVC+Two.m"; sourceTree = "<group>"; };
+		AAF238D9204E3DB700191285 /* GXPhoneJSVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneJSVC.h; sourceTree = "<group>"; };
+		AAF238DA204E3DB700191285 /* GXPhoneJSVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneJSVC.m; sourceTree = "<group>"; };
+		AAF238DF204E3DD000191285 /* dynamic.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dynamic.js; sourceTree = "<group>"; };
+		AAF238E1204E3E5F00191285 /* GXPhoneJSModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneJSModel.h; sourceTree = "<group>"; };
+		AAF238E2204E3E5F00191285 /* GXPhoneJSModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneJSModel.m; sourceTree = "<group>"; };
+		AAF238E5204E4CEC00191285 /* GXPhoneJSTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneJSTest.m; sourceTree = "<group>"; };
+		AAF238E9204E66F000191285 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B716D3CD1F4C4BEB00860791 /* GXShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B716D3D01F4C4BEB00860791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B716D3E01F4C4BEB00860791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -356,10 +378,26 @@
 			children = (
 				AAB84D892041037400F98FD2 /* GXPhoneTwoScrollVC.h */,
 				AAB84D8A2041037400F98FD2 /* GXPhoneTwoScrollVC.m */,
+				AAD5D91F204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.h */,
+				AAD5D920204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.m */,
+				AAD5D926204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h */,
+				AAD5D927204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.m */,
 				AAB84D8F20410CFE00F98FD2 /* GXPhoneTwoScrollView.h */,
 				AAB84D9020410CFE00F98FD2 /* GXPhoneTwoScrollView.m */,
 			);
 			path = "Two Gesture";
+			sourceTree = "<group>";
+		};
+		AAF238D5204E3D8400191285 /* JS */ = {
+			isa = PBXGroup;
+			children = (
+				AAF238DF204E3DD000191285 /* dynamic.js */,
+				AAF238D9204E3DB700191285 /* GXPhoneJSVC.h */,
+				AAF238DA204E3DB700191285 /* GXPhoneJSVC.m */,
+				AAF238E1204E3E5F00191285 /* GXPhoneJSModel.h */,
+				AAF238E2204E3E5F00191285 /* GXPhoneJSModel.m */,
+			);
+			path = JS;
 			sourceTree = "<group>";
 		};
 		B70FBC791F99CB2D004A52F7 /* Frameworks */ = {
@@ -389,6 +427,7 @@
 		B75555021F3C502C008D0D01 = {
 			isa = PBXGroup;
 			children = (
+				AAF238E9204E66F000191285 /* README.md */,
 				B75557521F3C7511008D0D01 /* Dependencies */,
 				B755550E1F3C502C008D0D01 /* GXPhone */,
 				B716D3CE1F4C4BEB00860791 /* GXShell */,
@@ -433,6 +472,7 @@
 			children = (
 				B755551A1F3C502C008D0D01 /* GXPhoneTests.m */,
 				B7BCCD301F57DC6D006B4135 /* GXPhoneSubStrTest.m */,
+				AAF238E5204E4CEC00191285 /* GXPhoneJSTest.m */,
 				B755551C1F3C502C008D0D01 /* Info.plist */,
 			);
 			path = GXPhoneTests;
@@ -561,10 +601,10 @@
 		B7CCDC711F3DBED900B06BB3 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				AAF238D5204E3D8400191285 /* JS */,
 				AAB84D852041034100F98FD2 /* Two Gesture */,
 				E4B83CC21FFE9011000A4AFF /* FeedCardJson */,
 				B7F0663A1FB558DB00E49E85 /* Corner */,
-				B78048131F735D5B004B5E5B /* UIKit */,
 				E4C3E0071F4C849D00C8E69A /* touch_event_response */,
 				E4C3E0021F4C847800C8E69A /* delayPerformMethod */,
 				E4C58B7A1F44A9C300DF928F /* stack overflow */,
@@ -572,6 +612,7 @@
 				B7CCDCC21F3DC52900B06BB3 /* Protect */,
 				B7CCDCC51F3DC52900B06BB3 /* RebaseTest */,
 				B7CCDC721F3DBED900B06BB3 /* BusTest */,
+				B78048131F735D5B004B5E5B /* UIKit */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -706,8 +747,11 @@
 				B7F066481FB55BB300E49E85 /* GXPhoneCornerTestCell.h in Headers */,
 				B7CCDC9C1F3DC52000B06BB3 /* GXMainNavigationVC.h in Headers */,
 				B78048B31F73BD2C004B5E5B /* GXPhoneCountDownVC.h in Headers */,
+				AAD5D928204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h in Headers */,
 				B7CCDCCD1F3DC52900B06BB3 /* GXPhoneADelegateVC.h in Headers */,
 				B7CCDC9E1F3DC52000B06BB3 /* GXMainTabBarViewController.h in Headers */,
+				AAF238E3204E3E5F00191285 /* GXPhoneJSModel.h in Headers */,
+				AAF238DB204E3DB700191285 /* GXPhoneJSVC.h in Headers */,
 				B7CCDCD11F3DC52900B06BB3 /* GXPhoneDelegateHeader.h in Headers */,
 				B74495E01F56B3970018CC0F /* GXPhoneRouter.h in Headers */,
 				E4C3E00E1F4C889800C8E69A /* GXPhoneTouchEventOneView.h in Headers */,
@@ -724,6 +768,7 @@
 				B759B9FF1F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.h in Headers */,
 				B7CCDC5C1F3DBA7C00B06BB3 /* GXPhoneBus.h in Headers */,
 				B78048431F736252004B5E5B /* GXPhoneCategoryVM.h in Headers */,
+				AAD5D921204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -918,6 +963,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7B6851D1F41AC4D00306EF5 /* GXPhone.xcassets in Resources */,
+				AAF238E0204E3DD000191285 /* dynamic.js in Resources */,
+				AAF238EA204E66F000191285 /* README.md in Resources */,
 				B7B6853B1F41B75B00306EF5 /* startMovie.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -944,9 +991,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF238E4204E3E5F00191285 /* GXPhoneJSModel.m in Sources */,
 				B78048461F736252004B5E5B /* GXPhoneSearchVC.m in Sources */,
 				B7CCDC5D1F3DBA7C00B06BB3 /* GXPhoneBus.m in Sources */,
 				B7CCDCDF1F3DC52900B06BB3 /* GXPhoneProtectVC.m in Sources */,
+				AAF238DC204E3DB700191285 /* GXPhoneJSVC.m in Sources */,
 				B7F066411FB5599200E49E85 /* GXPhoneCornerContainerVC.m in Sources */,
 				B7F066491FB55BB300E49E85 /* GXPhoneCornerTestCell.m in Sources */,
 				B78048AE1F73BD15004B5E5B /* GXPhonePageViewVC.m in Sources */,
@@ -954,7 +1003,6 @@
 				B78048441F736252004B5E5B /* GXPhoneCategoryVM.m in Sources */,
 				B7CCDCE11F3DC52900B06BB3 /* GXPhoneRebaseTestVC.m in Sources */,
 				B78048B01F73BD15004B5E5B /* GXPhoneRACDisposerShare.m in Sources */,
-				AAB84D8D2041037400F98FD2 /* GXPhoneTwoScrollVC.m in Sources */,
 				B7CCDC9D1F3DC52000B06BB3 /* GXMainNavigationVC.m in Sources */,
 				E4C3E00F1F4C889800C8E69A /* GXPhoneTouchEventOneView.m in Sources */,
 				E4B83CC91FFE902C000A4AFF /* GXPhoneFeedCardJson.m in Sources */,
@@ -971,6 +1019,9 @@
 				E4C58B841F44AA3A00DF928F /* GXPhoneStackOverflowVC.m in Sources */,
 				B78048481F736252004B5E5B /* GXPhoneUserVC.m in Sources */,
 				B75555381F3C5493008D0D01 /* GXPhoneAppDelegate.m in Sources */,
+				AAB84D8D2041037400F98FD2 /* GXPhoneTwoScrollVC.m in Sources */,
+				AAD5D922204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.m in Sources */,
+				AAD5D929204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.m in Sources */,
 				B78048421F736252004B5E5B /* GXPhoneCategoryVC.m in Sources */,
 				B7F066451FB55B9900E49E85 /* GXPhoneCornerTestVC.m in Sources */,
 				B74495E11F56B3970018CC0F /* GXPhoneRouter.m in Sources */,
@@ -985,6 +1036,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B755551B1F3C502C008D0D01 /* GXPhoneTests.m in Sources */,
+				AAF238E6204E4CEC00191285 /* GXPhoneJSTest.m in Sources */,
 				B7BCCD311F57DC6D006B4135 /* GXPhoneSubStrTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
