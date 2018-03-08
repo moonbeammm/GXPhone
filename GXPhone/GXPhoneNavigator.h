@@ -30,5 +30,6 @@
 - (void)showCornerTestVCWithType:(int64_t)type;
 - (void)showTwoScrollVC;
 - (void)showJSVC;
+- (void)showBlockVC;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "GXPhoneTwoScrollVC.h"
 #import "GXPhoneTwoScrollView.h"
+#import "GXPhoneKVOPerson.h"
 
 @interface GXPhoneTwoScrollVC () <UITableViewDataSource, UITableViewDelegate>
 
@@ -17,6 +18,7 @@
 @property (nonatomic, strong) NSMutableArray *mutArr;
 @property (nonatomic, strong) NSMutableArray *mutArr2;
 @property (nonatomic, strong) NSMutableArray *largeArr;
+@property (nonatomic, strong) GXPhoneKVOPerson *person;
 
 @end
 
@@ -34,31 +36,38 @@
         self.title = @"测试两个手势冲突问题.";
         self.mutArr = [NSMutableArray arrayWithArray:@[@"1"]];
         self.mutArr2 = self.mutArr;
+        self.person = [[GXPhoneKVOPerson alloc] init];
     }
     return self;
 }
+
+//- (void)setMutArr:(NSMutableArray *)mutArr {
+//    _mutArr = mutArr;
+//}
 
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:@"mutArra"];
+    
     [self configSubviews];
     
-    [RACObserve(self, mutArr) subscribeNext:^(id x) {
+    [RACObserve(self.person, name) subscribeNext:^(id x) {
         NSLog(@"mutArr 改变了");
     }];
+    [self.mutArr addObject:@"22"];
+//    self.mutArr = [NSMutableArray arrayWithArray:@[@1,@3]];
     
-    NSString *temp = @"";
+    self.person.name = @"hehe";
     
-    for (NSInteger i = 0 ;i < 1000;i++) {
-        @autoreleasepool {
-        UIView *view = [[UIView alloc] init];
-            NSString *string = [NSString stringWithFormat:@"create"];
-            [temp stringByAppendingString:string];
-//        NSLog(@"%p >> %p",string, &string);
-            NSLog(@"view: %p >> %p",view, &view);
-        }
-    }
+    
+    
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    NSLog(@"%@对象的%@属性改变了：%@", object, keyPath, change);
 }
 
 - (void)viewWillAppear:(BOOL)animated {

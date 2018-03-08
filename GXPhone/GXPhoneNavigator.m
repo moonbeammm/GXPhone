@@ -23,6 +23,7 @@
 #import "GXPhoneCornerContainerVC.h"
 #import "GXPhoneTwoScrollVC.h"
 #import "GXPhoneJSVC.h"
+#import "GXPhoneBlockVC.h"
 
 @implementation GXPhoneNavigator
 
@@ -122,6 +123,11 @@
 - (void)showJSVC
 {
     GXPhoneJSVC *vc = [GXPhoneJSVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (void)showBlockVC
+{
+    GXPhoneBlockVC *vc = [GXPhoneBlockVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
