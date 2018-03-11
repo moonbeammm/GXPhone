@@ -11,5 +11,7 @@
 @interface GXPhoneArithmeticHelper : NSObject
 
 + (NSArray *)insertSortWithArray:(NSArray *)arry;
++ (NSArray *)bubbleSortWithArray:(NSArray *)arry;
++ (NSArray *)selectSortWithArray:(NSArray *)arry;
 + (NSArray *)removeRepeatWithArray:(NSArray *)array;
 @end

@@ -41,12 +41,6 @@
     return self;
 }
 
-//- (void)setMutArr:(NSMutableArray *)mutArr {
-//    _mutArr = mutArr;
-//}
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -61,9 +55,6 @@
 //    self.mutArr = [NSMutableArray arrayWithArray:@[@1,@3]];
     
     self.person.name = @"hehe";
-    
-    
-    
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {

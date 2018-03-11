@@ -11,6 +11,8 @@
 
 @interface GXPhoneArithmeticTest : XCTestCase
 
+@property (nonatomic, strong) NSArray *arr;
+@property (nonatomic, strong) NSArray *resultArr;
 @end
 
 @implementation GXPhoneArithmeticTest
@@ -18,6 +20,8 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.arr = @[@(50),@(7),@(1),@(10),@(39),@(8)];
+    self.resultArr = @[@(1),@(7),@(8),@(10),@(39),@(50)];
 }
 
 - (void)tearDown {
@@ -25,13 +29,34 @@
     [super tearDown];
 }
 
+/**
+ 测试快速排序算法.
+ */
+
 - (void)testInsetSortExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    NSArray * arry = [GXPhoneArithmeticHelper insertSortWithArray:@[@(5),@(7),@(1),@(10),@(39),@(8)]];
-    BOOL equal = [arry isEqualToArray:@[@(1),@(5),@(7),@(8),@(10),@(39)]];
-    NSAssert(equal, @"排序出错了!");
+    NSArray * arry = [GXPhoneArithmeticHelper insertSortWithArray:self.arr];
+    BOOL equal = [arry isEqualToArray:self.resultArr];
+    NSAssert(equal, @"插入排序出错了!");
 }
+
+- (void)testBubbleSortExample {
+    // This is an example of a functional test case.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSArray * arry = [GXPhoneArithmeticHelper bubbleSortWithArray:self.arr];
+    BOOL equal = [arry isEqualToArray:self.resultArr];
+    NSAssert(equal, @"冒泡排序出错了!");
+}
+
+- (void)testselectSortExample {
+    // This is an example of a functional test case.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSArray * arry = [GXPhoneArithmeticHelper selectSortWithArray:self.arr];
+    BOOL equal = [arry isEqualToArray:self.resultArr];
+    NSAssert(equal, @"选择排序出错了!");
+}
+
 
 - (void)testRemoveRepeatExample {
     for (int i = 0; i < 10000; i++) {

@@ -1,19 +1,20 @@
 //
-//  GXPhoneJSTest.m
+//  GXPhoneMemoryTest.m
 //  GXPhoneTests
 //
-//  Created by sgx on 2018/3/6.
+//  Created by sunguangxin on 2018/3/9.
 //  Copyright © 2018年 sunguangxin. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "GXPhoneJSModel.h"
 
-@interface GXPhoneJSTest : XCTestCase
+@interface GXPhoneMemoryTest : XCTestCase
+
+@property (nonatomic, strong) UIView *view;
 
 @end
 
-@implementation GXPhoneJSTest
+@implementation GXPhoneMemoryTest
 
 - (void)setUp {
     [super setUp];
@@ -24,15 +25,20 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
+
 /**
- 测试OC代码调用JS代码.
+ 测试引用计数
  */
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    for (NSInteger i = 0; i < 10000; i++) {
-        [GXPhoneJSModel parseByJavaScriptWithRawContent:@""];
-    }
+    UIView *view = [[UIView alloc] init];
+    NSLog(@"tempArr 的retaincount >> %ld",CFGetRetainCount((__bridge CFTypeRef) view));
+    self.view = view;
+    NSLog(@"tempArr 的retaincount >> %ld",CFGetRetainCount((__bridge CFTypeRef) view));
+    // 为啥用控制台的po打印和这里打印的retainCount不一致.
+    // CFGetRetainCount是给CF库打印retainCount的.可能是这样导致的不准.
+    NSLog(@"self.arrr 的retaincount >> %ld",CFGetRetainCount((__bridge CFTypeRef) self.view));
 }
 
 - (void)testPerformanceExample {

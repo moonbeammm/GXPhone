@@ -11,7 +11,7 @@
 @interface GXPhoneBlockVC ()
 
 @property (nonatomic, copy) void (^mallocBlock)(void);
-
+@property (nonatomic, strong) NSArray *arrr;
 @end
 
 @implementation GXPhoneBlockVC
@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     static int static_k = 3;
-    self.automaticallyAdjustsScrollViewInsets
+    
     /// 1.globalBlock
     /// 没有用到外界变量或只用到全局变量、静态变量的block为_NSConcreteGlobalBlock，生命周期从创建到应用程序结束。
     void (^globalBlock)(void) = ^{
@@ -49,15 +49,26 @@
     ///////////////////////////////////////////////////////////////
     NSArray *arr =@[@"1"];
     NSLog(@"arr>> %p >> %p",arr,&arr);
+    __weak typeof(arr) weakArr = arr;
     void (^globalBlock2)(void) = ^{
-        NSLog(@"arr>> %p >> %p",arr,&arr);
+        
+        NSLog(@"arr>> %p >> %p",weakArr,&weakArr);
+        NSLog(@"weakArr 的retaincount >> %ld",CFGetRetainCount((__bridge CFTypeRef) weakArr));
+        
     };
+    NSLog(@"weakArr 的retaincount >> %ld",CFGetRetainCount((__bridge CFTypeRef) weakArr));
+    NSLog(@"weakArr 的retaincount >> %ld",CFGetRetainCount((__bridge CFTypeRef) arr));
     NSLog(@"捕获了外界变量.所以是mallocBlock >>%@",globalBlock2);
     globalBlock2();
     ////////////////////////////////////////////////////////////////
     
+    NSArray *tempArr = @[@"woshisunguangxin",@"hahhha"];
+    NSLog(@"tempArr 的retaincount >> %ld",CFGetRetainCount((__bridge CFTypeRef) tempArr));
+    self.arrr = tempArr;
     
-    
+    NSLog(@"tempArr 的retaincount >> %ld",CFGetRetainCount((__bridge CFTypeRef) tempArr));
+    NSLog(@"self.arrr 的retaincount >> %ld",CFGetRetainCount((__bridge CFTypeRef) self.arrr));
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {

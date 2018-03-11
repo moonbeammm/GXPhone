@@ -6,6 +6,10 @@
 //  Copyright © 2018年 sunguangxin. All rights reserved.
 //
 
+/**
+ 测试三种类型的block创建.
+ */
+
 #import <GXRuler/GXRuler.h>
 
 @interface GXPhoneBlockVC : GXBaseViewController
