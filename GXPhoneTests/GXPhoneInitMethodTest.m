@@ -1,18 +1,19 @@
 //
-//  GXPhoneTests.m
+//  GXPhoneInitMethodTest.m
 //  GXPhoneTests
 //
-//  Created by sunguangxin on 2017/8/10.
-//  Copyright © 2017年 sunguangxin. All rights reserved.
+//  Created by sunguangxin on 2018/3/17.
+//  Copyright © 2018年 sunguangxin. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
+#import "GXPhoneChild.h"
 
-@interface GXPhoneTests : XCTestCase
+@interface GXPhoneInitMethodTest : XCTestCase
 
 @end
 
-@implementation GXPhoneTests
+@implementation GXPhoneInitMethodTest
 
 - (void)setUp {
     [super setUp];
@@ -27,7 +28,9 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-
+    
+    /// 测试最好不要在init方法里通过self调用属性.
+    GXPhoneChild *child = [[GXPhoneChild alloc] init];
 }
 
 - (void)testPerformanceExample {

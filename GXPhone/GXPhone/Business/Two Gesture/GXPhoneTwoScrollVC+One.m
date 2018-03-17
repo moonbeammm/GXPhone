@@ -12,7 +12,7 @@
 
 + (void)load {
     [super load];
-    NSLog(@"sunguangxin >> load one");
+    NSLog(@"我重写了父类的+load方法.>> 1");
 }
 
 @end

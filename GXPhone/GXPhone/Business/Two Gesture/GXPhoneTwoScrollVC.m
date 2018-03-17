@@ -8,17 +8,12 @@
 
 #import "GXPhoneTwoScrollVC.h"
 #import "GXPhoneTwoScrollView.h"
-#import "GXPhoneKVOPerson.h"
 
 @interface GXPhoneTwoScrollVC () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) GXPhoneTwoScrollView *scrollView;
 @property (nonatomic, strong) UIView *topView;
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSMutableArray *mutArr;
-@property (nonatomic, strong) NSMutableArray *mutArr2;
-@property (nonatomic, strong) NSMutableArray *largeArr;
-@property (nonatomic, strong) GXPhoneKVOPerson *person;
 
 @end
 
@@ -26,7 +21,7 @@
 
 + (void)load {
     [super load];
-    NSLog(@"sunguangxin >> load");
+    NSLog(@"我的+load方法被子类重写了.");
 }
 
 - (instancetype)init
@@ -34,39 +29,18 @@
     self = [super init];
     if (self) {
         self.title = @"测试两个手势冲突问题.";
-        self.mutArr = [NSMutableArray arrayWithArray:@[@"1"]];
-        self.mutArr2 = self.mutArr;
-        self.person = [[GXPhoneKVOPerson alloc] init];
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:@"mutArra"];
-    
     [self configSubviews];
-    
-    [RACObserve(self.person, name) subscribeNext:^(id x) {
-        NSLog(@"mutArr 改变了");
-    }];
-    [self.mutArr addObject:@"22"];
-//    self.mutArr = [NSMutableArray arrayWithArray:@[@1,@3]];
-    
-    self.person.name = @"hehe";
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    NSLog(@"%@对象的%@属性改变了：%@", object, keyPath, change);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = NO;
-    
-    self.mutArr[0] = @"2";
-    NSLog(@"sunguangxin >> %@",self.mutArr2[0]);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

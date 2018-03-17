@@ -1,18 +1,19 @@
 //
-//  GXPhoneTests.m
+//  GXPhoneRuntimeTest.m
 //  GXPhoneTests
 //
-//  Created by sunguangxin on 2017/8/10.
-//  Copyright © 2017年 sunguangxin. All rights reserved.
+//  Created by sunguangxin on 2018/3/17.
+//  Copyright © 2018年 sunguangxin. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
+#import <objc/runtime.h>
 
-@interface GXPhoneTests : XCTestCase
+@interface GXPhoneRuntimeTest : XCTestCase
 
 @end
 
-@implementation GXPhoneTests
+@implementation GXPhoneRuntimeTest
 
 - (void)setUp {
     [super setUp];
@@ -27,7 +28,9 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-
+    unsigned int propertyCount;
+    objc_property_t *propertys = class_copyPropertyList([NSObject class], &propertyCount);
+    NSLog(@"%@",propertys[0]);
 }
 
 - (void)testPerformanceExample {

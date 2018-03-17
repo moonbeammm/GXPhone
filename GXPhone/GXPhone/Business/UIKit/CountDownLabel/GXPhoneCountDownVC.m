@@ -39,7 +39,6 @@
 {
     __block int timeout = 61; // 倒计时时间
     self.countDownLabel.text = [NSString stringWithFormat:@"接收短信大概需要%d秒钟", timeout];
-    self.countDownLabel.textColor = [UIColor lightGrayColor];
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_source_t timer = dispatch_source_create((DISPATCH_SOURCE_TYPE_TIMER), 0, 0, queue);
     dispatch_source_set_timer(timer, dispatch_walltime(NULL, 0), 1.0 * NSEC_PER_SEC, 0 * NSEC_PER_SEC); // 每秒执行

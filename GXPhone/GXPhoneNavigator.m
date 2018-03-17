@@ -10,20 +10,16 @@
 
 // vc
 #import "GXPhoneADelegateVC.h"
-#import "GXPhoneRebaseTestVC.h"
 #import "GXPikerViewVC.h"
 #import "GXPhoneProtectVC.h"
 #import "GXPhoneDelayPerformMethodVC.h"
 #import "GXPhoneStackOverflowVC.h"
 #import "GXPhoneTouchEventVC.h"
-#import "GXPhonePageViewVC.h"
 #import "GXPhoneLabelTestVC.h"
 #import "GXPhoneCountDownVC.h"
 #import "GXPhoneCornerTestVC.h"
 #import "GXPhoneCornerContainerVC.h"
 #import "GXPhoneTwoScrollVC.h"
-#import "GXPhoneJSVC.h"
-#import "GXPhoneBlockVC.h"
 
 @implementation GXPhoneNavigator
 
@@ -47,12 +43,6 @@
 - (void)showDelegateVC
 {
     GXPhoneADelegateVC *vc = [[GXPhoneADelegateVC alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (void)showRebaseTestVC
-{
-    GXPhoneRebaseTestVC *vc = [[GXPhoneRebaseTestVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -86,12 +76,6 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)showPageViewVC
-{
-    GXPhonePageViewVC *vc = [GXPhonePageViewVC new];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
 - (void)showLabelTestVC
 {
     GXPhoneLabelTestVC *vc = [GXPhoneLabelTestVC new];
@@ -118,16 +102,6 @@
 - (void)showTwoScrollVC
 {
     GXPhoneTwoScrollVC *vc = [GXPhoneTwoScrollVC new];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)showJSVC
-{
-    GXPhoneJSVC *vc = [GXPhoneJSVC new];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)showBlockVC
-{
-    GXPhoneBlockVC *vc = [GXPhoneBlockVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

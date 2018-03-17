@@ -8,8 +8,6 @@
 
 #import "GXPhoneBus.h"
 
-#import "GXPhoneBusTestVC.h"
-
 @implementation GXPhoneBus
 
 // 须知
@@ -30,11 +28,10 @@
         [validator setStringValidationForKey:@"from"];
         if ([validator validateModel:model]) {
             // viewModel/from为外界传进来的参数
-            NSObject *viewModel = (NSObject *)[model viewModelValueForKey:@"viewModel"];
-            NSString *from = (NSString *)[model viewModelValueForKey:@"from"];
-            NSLog(@"GXPhoneBus-callFunction-url:%@,viewModel:%@,from:%@",function,viewModel,from);
+//            NSObject *viewModel = (NSObject *)[model viewModelValueForKey:@"viewModel"];
+//            NSString *from = (NSString *)[model viewModelValueForKey:@"from"];
             // 创建vc
-            UIViewController *vc = [[GXPhoneBusTestVC alloc] init];
+            UIViewController *vc = [[UIViewController alloc] init];
             // 通过vc和params创建保存vc的busModel
             resultModel = [GXBusModel new];
             [resultModel setControllerValue:vc forKey:@"vc"];
