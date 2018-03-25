@@ -86,6 +86,7 @@
 		B7F066491FB55BB300E49E85 /* GXPhoneCornerTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F066471FB55BB300E49E85 /* GXPhoneCornerTestCell.m */; };
 		E41A6D3720522E1700703405 /* GXPhoneMemoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E41A6D3620522E1700703405 /* GXPhoneMemoryTest.m */; };
 		E41A6D3C2055925300703405 /* GXPhoneAsyncBlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E41A6D3B2055925300703405 /* GXPhoneAsyncBlockTest.m */; };
+		E467506F2067F907001FEFA4 /* GXPhoneNotificationThreadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E467506E2067F907001FEFA4 /* GXPhoneNotificationThreadTest.m */; };
 		E47F5950205C2EC9000FA790 /* GXPhoneKVOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F594F205C2EC9000FA790 /* GXPhoneKVOTest.m */; };
 		E47F5969205C3718000FA790 /* GXPhoneSynthesizeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F5968205C3718000FA790 /* GXPhoneSynthesizeTest.m */; };
 		E47F596F205C3ADF000FA790 /* GXPhoneFather.h in Headers */ = {isa = PBXBuildFile; fileRef = E47F596D205C3ADF000FA790 /* GXPhoneFather.h */; };
@@ -301,6 +302,7 @@
 		B7F066471FB55BB300E49E85 /* GXPhoneCornerTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneCornerTestCell.m; sourceTree = "<group>"; };
 		E41A6D3620522E1700703405 /* GXPhoneMemoryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneMemoryTest.m; sourceTree = "<group>"; };
 		E41A6D3B2055925300703405 /* GXPhoneAsyncBlockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneAsyncBlockTest.m; sourceTree = "<group>"; };
+		E467506E2067F907001FEFA4 /* GXPhoneNotificationThreadTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneNotificationThreadTest.m; sourceTree = "<group>"; };
 		E47F594F205C2EC9000FA790 /* GXPhoneKVOTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneKVOTest.m; sourceTree = "<group>"; };
 		E47F5968205C3718000FA790 /* GXPhoneSynthesizeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneSynthesizeTest.m; sourceTree = "<group>"; };
 		E47F596D205C3ADF000FA790 /* GXPhoneFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneFather.h; sourceTree = "<group>"; };
@@ -513,6 +515,7 @@
 				AA781E8D205E3E0C0017B155 /* GXPhonePointerTest.m */,
 				AA6AE2AF205F99E600E447E9 /* GXPhoneStringSeparateTest.m */,
 				AA53580F2063E1DB00631810 /* GXPhoneMutbleArrTest.m */,
+				E467506E2067F907001FEFA4 /* GXPhoneNotificationThreadTest.m */,
 				B755551C1F3C502C008D0D01 /* Info.plist */,
 			);
 			path = GXPhoneTests;
@@ -1032,6 +1035,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E467506F2067F907001FEFA4 /* GXPhoneNotificationThreadTest.m in Sources */,
 				E47F5995205D9BB6000FA790 /* GXPhoneTryCatchTest.m in Sources */,
 				B755551B1F3C502C008D0D01 /* GXPhoneTests.m in Sources */,
 				E47F5969205C3718000FA790 /* GXPhoneSynthesizeTest.m in Sources */,

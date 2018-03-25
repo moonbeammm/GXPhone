@@ -101,11 +101,60 @@
  a指向的堆中地址：0x7fb839e85a20；a在栈中的指针地址：0x7ffee0455c58
  */
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)test__block {
+    NSMutableString *string = [NSMutableString stringWithString:@"haha"];
+    NSLog(@"block前 >> %@ %p",string,string);
+    void (^testBlock)(void) = ^{
+        NSLog(@"block内部 >> %@ %p",string,string);
+    };
+    testBlock();
+    NSLog(@"block执行后 >> %@ %p",string,string);
+    /*
+     block前 >> haha 0x7fb424741730
+     block内部 >> haha 0x7fb424741730
+     block执行后 >> haha 0x7fb424741730
+     */
+    
+    __block NSMutableString *string1 = [NSMutableString stringWithString:@"fsda"];
+    NSLog(@"block执行前 >> %@ %p %p",string1,string1,&string1);
+    void (^testBlock1)(void) = ^{
+        /// Variable is not assignable (missing __block type specifier)
+        string1 = [NSMutableString stringWithString:@"fwefwe"];
+        NSLog(@"block内部 >> %@ %p %p",string1,string1,&string1);
+    };
+    testBlock1();
+    NSLog(@"block执行后 >> %@ %p  %p",string1,string1,&string1);
+    /*
+     block执行前 >> fsda 0x7f8185e4c150 0x7ffeedb31c20
+     block内部 >> fwefwe 0x7f8185f68ac0 0x7f8185f68ab8
+     block执行后 >> fwefwe 0x7f8185f68ac0  0x7f8185f68ab8
+     */
+    
+    __block UIView *string2 = [UIView new];
+    NSLog(@"block执行前 >> %@ %p %p",string2,string2,&string2);
+    void (^testBlock2)(void) = ^{
+        /// Variable is not assignable (missing __block type specifier)
+        string2 = [UIView new];
+        NSLog(@"block内部 >> %@ %p %p",string2,string2,&string2);
+    };
+    testBlock2();
+    NSLog(@"block执行后 >> %@ %p  %p",string2,string2,&string2);
+    /*
+     block执行前 >> <layer = <CALayer: 0x7f8005c344b0>> 0x7f8005f562c0 0x7ffeec153bb0
+     block内部 >> <layer = <CALayer: 0x7f8005e6d450>> 0x7f8005e69690 0x7f8005e69138
+     block执行后 >> <layer = <CALayer: 0x7f8005e6d450>> 0x7f8005e69690  0x7f8005e69138
+     */
 }
+
+/*
+ 测试block内部能修改局部变量string吗.(局部变量UIView也不行)
+ 答案: 不能
+ 以前以为只有整形需要加__block
+ 
+ 现在才知道原来局部变量都是放在栈里的.
+ 那么block内要引用局部变量.
+ 都需要加上__block.把这个局部变量copy到堆里.
+ 然后引用指向堆里的这块内存的地址.
+ */
 
 @end
