@@ -12,7 +12,18 @@
 
 + (void)load {
     [super load];
-    NSLog(@"我重写了父类的+load方法.>> 1");
+    NSLog(@"我是分类one>> 重写了+load方法.%@",self);
 }
+
++ (void)initialize {
+    [super initialize];
+    NSLog(@"sgx 我是分类one.重写了initilize方法%@",self);
+    
+}
+
+//- (void)viewDidLoad{
+//
+//    [super viewDidLoad];
+//}
 
 @end

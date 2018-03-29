@@ -87,6 +87,12 @@
 		E41A6D3720522E1700703405 /* GXPhoneMemoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E41A6D3620522E1700703405 /* GXPhoneMemoryTest.m */; };
 		E41A6D3C2055925300703405 /* GXPhoneAsyncBlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E41A6D3B2055925300703405 /* GXPhoneAsyncBlockTest.m */; };
 		E467506F2067F907001FEFA4 /* GXPhoneNotificationThreadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E467506E2067F907001FEFA4 /* GXPhoneNotificationThreadTest.m */; };
+		E467509C206A9A1D001FEFA4 /* GXPhoneOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E467509B206A9A1D001FEFA4 /* GXPhoneOperationTest.m */; };
+		E46750B5206BE88D001FEFA4 /* GXPhoneGCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E46750B4206BE88D001FEFA4 /* GXPhoneGCDTest.m */; };
+		E46750CF206D4266001FEFA4 /* GXPhoneLinguisticTaggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E46750CE206D4266001FEFA4 /* GXPhoneLinguisticTaggerTest.m */; };
+		E46750D4206D45AD001FEFA4 /* GXPhoneCacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E46750D3206D45AD001FEFA4 /* GXPhoneCacheTest.m */; };
+		E46750D7206D49FF001FEFA4 /* GXPhoneTwoScrollSubVC.h in Headers */ = {isa = PBXBuildFile; fileRef = E46750D5206D49FF001FEFA4 /* GXPhoneTwoScrollSubVC.h */; };
+		E46750D8206D49FF001FEFA4 /* GXPhoneTwoScrollSubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E46750D6206D49FF001FEFA4 /* GXPhoneTwoScrollSubVC.m */; };
 		E47F5950205C2EC9000FA790 /* GXPhoneKVOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F594F205C2EC9000FA790 /* GXPhoneKVOTest.m */; };
 		E47F5969205C3718000FA790 /* GXPhoneSynthesizeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F5968205C3718000FA790 /* GXPhoneSynthesizeTest.m */; };
 		E47F596F205C3ADF000FA790 /* GXPhoneFather.h in Headers */ = {isa = PBXBuildFile; fileRef = E47F596D205C3ADF000FA790 /* GXPhoneFather.h */; };
@@ -303,6 +309,12 @@
 		E41A6D3620522E1700703405 /* GXPhoneMemoryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneMemoryTest.m; sourceTree = "<group>"; };
 		E41A6D3B2055925300703405 /* GXPhoneAsyncBlockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneAsyncBlockTest.m; sourceTree = "<group>"; };
 		E467506E2067F907001FEFA4 /* GXPhoneNotificationThreadTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneNotificationThreadTest.m; sourceTree = "<group>"; };
+		E467509B206A9A1D001FEFA4 /* GXPhoneOperationTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneOperationTest.m; sourceTree = "<group>"; };
+		E46750B4206BE88D001FEFA4 /* GXPhoneGCDTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneGCDTest.m; sourceTree = "<group>"; };
+		E46750CE206D4266001FEFA4 /* GXPhoneLinguisticTaggerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneLinguisticTaggerTest.m; sourceTree = "<group>"; };
+		E46750D3206D45AD001FEFA4 /* GXPhoneCacheTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneCacheTest.m; sourceTree = "<group>"; };
+		E46750D5206D49FF001FEFA4 /* GXPhoneTwoScrollSubVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneTwoScrollSubVC.h; sourceTree = "<group>"; };
+		E46750D6206D49FF001FEFA4 /* GXPhoneTwoScrollSubVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneTwoScrollSubVC.m; sourceTree = "<group>"; };
 		E47F594F205C2EC9000FA790 /* GXPhoneKVOTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneKVOTest.m; sourceTree = "<group>"; };
 		E47F5968205C3718000FA790 /* GXPhoneSynthesizeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneSynthesizeTest.m; sourceTree = "<group>"; };
 		E47F596D205C3ADF000FA790 /* GXPhoneFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneFather.h; sourceTree = "<group>"; };
@@ -398,6 +410,8 @@
 			children = (
 				AAB84D892041037400F98FD2 /* GXPhoneTwoScrollVC.h */,
 				AAB84D8A2041037400F98FD2 /* GXPhoneTwoScrollVC.m */,
+				E46750D5206D49FF001FEFA4 /* GXPhoneTwoScrollSubVC.h */,
+				E46750D6206D49FF001FEFA4 /* GXPhoneTwoScrollSubVC.m */,
 				AAD5D91F204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.h */,
 				AAD5D920204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.m */,
 				AAD5D926204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h */,
@@ -497,6 +511,7 @@
 		B75555191F3C502C008D0D01 /* GXPhoneTests */ = {
 			isa = PBXGroup;
 			children = (
+				E46750B9206BEA20001FEFA4 /* 多线程 */,
 				B755551A1F3C502C008D0D01 /* GXPhoneTests.m */,
 				AA9A6D532053D8E400EBDFD3 /* GXPhoneRetainCountTest.m */,
 				B7BCCD301F57DC6D006B4135 /* GXPhoneSubStrTest.m */,
@@ -516,6 +531,8 @@
 				AA6AE2AF205F99E600E447E9 /* GXPhoneStringSeparateTest.m */,
 				AA53580F2063E1DB00631810 /* GXPhoneMutbleArrTest.m */,
 				E467506E2067F907001FEFA4 /* GXPhoneNotificationThreadTest.m */,
+				E46750CE206D4266001FEFA4 /* GXPhoneLinguisticTaggerTest.m */,
+				E46750D3206D45AD001FEFA4 /* GXPhoneCacheTest.m */,
 				B755551C1F3C502C008D0D01 /* Info.plist */,
 			);
 			path = GXPhoneTests;
@@ -695,6 +712,15 @@
 			path = Corner;
 			sourceTree = "<group>";
 		};
+		E46750B9206BEA20001FEFA4 /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				E467509B206A9A1D001FEFA4 /* GXPhoneOperationTest.m */,
+				E46750B4206BE88D001FEFA4 /* GXPhoneGCDTest.m */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
 		E4C3E0021F4C847800C8E69A /* delayPerformMethod */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,6 +777,7 @@
 				B7CCDC9C1F3DC52000B06BB3 /* GXMainNavigationVC.h in Headers */,
 				B78048B31F73BD2C004B5E5B /* GXPhoneCountDownVC.h in Headers */,
 				AAD5D928204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h in Headers */,
+				E46750D7206D49FF001FEFA4 /* GXPhoneTwoScrollSubVC.h in Headers */,
 				B7CCDCCD1F3DC52900B06BB3 /* GXPhoneADelegateVC.h in Headers */,
 				B7CCDC9E1F3DC52000B06BB3 /* GXMainTabBarViewController.h in Headers */,
 				E47F596F205C3ADF000FA790 /* GXPhoneFather.h in Headers */,
@@ -1027,6 +1054,7 @@
 				B74495E11F56B3970018CC0F /* GXPhoneRouter.m in Sources */,
 				B759BA001F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.m in Sources */,
 				B78048B41F73BD2C004B5E5B /* GXPhoneCountDownVC.m in Sources */,
+				E46750D8206D49FF001FEFA4 /* GXPhoneTwoScrollSubVC.m in Sources */,
 				E4C3E00B1F4C84C000C8E69A /* GXPhoneTouchEventVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1039,8 +1067,10 @@
 				E47F5995205D9BB6000FA790 /* GXPhoneTryCatchTest.m in Sources */,
 				B755551B1F3C502C008D0D01 /* GXPhoneTests.m in Sources */,
 				E47F5969205C3718000FA790 /* GXPhoneSynthesizeTest.m in Sources */,
+				E46750D4206D45AD001FEFA4 /* GXPhoneCacheTest.m in Sources */,
 				AA9A6D542053D8E400EBDFD3 /* GXPhoneRetainCountTest.m in Sources */,
 				AA5358102063E1DB00631810 /* GXPhoneMutbleArrTest.m in Sources */,
+				E46750CF206D4266001FEFA4 /* GXPhoneLinguisticTaggerTest.m in Sources */,
 				AAF23966204F882A00191285 /* GXPhoneArithmeticTest.m in Sources */,
 				E47F5990205D93CE000FA790 /* GXPhoneIsKindOfClassTest.m in Sources */,
 				AAF238E6204E4CEC00191285 /* GXPhoneJSTest.m in Sources */,
@@ -1048,8 +1078,10 @@
 				E47F597A205D6AF6000FA790 /* GXPhoneBlockTypeTest.m in Sources */,
 				E41A6D3C2055925300703405 /* GXPhoneAsyncBlockTest.m in Sources */,
 				E47F59AB205EC6F4000FA790 /* GXPhoneDelegateResponseTest.m in Sources */,
+				E46750B5206BE88D001FEFA4 /* GXPhoneGCDTest.m in Sources */,
 				E47F5978205D657E000FA790 /* GXPhoneRuntimeTest.m in Sources */,
 				AA6AE2B0205F99E600E447E9 /* GXPhoneStringSeparateTest.m in Sources */,
+				E467509C206A9A1D001FEFA4 /* GXPhoneOperationTest.m in Sources */,
 				AA781E8E205E3E0C0017B155 /* GXPhonePointerTest.m in Sources */,
 				E47F5950205C2EC9000FA790 /* GXPhoneKVOTest.m in Sources */,
 				B7BCCD311F57DC6D006B4135 /* GXPhoneSubStrTest.m in Sources */,

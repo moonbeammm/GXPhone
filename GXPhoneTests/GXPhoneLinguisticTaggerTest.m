@@ -1,18 +1,18 @@
 //
-//  GXPhoneMutbleArrTest.m
+//  GXPhoneLinguisticTaggerTest.m
 //  GXPhoneTests
 //
-//  Created by sgx on 2018/3/22.
+//  Created by sunguangxin on 2018/3/29.
 //  Copyright © 2018年 sunguangxin. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface GXPhoneMutbleArrTest : XCTestCase
+@interface GXPhoneLinguisticTaggerTest : XCTestCase
 
 @end
 
-@implementation GXPhoneMutbleArrTest
+@implementation GXPhoneLinguisticTaggerTest
 
 - (void)setUp {
     [super setUp];
@@ -27,19 +27,6 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    NSMutableArray *mutArr = [NSMutableArray arrayWithArray:@[@0,@1,@2,@3,@4,@5,@6]];
-    [mutArr removeObjectsInRange:NSMakeRange(2, mutArr.count - 2)];
-    NSLog(@"%@",mutArr);
-    /*
-     删除从location开始(包含location)后面n个元素.
-     
-     2018-03-22 21:09:17.239674+0800 xctest[23420:606558] (
-     0,
-     1,
-     5,
-     6
-     )
-     */
 }
 
 - (void)testPerformanceExample {
@@ -47,7 +34,6 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
-
 }
 
 @end

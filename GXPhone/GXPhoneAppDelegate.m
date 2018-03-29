@@ -28,20 +28,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-
-    NSLog(@"第一次启动!");
-    kdebug_signpost_start(0,0,0,0,0);
-
-    for (int i = 0; i<10000; i++) {
-        NSLog(@"我是第一个!");
-    }
-    kdebug_signpost_end(0,0,0,0,0);
-    kdebug_signpost_start(1,0,0,0,1);
-    for (int i = 0; i<10000; i++) {
-        NSLog(@"我是第二个!");
-    }
-    kdebug_signpost_end(1,0,0,0,1);
-    
     [self configureRooterVC];
     [self configureNavigator];
     [self configureStatusBarStyle:application];
