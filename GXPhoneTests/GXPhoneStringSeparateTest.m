@@ -50,6 +50,23 @@
     }
 }
 
+- (void)testRegular {
+    NSString *paramsString0 = @"double_bili_av_s_layout.nib";
+    NSString *paramsString1 = @"?eid=333&name==";
+    NSString *paramsString2 = @"?eid=333&name===&eid=22";
+    NSString *paramsString3 = @"?eid=333&name=\\jj&eid=22";//不支持
+    NSString *paramsString4 = @"?eid=333&name=\.jj&eid=22";
+    NSString *paramsString5 = @"?eid=333&name=\\\\jj&eid=22";// 不支持
+    NSArray *paramsStringArr = @[paramsString0,paramsString1,paramsString2,paramsString3,paramsString4,paramsString5];
+    
+    for (NSString *paramsString in paramsStringArr) {
+        /// 用正则提取name的值.
+        /// 正则表达式全集: http://tool.oschina.net/uploads/apidocs/jquery/regexp.html
+        NSArray *array = [self matchString:paramsString toRegexString:@"double_bili_(.*?)_layout.nib"];
+        NSLog(@"%@",array);
+    }
+}
+
 /**
  *  正则匹配返回符合要求的字符串 数组
  *
