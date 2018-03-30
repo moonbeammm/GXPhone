@@ -12,6 +12,7 @@
 		AA08D2A52000A9570062C7CE /* GXPodContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA08D2A22000A94C0062C7CE /* GXPodContainer.framework */; };
 		AA08D2A62000A9570062C7CE /* GXRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA08D2712000A8080062C7CE /* GXRuler.framework */; };
 		AA5358102063E1DB00631810 /* GXPhoneMutbleArrTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53580F2063E1DB00631810 /* GXPhoneMutbleArrTest.m */; };
+		AA658A00206DED38004BB6B6 /* GXPhoneDictionaryKeyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6589FF206DED38004BB6B6 /* GXPhoneDictionaryKeyTest.m */; };
 		AA6AE2B0205F99E600E447E9 /* GXPhoneStringSeparateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6AE2AF205F99E600E447E9 /* GXPhoneStringSeparateTest.m */; };
 		AA781E8E205E3E0C0017B155 /* GXPhonePointerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA781E8D205E3E0C0017B155 /* GXPhonePointerTest.m */; };
 		AA9A6D542053D8E400EBDFD3 /* GXPhoneRetainCountTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9A6D532053D8E400EBDFD3 /* GXPhoneRetainCountTest.m */; };
@@ -231,6 +232,7 @@
 		AA08D26B2000A8080062C7CE /* GXRuler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXRuler.xcodeproj; path = "../GXRuler-OC/GXRuler/GXRuler.xcodeproj"; sourceTree = "<group>"; };
 		AA08D29D2000A94C0062C7CE /* GXPodContainer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXPodContainer.xcodeproj; path = "../GXRuler-OC/GXPodContainer/GXPodContainer.xcodeproj"; sourceTree = "<group>"; };
 		AA53580F2063E1DB00631810 /* GXPhoneMutbleArrTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneMutbleArrTest.m; sourceTree = "<group>"; };
+		AA6589FF206DED38004BB6B6 /* GXPhoneDictionaryKeyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneDictionaryKeyTest.m; sourceTree = "<group>"; };
 		AA6AE2AF205F99E600E447E9 /* GXPhoneStringSeparateTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneStringSeparateTest.m; sourceTree = "<group>"; };
 		AA781E8D205E3E0C0017B155 /* GXPhonePointerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhonePointerTest.m; sourceTree = "<group>"; };
 		AA9A6D532053D8E400EBDFD3 /* GXPhoneRetainCountTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneRetainCountTest.m; sourceTree = "<group>"; };
@@ -533,6 +535,7 @@
 				E467506E2067F907001FEFA4 /* GXPhoneNotificationThreadTest.m */,
 				E46750CE206D4266001FEFA4 /* GXPhoneLinguisticTaggerTest.m */,
 				E46750D3206D45AD001FEFA4 /* GXPhoneCacheTest.m */,
+				AA6589FF206DED38004BB6B6 /* GXPhoneDictionaryKeyTest.m */,
 				B755551C1F3C502C008D0D01 /* Info.plist */,
 			);
 			path = GXPhoneTests;
@@ -1084,6 +1087,7 @@
 				E467509C206A9A1D001FEFA4 /* GXPhoneOperationTest.m in Sources */,
 				AA781E8E205E3E0C0017B155 /* GXPhonePointerTest.m in Sources */,
 				E47F5950205C2EC9000FA790 /* GXPhoneKVOTest.m in Sources */,
+				AA658A00206DED38004BB6B6 /* GXPhoneDictionaryKeyTest.m in Sources */,
 				B7BCCD311F57DC6D006B4135 /* GXPhoneSubStrTest.m in Sources */,
 				E47F5976205C3CDA000FA790 /* GXPhoneInitMethodTest.m in Sources */,
 			);
