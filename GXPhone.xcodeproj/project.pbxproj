@@ -11,6 +11,11 @@
 		AA08D2A42000A9570062C7CE /* GXPageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA08D25F2000A7FA0062C7CE /* GXPageView.framework */; };
 		AA08D2A52000A9570062C7CE /* GXPodContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA08D2A22000A94C0062C7CE /* GXPodContainer.framework */; };
 		AA08D2A62000A9570062C7CE /* GXRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA08D2712000A8080062C7CE /* GXRuler.framework */; };
+		AA2884E4209B29590016C66F /* GXPhoneTouchEventThreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2884E2209B29590016C66F /* GXPhoneTouchEventThreeView.h */; };
+		AA2884E5209B29590016C66F /* GXPhoneTouchEventThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2884E3209B29590016C66F /* GXPhoneTouchEventThreeView.m */; };
+		AA2884EB209B2B7F0016C66F /* GXPhoneTouchEventButton.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2884E9209B2B7F0016C66F /* GXPhoneTouchEventButton.h */; };
+		AA2884EC209B2B7F0016C66F /* GXPhoneTouchEventButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2884EA209B2B7F0016C66F /* GXPhoneTouchEventButton.m */; };
+		AA5163AF209EF00800FAA8D3 /* GXPhoneRunloopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5163AE209EF00800FAA8D3 /* GXPhoneRunloopTest.m */; };
 		AA5358102063E1DB00631810 /* GXPhoneMutbleArrTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53580F2063E1DB00631810 /* GXPhoneMutbleArrTest.m */; };
 		AA5549AF207C5EC8003209D3 /* GXPhoneASCIITest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5549AE207C5EC8003209D3 /* GXPhoneASCIITest.m */; };
 		AA658A00206DED38004BB6B6 /* GXPhoneDictionaryKeyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6589FF206DED38004BB6B6 /* GXPhoneDictionaryKeyTest.m */; };
@@ -23,6 +28,8 @@
 		AAB84D8D2041037400F98FD2 /* GXPhoneTwoScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB84D8A2041037400F98FD2 /* GXPhoneTwoScrollVC.m */; };
 		AAB84D9120410CFE00F98FD2 /* GXPhoneTwoScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB84D8F20410CFE00F98FD2 /* GXPhoneTwoScrollView.h */; };
 		AAB84D9220410CFE00F98FD2 /* GXPhoneTwoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB84D9020410CFE00F98FD2 /* GXPhoneTwoScrollView.m */; };
+		AAC140B920D3C56C00EFDF1F /* GXPhoneCALayerVC.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC140B720D3C56C00EFDF1F /* GXPhoneCALayerVC.h */; };
+		AAC140BA20D3C56C00EFDF1F /* GXPhoneCALayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC140B820D3C56C00EFDF1F /* GXPhoneCALayerVC.m */; };
 		AAD5D921204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD5D91F204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.h */; };
 		AAD5D922204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD5D920204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.m */; };
 		AAD5D928204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD5D926204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h */; };
@@ -232,6 +239,11 @@
 		AA08D2622000A8010062C7CE /* GXNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXNetwork.xcodeproj; path = "../GXRuler-OC/GXNetwork/GXNetwork.xcodeproj"; sourceTree = "<group>"; };
 		AA08D26B2000A8080062C7CE /* GXRuler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXRuler.xcodeproj; path = "../GXRuler-OC/GXRuler/GXRuler.xcodeproj"; sourceTree = "<group>"; };
 		AA08D29D2000A94C0062C7CE /* GXPodContainer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GXPodContainer.xcodeproj; path = "../GXRuler-OC/GXPodContainer/GXPodContainer.xcodeproj"; sourceTree = "<group>"; };
+		AA2884E2209B29590016C66F /* GXPhoneTouchEventThreeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneTouchEventThreeView.h; sourceTree = "<group>"; };
+		AA2884E3209B29590016C66F /* GXPhoneTouchEventThreeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneTouchEventThreeView.m; sourceTree = "<group>"; };
+		AA2884E9209B2B7F0016C66F /* GXPhoneTouchEventButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneTouchEventButton.h; sourceTree = "<group>"; };
+		AA2884EA209B2B7F0016C66F /* GXPhoneTouchEventButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneTouchEventButton.m; sourceTree = "<group>"; };
+		AA5163AE209EF00800FAA8D3 /* GXPhoneRunloopTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneRunloopTest.m; sourceTree = "<group>"; };
 		AA53580F2063E1DB00631810 /* GXPhoneMutbleArrTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneMutbleArrTest.m; sourceTree = "<group>"; };
 		AA5549AE207C5EC8003209D3 /* GXPhoneASCIITest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneASCIITest.m; sourceTree = "<group>"; };
 		AA6589FF206DED38004BB6B6 /* GXPhoneDictionaryKeyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneDictionaryKeyTest.m; sourceTree = "<group>"; };
@@ -244,6 +256,8 @@
 		AAB84D8A2041037400F98FD2 /* GXPhoneTwoScrollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneTwoScrollVC.m; sourceTree = "<group>"; };
 		AAB84D8F20410CFE00F98FD2 /* GXPhoneTwoScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneTwoScrollView.h; sourceTree = "<group>"; };
 		AAB84D9020410CFE00F98FD2 /* GXPhoneTwoScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneTwoScrollView.m; sourceTree = "<group>"; };
+		AAC140B720D3C56C00EFDF1F /* GXPhoneCALayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneCALayerVC.h; sourceTree = "<group>"; };
+		AAC140B820D3C56C00EFDF1F /* GXPhoneCALayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneCALayerVC.m; sourceTree = "<group>"; };
 		AAD5D91F204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXPhoneTwoScrollVC+One.h"; sourceTree = "<group>"; };
 		AAD5D920204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GXPhoneTwoScrollVC+One.m"; sourceTree = "<group>"; };
 		AAD5D926204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXPhoneTwoScrollVC+Two.h"; sourceTree = "<group>"; };
@@ -409,7 +423,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AAB84D852041034100F98FD2 /* Two Gesture */ = {
+		AAB84D852041034100F98FD2 /* TwoGesture */ = {
 			isa = PBXGroup;
 			children = (
 				AAB84D892041037400F98FD2 /* GXPhoneTwoScrollVC.h */,
@@ -423,7 +437,16 @@
 				AAB84D8F20410CFE00F98FD2 /* GXPhoneTwoScrollView.h */,
 				AAB84D9020410CFE00F98FD2 /* GXPhoneTwoScrollView.m */,
 			);
-			path = "Two Gesture";
+			path = TwoGesture;
+			sourceTree = "<group>";
+		};
+		AAC140B320D3C54600EFDF1F /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				AAC140B720D3C56C00EFDF1F /* GXPhoneCALayerVC.h */,
+				AAC140B820D3C56C00EFDF1F /* GXPhoneCALayerVC.m */,
+			);
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 		AAF238D5204E3D8400191285 /* JS */ = {
@@ -577,6 +600,7 @@
 		B78048131F735D5B004B5E5B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				AAC140B320D3C54600EFDF1F /* CALayer */,
 				B78048A71F73BD15004B5E5B /* CountDownLabel */,
 				B780481D1F735D93004B5E5B /* UILabel */,
 				B78048181F735D80004B5E5B /* UIPickerView */,
@@ -657,7 +681,7 @@
 			children = (
 				AAF2395D204F86E500191285 /* Arithmetic */,
 				AAF238D5204E3D8400191285 /* JS */,
-				AAB84D852041034100F98FD2 /* Two Gesture */,
+				AAB84D852041034100F98FD2 /* TwoGesture */,
 				B7F0663A1FB558DB00E49E85 /* Corner */,
 				E4C3E0071F4C849D00C8E69A /* touch_event_response */,
 				E4C3E0021F4C847800C8E69A /* delayPerformMethod */,
@@ -723,6 +747,7 @@
 			children = (
 				E467509B206A9A1D001FEFA4 /* GXPhoneOperationTest.m */,
 				E46750B4206BE88D001FEFA4 /* GXPhoneGCDTest.m */,
+				AA5163AE209EF00800FAA8D3 /* GXPhoneRunloopTest.m */,
 			);
 			path = "多线程";
 			sourceTree = "<group>";
@@ -745,6 +770,10 @@
 				E4C3E00D1F4C889800C8E69A /* GXPhoneTouchEventOneView.m */,
 				E4C3E0101F4C88A400C8E69A /* GXPhoneTouchEventTwoView.h */,
 				E4C3E0111F4C88A400C8E69A /* GXPhoneTouchEventTwoView.m */,
+				AA2884E2209B29590016C66F /* GXPhoneTouchEventThreeView.h */,
+				AA2884E3209B29590016C66F /* GXPhoneTouchEventThreeView.m */,
+				AA2884E9209B2B7F0016C66F /* GXPhoneTouchEventButton.h */,
+				AA2884EA209B2B7F0016C66F /* GXPhoneTouchEventButton.m */,
 				B759B9FD1F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.h */,
 				B759B9FE1F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.m */,
 			);
@@ -781,8 +810,10 @@
 				B7F066481FB55BB300E49E85 /* GXPhoneCornerTestCell.h in Headers */,
 				AAF23963204F86FD00191285 /* GXPhoneArithmeticHelper.h in Headers */,
 				B7CCDC9C1F3DC52000B06BB3 /* GXMainNavigationVC.h in Headers */,
+				AA2884E4209B29590016C66F /* GXPhoneTouchEventThreeView.h in Headers */,
 				B78048B31F73BD2C004B5E5B /* GXPhoneCountDownVC.h in Headers */,
 				AAD5D928204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h in Headers */,
+				AA2884EB209B2B7F0016C66F /* GXPhoneTouchEventButton.h in Headers */,
 				AA658A65206E4233004BB6B6 /* GXPhoneTwoScrollSubVC.h in Headers */,
 				B7CCDCCD1F3DC52900B06BB3 /* GXPhoneADelegateVC.h in Headers */,
 				B7CCDC9E1F3DC52000B06BB3 /* GXMainTabBarViewController.h in Headers */,
@@ -803,6 +834,7 @@
 				B7CCDCDE1F3DC52900B06BB3 /* GXPhoneProtectVC.h in Headers */,
 				B759B9FF1F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.h in Headers */,
 				B7CCDC5C1F3DBA7C00B06BB3 /* GXPhoneBus.h in Headers */,
+				AAC140B920D3C56C00EFDF1F /* GXPhoneCALayerVC.h in Headers */,
 				B78048431F736252004B5E5B /* GXPhoneCategoryVM.h in Headers */,
 				AAD5D921204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.h in Headers */,
 			);
@@ -1051,13 +1083,16 @@
 				B77153F01F8A211B004E8F6F /* GXPhoneVideoModel.m in Sources */,
 				E4C58B841F44AA3A00DF928F /* GXPhoneStackOverflowVC.m in Sources */,
 				B78048481F736252004B5E5B /* GXPhoneUserVC.m in Sources */,
+				AA2884E5209B29590016C66F /* GXPhoneTouchEventThreeView.m in Sources */,
 				B75555381F3C5493008D0D01 /* GXPhoneAppDelegate.m in Sources */,
+				AAC140BA20D3C56C00EFDF1F /* GXPhoneCALayerVC.m in Sources */,
 				AAB84D8D2041037400F98FD2 /* GXPhoneTwoScrollVC.m in Sources */,
 				AAD5D922204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.m in Sources */,
 				AAD5D929204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.m in Sources */,
 				B78048421F736252004B5E5B /* GXPhoneCategoryVC.m in Sources */,
 				B7F066451FB55B9900E49E85 /* GXPhoneCornerTestVC.m in Sources */,
 				B74495E11F56B3970018CC0F /* GXPhoneRouter.m in Sources */,
+				AA2884EC209B2B7F0016C66F /* GXPhoneTouchEventButton.m in Sources */,
 				B759BA001F7A2C3700BD1DF6 /* GXPhoneTouchTwoVC.m in Sources */,
 				B78048B41F73BD2C004B5E5B /* GXPhoneCountDownVC.m in Sources */,
 				AA658A66206E4233004BB6B6 /* GXPhoneTwoScrollSubVC.m in Sources */,
@@ -1088,6 +1123,7 @@
 				E47F5978205D657E000FA790 /* GXPhoneRuntimeTest.m in Sources */,
 				AA6AE2B0205F99E600E447E9 /* GXPhoneStringSeparateTest.m in Sources */,
 				E467509C206A9A1D001FEFA4 /* GXPhoneOperationTest.m in Sources */,
+				AA5163AF209EF00800FAA8D3 /* GXPhoneRunloopTest.m in Sources */,
 				AA781E8E205E3E0C0017B155 /* GXPhonePointerTest.m in Sources */,
 				E47F5950205C2EC9000FA790 /* GXPhoneKVOTest.m in Sources */,
 				AA5549AF207C5EC8003209D3 /* GXPhoneASCIITest.m in Sources */,

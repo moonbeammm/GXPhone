@@ -7,6 +7,55 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <objc/runtime.h>
+
+@interface PersonHaha : NSObject
+
+@end
+
+@implementation PersonHaha
+
+- (void)setName:(NSString *)name {
+    
+}
+
+-(NSString *)name {
+    return nil;
+}
+
+@end
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@interface Person : NSObject
+
+@property (nonatomic, strong) NSString *name;
+
+@end
+
+@implementation Person
+@dynamic name;
+
+/// 只有此方法返回非空值.才会调用forwardInvocation方法
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
+{
+    NSMethodSignature *sig = [[PersonHaha new] methodSignatureForSelector:aSelector];
+    return sig;
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation
+{
+    [anInvocation invokeWithTarget:[PersonHaha new]];
+}
+
+@end
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @interface GXPhoneKVOTest : XCTestCase
 
@@ -54,11 +103,10 @@
     NSLog(@"%@对象的%@属性改变了：%@", object, keyPath, change);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
+// 4.有种情况KVO监听不到
+// 如上的person类.监听了name属性.
+// 但是name属性使用dynamic来修饰了.就不会产生set和get方法了
+// 此时我们使用forwardInvocation来讲消息转发.防止崩溃
+// 这时是触发不了KVO的.
 
 @end

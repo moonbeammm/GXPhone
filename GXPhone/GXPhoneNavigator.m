@@ -20,6 +20,7 @@
 #import "GXPhoneCornerTestVC.h"
 #import "GXPhoneCornerContainerVC.h"
 #import "GXPhoneTwoScrollVC.h"
+#import "GXPhoneCALayerVC.h"
 
 @implementation GXPhoneNavigator
 
@@ -102,6 +103,11 @@
 - (void)showTwoScrollVC
 {
     GXPhoneTwoScrollVC *vc = [GXPhoneTwoScrollVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (void)showCALayerVC
+{
+    GXPhoneCALayerVC *vc = [GXPhoneCALayerVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

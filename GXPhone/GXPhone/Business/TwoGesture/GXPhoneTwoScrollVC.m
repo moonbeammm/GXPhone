@@ -26,6 +26,7 @@
 + (void)load {
     [super load];
     NSLog(@"我的+load方法被子类/分类重写了.%@",self);
+    NSLog(@"测试");
 }
 /*
  如果本类的分类重写了initialize方法(除了load方法.其他方法都会被分类覆盖)

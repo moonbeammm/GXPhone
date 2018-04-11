@@ -31,5 +31,6 @@
 - (void)showTwoScrollVC;
 - (void)showJSVC;
 - (void)showBlockVC;
+- (void)showCALayerVC;
 
 @end
