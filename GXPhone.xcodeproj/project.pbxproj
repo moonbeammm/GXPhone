@@ -24,6 +24,8 @@
 		AA6AE2B0205F99E600E447E9 /* GXPhoneStringSeparateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6AE2AF205F99E600E447E9 /* GXPhoneStringSeparateTest.m */; };
 		AA781E8E205E3E0C0017B155 /* GXPhonePointerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA781E8D205E3E0C0017B155 /* GXPhonePointerTest.m */; };
 		AA9A6D542053D8E400EBDFD3 /* GXPhoneRetainCountTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9A6D532053D8E400EBDFD3 /* GXPhoneRetainCountTest.m */; };
+		AA9B0E3420F353690057C39D /* GXPhoneTwoScrollViewSubTwoVC.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9B0E3220F353690057C39D /* GXPhoneTwoScrollViewSubTwoVC.h */; };
+		AA9B0E3520F353690057C39D /* GXPhoneTwoScrollViewSubTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9B0E3320F353690057C39D /* GXPhoneTwoScrollViewSubTwoVC.m */; };
 		AAB84D8C2041037400F98FD2 /* GXPhoneTwoScrollVC.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB84D892041037400F98FD2 /* GXPhoneTwoScrollVC.h */; };
 		AAB84D8D2041037400F98FD2 /* GXPhoneTwoScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB84D8A2041037400F98FD2 /* GXPhoneTwoScrollVC.m */; };
 		AAB84D9120410CFE00F98FD2 /* GXPhoneTwoScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB84D8F20410CFE00F98FD2 /* GXPhoneTwoScrollView.h */; };
@@ -252,6 +254,8 @@
 		AA6AE2AF205F99E600E447E9 /* GXPhoneStringSeparateTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneStringSeparateTest.m; sourceTree = "<group>"; };
 		AA781E8D205E3E0C0017B155 /* GXPhonePointerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhonePointerTest.m; sourceTree = "<group>"; };
 		AA9A6D532053D8E400EBDFD3 /* GXPhoneRetainCountTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneRetainCountTest.m; sourceTree = "<group>"; };
+		AA9B0E3220F353690057C39D /* GXPhoneTwoScrollViewSubTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneTwoScrollViewSubTwoVC.h; sourceTree = "<group>"; };
+		AA9B0E3320F353690057C39D /* GXPhoneTwoScrollViewSubTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneTwoScrollViewSubTwoVC.m; sourceTree = "<group>"; };
 		AAB84D892041037400F98FD2 /* GXPhoneTwoScrollVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneTwoScrollVC.h; sourceTree = "<group>"; };
 		AAB84D8A2041037400F98FD2 /* GXPhoneTwoScrollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhoneTwoScrollVC.m; sourceTree = "<group>"; };
 		AAB84D8F20410CFE00F98FD2 /* GXPhoneTwoScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhoneTwoScrollView.h; sourceTree = "<group>"; };
@@ -430,6 +434,8 @@
 				AAB84D8A2041037400F98FD2 /* GXPhoneTwoScrollVC.m */,
 				AA658A63206E4233004BB6B6 /* GXPhoneTwoScrollSubVC.h */,
 				AA658A64206E4233004BB6B6 /* GXPhoneTwoScrollSubVC.m */,
+				AA9B0E3220F353690057C39D /* GXPhoneTwoScrollViewSubTwoVC.h */,
+				AA9B0E3320F353690057C39D /* GXPhoneTwoScrollViewSubTwoVC.m */,
 				AAD5D91F204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.h */,
 				AAD5D920204A9AA900E9D08E /* GXPhoneTwoScrollVC+One.m */,
 				AAD5D926204A9AC300E9D08E /* GXPhoneTwoScrollVC+Two.h */,
@@ -816,6 +822,7 @@
 				AA2884EB209B2B7F0016C66F /* GXPhoneTouchEventButton.h in Headers */,
 				AA658A65206E4233004BB6B6 /* GXPhoneTwoScrollSubVC.h in Headers */,
 				B7CCDCCD1F3DC52900B06BB3 /* GXPhoneADelegateVC.h in Headers */,
+				AA9B0E3420F353690057C39D /* GXPhoneTwoScrollViewSubTwoVC.h in Headers */,
 				B7CCDC9E1F3DC52000B06BB3 /* GXMainTabBarViewController.h in Headers */,
 				E47F596F205C3ADF000FA790 /* GXPhoneFather.h in Headers */,
 				AAF238E3204E3E5F00191285 /* GXPhoneJSModel.h in Headers */,
@@ -1059,6 +1066,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9B0E3520F353690057C39D /* GXPhoneTwoScrollViewSubTwoVC.m in Sources */,
 				AAF238E4204E3E5F00191285 /* GXPhoneJSModel.m in Sources */,
 				B78048461F736252004B5E5B /* GXPhoneSearchVC.m in Sources */,
 				B7CCDC5D1F3DBA7C00B06BB3 /* GXPhoneBus.m in Sources */,

@@ -19,26 +19,8 @@
 
 @implementation GXPhoneTwoScrollVC
 
-/*
- load 放在程序启动的时候就会挨个调用.
- 分类或者子类重写了并不会覆盖.
- */
-+ (void)load {
-    [super load];
-    NSLog(@"我的+load方法被子类/分类重写了.%@",self);
-    NSLog(@"测试");
-}
-/*
- 如果本类的分类重写了initialize方法(除了load方法.其他方法都会被分类覆盖)
- 那本类的此方法会被分类覆盖.
- 就不会被调用了.
- */
-+ (void)initialize {
-    [super initialize];
-    NSLog(@"sgx 我是父类.重写了initilize方法%@",self);
-}
-
-/*
+/* load方法和initialize方法加载总结:
+ 
  2018-03-30 00:25:46.680766+0800 GXUniversal[30739:3597111] 我的+load方法被子类/分类重写了.
  2018-03-30 00:25:46.681030+0800 GXUniversal[30739:3597111] sgx 我是分类two.重写了initilize方法GXPhoneTwoScrollVC
  2018-03-30 00:25:46.681471+0800 GXUniversal[30739:3597111] 我是分类two>> 重写了+load方法.
@@ -46,6 +28,44 @@
  2018-03-30 00:25:46.681708+0800 GXUniversal[30739:3597111] 我是分类one>> 重写了+load方法.
  2018-03-30 00:25:46.681794+0800 GXUniversal[30739:3597111] 我是分类two>> 重写了+load方法.
  */
+
+/*
+ load 放在程序启动的时候就会挨个调用.
+ 分类或者子类重写了并不会覆盖.
+ 即分类和子类的load方法都会被调用
+ 
+ 注意一: 子类不要调用[super load]方法.原因见子类GXPhoneTwoScrollSubVC
+ 注意二: 在这里打印self.会触发initialize方法.
+ */
++ (void)load {
+    NSLog(@"[+load]  >>  父类");
+}
+/*
+ initialize方法只有在第一次向该类发送消息的时候才会被调用.
+ 
+ 如果本类的分类重写了initialize方法(除了load方法.其他方法都会被分类覆盖)
+ 所以本类的此方法会被分类覆盖.
+ ************就不会被调用了************
+ */
++ (void)initialize {
+    NSLog(@"[+initilize]  >>  父类");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - (instancetype)init
 {

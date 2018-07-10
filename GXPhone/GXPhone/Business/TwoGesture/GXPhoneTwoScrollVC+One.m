@@ -11,19 +11,12 @@
 @implementation GXPhoneTwoScrollVC (One)
 
 + (void)load {
-    [super load];
-    NSLog(@"我是分类one>> 重写了+load方法.%@",self);
+    NSLog(@"[+load]  >>  分类one");
 }
 
 + (void)initialize {
-    [super initialize];
-    NSLog(@"sgx 我是分类one.重写了initilize方法%@",self);
-    
+    NSLog(@"[+initilize]  >>  分类one >> %@",self);
 }
 
-//- (void)viewDidLoad{
-//
-//    [super viewDidLoad];
-//}
-
 @end
+
