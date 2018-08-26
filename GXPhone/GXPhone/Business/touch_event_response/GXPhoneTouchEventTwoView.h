@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GXPhoneTouchEventTwoView : UIImageView
+@interface GXPhoneTouchEventTwoView : UIView
 
 @end

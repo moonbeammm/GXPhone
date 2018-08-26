@@ -10,15 +10,15 @@
 
 @implementation GXPhoneTouchEventTwoView
 
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
-{
-    NSLog(@"===========%@-%@-传递链",NSStringFromClass([self class]), NSStringFromSelector(@selector(hitTest:withEvent:)));
-    return [super hitTest:point withEvent:event];
-}
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+//{
+//    NSLog(@"传递链 >> twoView");
+//    return self;//[super hitTest:point withEvent:event];
+//}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"+++++++++++%@-%@-响应链",NSStringFromClass([self class]), NSStringFromSelector(@selector(touchesBegan:withEvent:)));
+    NSLog(@"响应链 >> twoView");
     [super touchesBegan:touches withEvent:event];
 }
 
